@@ -14,7 +14,13 @@
 <meta property="og:description" content="خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس، تأهيل المدربين (ToT)، وإدارة المسابقات وإعداد الفرق المتوّجة وطنياً وعالمياً في WRO وRobotex.">
 <meta property="og:locale" content="ar_KW">
 <meta property="og:locale:alternate" content="en_US">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
+<!-- مهم: بعد رفع الموقع استبدل المسار بالرابط الكامل، مثال: https://yourdomain.com/images/og.jpg (واتساب ولينكدإن يتطلبان رابطاً كاملاً) -->
+<meta property="og:image" content="images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mahmoud Korany Abdelfattah">
+<meta name="twitter:image" content="images/og.jpg">
 <!-- Favicon مضمّن كـ SVG -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23150f26'/%3E%3Cpath d='M22 16v32M22 33l19-17M28 28l14 20' fill='none' stroke='%23d4b464' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='46' cy='16' r='3' fill='%238e6ee6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,20 +173,18 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
 [data-theme="light"] .hero h1 em{background:linear-gradient(120deg,var(--gold-deep),var(--gold-text));-webkit-background-clip:text;background-clip:text}
 .hero-sub{color:var(--muted);font-size:clamp(1rem,1.5vw,1.15rem);max-width:56ch;margin-top:1.5rem}
 .hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.3rem}
-.hero-trust{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.8rem;padding-top:1.6rem;border-top:1px solid var(--border);color:var(--muted);font-size:.86rem}
-.hero-trust li{display:flex;align-items:center;gap:.55rem}
-.hero-trust li::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold)}
-.hero-visual{position:relative;aspect-ratio:1/1;width:100%;max-width:540px;margin-inline:auto}
-.hero-visual::before{content:"";position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(var(--purple-rgb),.3),transparent 68%);filter:blur(20px)}
-#hero3d{position:absolute;inset:0}
-#hero3d canvas{width:100%!important;height:100%!important;display:block}
-.fallback3d{position:absolute;inset:12%;display:none;color:var(--gold)}
-.no3d .fallback3d{display:block}
-.chip{position:absolute;display:flex;align-items:center;gap:.55rem;padding:.55rem .95rem;border-radius:999px;font-size:.8rem;font-weight:500;background:var(--header-bg);border:1px solid rgba(var(--gold-rgb),.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:var(--shadow);direction:ltr}
-.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-.chip-1{top:9%;inset-inline-start:0;animation:float 7s ease-in-out infinite}
-.chip-2{bottom:11%;inset-inline-end:0;animation:float 8s ease-in-out -3s infinite}
-@keyframes float{50%{transform:translateY(-10px)}}
+.hero-visual{position:relative;width:100%;max-width:430px;margin-inline:auto}
+.portrait{position:relative;margin:0;aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;background:linear-gradient(160deg,var(--surface),var(--surface-2));box-shadow:var(--shadow)}
+.portrait::before{content:"";position:absolute;inset-block:14px -14px;inset-inline:14px -14px;border:1px solid rgba(var(--gold-rgb),.45);border-radius:var(--radius);z-index:-1}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait-ph{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:1.2rem;text-align:center;padding:2rem;background:radial-gradient(circle at 50% 38%,rgba(var(--purple-rgb),.3),transparent 62%)}
+.portrait-ph svg{width:46%;height:auto}
+.portrait-ph span{font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;letter-spacing:.02em;color:var(--gold-text);direction:ltr}
+.portrait.has-photo .portrait-ph{display:none}
+.portrait-cap{position:absolute;inset-inline:0;bottom:0;padding:3rem 1.4rem 1.2rem;background:linear-gradient(transparent,rgba(11,10,16,.88));color:#f2eff9;font-size:.88rem;line-height:1.5}
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1.6rem}
+.badge{display:flex;flex-direction:column;gap:.15rem;padding:.8rem 1rem;border-radius:var(--radius-sm);background:var(--surface);box-shadow:var(--shadow);font-size:.78rem;color:var(--muted);line-height:1.45}
+.badge b{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:600;color:var(--gold-text);direction:ltr;text-align:start;line-height:1.2}
 
 /* ==========================================================
    5) نبذة + الأرقام
@@ -193,11 +197,10 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
 .cred li:last-child{border-bottom:0}
 .cred span{color:var(--muted);flex-shrink:0}
 .cred strong{font-weight:500;text-align:end}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(2.5rem,6vw,4.5rem);border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(160deg,var(--surface),var(--surface-2));box-shadow:var(--shadow);overflow:hidden}
-.stat{padding:2.2rem 1.2rem;text-align:center;border-inline-end:1px solid var(--border)}
-.stat:last-child{border-inline-end:0}
-.stat-num{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.1rem,4.5vw,3.3rem);font-weight:600;line-height:1.1;color:var(--gold-text);font-variant-numeric:tabular-nums}
-.stat-label{color:var(--muted);font-size:.93rem;margin-top:.5rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid var(--border)}
+.stat{text-align:start}
+.stat-num{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.7rem,2.8vw,2.3rem);font-weight:600;line-height:1.1;color:var(--gold-text);font-variant-numeric:tabular-nums}
+.stat-label{color:var(--muted);font-size:.8rem;line-height:1.5;margin-top:.35rem}
 
 /* ==========================================================
    6) الشبكات: الخدمات / لماذا / الأعمال / الآراء
@@ -214,12 +217,35 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
 .work-no{font-family:'Playfair Display',Georgia,serif;font-size:1.7rem;color:rgba(var(--purple-rgb),.75);line-height:1}
 .work-card::before{content:"";position:absolute;inset-inline:2rem;bottom:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .5s}
 .work-card:hover::before{transform:scaleX(1)}
-.quote{display:flex;flex-direction:column;gap:1.4rem;margin:0}
-.quote svg{width:34px;height:34px;color:var(--gold);opacity:.8}
-.quote blockquote{margin:0;font-size:1.02rem;color:var(--text);line-height:1.9}
-.quote figcaption{margin-top:auto;padding-top:1.2rem;border-top:1px solid var(--border);display:flex;align-items:center;gap:.8rem;color:var(--gold-text);font-weight:600;font-size:.93rem}
-.avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--purple-deep));border:1px solid rgba(var(--gold-rgb),.5);display:grid;place-items:center;color:#fff}
-.avatar .icon{width:18px;height:18px}
+.podium{display:grid;grid-template-columns:repeat(4,1fr);margin-bottom:clamp(2rem,4vw,3rem);border-block:1px solid var(--border)}
+.podium>div{padding:2rem 1.4rem;border-inline-end:1px solid var(--border)}
+.podium>div:last-child{border-inline-end:0}
+.podium b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.4rem,4.6vw,3.6rem);font-weight:600;line-height:1.05;color:var(--gold-text);direction:ltr;text-align:start}
+.podium span{display:block;margin-top:.6rem;color:var(--muted);font-size:.92rem;line-height:1.55}
+.partners{padding-block:clamp(2.8rem,5vw,4rem)}
+.partners h2{font-size:1.05rem;font-family:var(--font-body);font-weight:600;color:var(--muted);margin-bottom:1.4rem}
+.partners ul{display:flex;flex-wrap:wrap;gap:.7rem}
+.partners li{padding:.6rem 1.15rem;border:1px solid var(--border);border-radius:999px;font-size:.92rem}
+.gal-filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.8rem}
+.gal-filters button{padding:.55rem 1.15rem;border:1px solid var(--border);border-radius:999px;font-size:.9rem;color:var(--muted);transition:border-color .3s,color .3s,background-color .3s}
+.gal-filters button:hover{border-color:var(--gold);color:var(--text)}
+.gal-filters button[aria-pressed="true"]{background:rgba(var(--gold-rgb),.14);border-color:var(--gold);color:var(--gold-text)}
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem}
+.gal-item{position:relative;aspect-ratio:4/3;border-radius:var(--radius-sm);overflow:hidden;background:var(--surface);display:block;width:100%}
+.gal-item:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-item span{position:absolute;inset-inline:0;bottom:0;padding:2.4rem 1rem .9rem;background:linear-gradient(transparent,rgba(11,10,16,.85));color:#f2eff9;font-size:.86rem;line-height:1.5;text-align:start;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.gal-item:hover span,.gal-item:focus-visible span{opacity:1;transform:none}
+@media (hover:none){.gal-item span{opacity:1;transform:none}}
+.lightbox{border:0;padding:0;background:transparent;max-width:min(94vw,1100px);width:100%;color:#f2eff9;overflow:visible}
+.lightbox::backdrop{background:rgba(6,5,10,.9)}
+.lightbox img{width:100%;max-height:78vh;object-fit:contain;border-radius:var(--radius-sm)}
+.lightbox p{margin-top:.9rem;text-align:center;font-size:.95rem}
+.lb-btn{position:fixed;top:50%;width:46px;height:46px;margin-top:-23px;border-radius:50%;display:grid;place-items:center;background:rgba(21,18,31,.8);border:1px solid rgba(var(--gold-rgb),.5);color:#f2eff9}
+.lb-prev{inset-inline-start:1rem}.lb-next{inset-inline-end:1rem}
+.lb-close{position:fixed;top:1rem;inset-inline-end:1rem;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(21,18,31,.8);border:1px solid rgba(var(--gold-rgb),.5);color:#f2eff9}
+[dir="rtl"] .lb-btn .icon{transform:scaleX(-1)}
 
 /* ==========================================================
    7) الأسئلة الشائعة (أكورديون)
@@ -277,6 +303,46 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
 .to-top:hover{background:rgba(var(--gold-rgb),.15)}
 
 /* ==========================================================
+   9b) مسار Line Following في الهيدر
+   ========================================================== */
+.track{position:absolute;inset-inline:0;bottom:-1px;height:0;pointer-events:none}
+.track-line{position:absolute;inset-inline:0;bottom:0;height:3px;background:rgba(var(--gold-rgb),.18)}
+.track-fill{position:absolute;inset-block:0;inset-inline-start:0;width:0;background:var(--gold);display:block}
+.stop{position:absolute;bottom:-3px;width:9px;height:9px;margin-inline-start:-4.5px;border-radius:50%;background:var(--bg);border:1.5px solid rgba(var(--gold-rgb),.65);transition:background-color .3s}
+.stop.on{background:var(--gold)}
+.track-bot{position:absolute;bottom:-6px;inset-inline-start:0;width:26px;height:16px;margin-inline-start:-13px;will-change:transform}
+
+/* ==========================================================
+   9c) لعبة LEGO Sumo
+   ========================================================== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.play-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.play-how{display:grid;gap:.9rem;counter-reset:how}
+.play-how li{position:relative;padding-inline-start:2.2rem;color:var(--muted);font-size:1rem}
+.play-how li::before{counter-increment:how;content:counter(how);position:absolute;inset-inline-start:0;top:.15rem;width:1.5rem;height:1.5rem;border-radius:50%;border:1px solid rgba(var(--gold-rgb),.5);color:var(--gold-text);font-size:.8rem;font-weight:600;display:grid;place-items:center;line-height:1}
+.play-hud{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;margin-top:2rem;padding-top:1.4rem;border-top:1px solid var(--border)}
+.play-hud b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:600;line-height:1.1;color:var(--gold-text);font-variant-numeric:tabular-nums}
+.play-hud span{color:var(--muted);font-size:.85rem}
+.play-cta{margin-top:1.8rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.4rem}
+.play-cta p{color:var(--muted);flex:1 1 260px;font-size:.98rem}
+.arena{position:relative;width:100%;max-width:520px;margin-inline:auto}
+.arena canvas{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:50%;touch-action:none;cursor:crosshair;user-select:none;-webkit-user-select:none}
+.arena canvas:focus-visible{outline-offset:6px;border-radius:50%}
+.arena-ui{position:absolute;inset:0 0 auto 0;aspect-ratio:1;display:grid;place-items:center;pointer-events:none}
+.arena-card{pointer-events:auto;text-align:center;width:min(64%,300px);padding:1.4rem 1.3rem;border-radius:var(--radius);background:rgba(11,10,16,.9);border:1px solid rgba(var(--gold-rgb),.4);color:#f2eff9;box-shadow:0 20px 44px -22px rgba(0,0,0,.8)}
+.arena-card[hidden]{display:none}
+.arena-card h3{font-size:1.25rem;margin-bottom:.5rem;color:var(--gold-light)}
+.arena-card p{font-size:.92rem;line-height:1.6;color:#c9c3da;margin-bottom:1rem}
+.arena-count{position:absolute;font-family:'Playfair Display',Georgia,serif;font-variant-numeric:lining-nums;font-size:clamp(4rem,14vw,6.5rem);font-weight:700;color:var(--gold-light);line-height:1;direction:ltr;animation:pop .6s cubic-bezier(.2,.7,.2,1)}
+.arena-count[hidden]{display:none}
+@keyframes pop{from{transform:scale(1.5);opacity:0}to{transform:none;opacity:1}}
+.boost{margin-top:1.1rem;width:100%;justify-content:space-between;gap:1rem}
+.boost-bar{flex:1;max-width:55%;height:6px;border-radius:3px;background:rgba(var(--gold-rgb),.2);overflow:hidden}
+.boost-bar i{display:block;height:100%;width:100%;background:var(--gold);transform-origin:left center;transform:scaleX(1)}
+[dir="rtl"] .boost-bar i{transform-origin:right center}
+.boost.ready{border-color:var(--gold)}
+
+/* ==========================================================
    10) التجاوب
    ========================================================== */
 @media (max-width:1020px){
@@ -287,24 +353,34 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   .nav-links a::after{display:none}
 }
 @media (max-width:900px){
-  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-  .hero-visual{max-width:400px;order:-1}
+  .hero-grid,.about-grid,.contact-grid,.play-grid{grid-template-columns:1fr}
+  .play-text{display:contents}
+  .play-text>.sec-head{order:1}.play-how{order:2}.arena{order:3}.play-hud{order:4}.play-cta{order:5}
+  .play-grid{gap:1.6rem}
+  .play-hud,.play-cta{margin-top:.4rem}
+  .hero-visual{max-width:340px;order:-1}
+  .podium{grid-template-columns:repeat(2,1fr)}
+  .podium>div:nth-child(2){border-inline-end:0}
+  .podium>div:nth-child(-n+2){border-bottom:1px solid var(--border)}
   .hero{padding-top:calc(var(--header-h) + 1.5rem)}
   .grid-3>*,#servicesGrid>*:nth-child(4),#servicesGrid>*:nth-child(5){grid-column:span 3}
   #servicesGrid>*:nth-child(5){grid-column:span 6}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-inline-end:0}
-  .stat:nth-child(-n+2){border-bottom:1px solid var(--border)}
+  .stats{grid-template-columns:repeat(2,1fr);gap:1.4rem 1rem}
 }
 @media (max-width:640px){
   .grid-3>*,#servicesGrid>*:nth-child(n){grid-column:span 6}
   .grid-2{grid-template-columns:1fr}
   .nav-cta{display:none}
+  .nav{gap:.5rem}.nav-actions{gap:.4rem}
+  .logo{font-size:1.2rem;gap:.5rem}.logo svg{width:30px;height:30px}
+  .icon-btn{width:38px;height:38px}.lang-btn{padding-inline:.75rem}
   .card{padding:1.6rem}
   .why-card{flex-direction:column;gap:1.1rem}
   .hero-cta .btn{flex:1 1 100%}
-  .hero-visual{max-width:300px}
-  .chip{font-size:.72rem;padding:.4rem .75rem}
+  .hero-visual{max-width:250px}
+  .badge{font-size:.72rem;padding:.6rem .75rem}.badge b{font-size:1.1rem}
+  .gal-item:first-child{grid-column:auto;grid-row:auto;aspect-ratio:4/3}
+  .gal-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
   .cred li{flex-direction:column;gap:.15rem}
   .cred strong{text-align:start}
 }
@@ -335,7 +411,7 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
       <li><a href="#services" data-i18n="nav.services"></a></li>
       <li><a href="#why" data-i18n="nav.why"></a></li>
       <li><a href="#work" data-i18n="nav.work"></a></li>
-      <li><a href="#testimonials" data-i18n="nav.testimonials"></a></li>
+      <li id="navGallery" hidden><a href="#gallery" data-i18n="nav.gallery"></a></li>
       <li><a href="#faq" data-i18n="nav.faq"></a></li>
       <li><a href="#contact" data-i18n="nav.contact"></a></li>
     </ul>
@@ -355,6 +431,12 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
       </button>
     </div>
   </nav>
+  <!-- مسار Line Following: روبوت صغير يتتبّع الخط مع تمرير الصفحة -->
+  <div class="track" id="track" aria-hidden="true">
+    <div class="track-line"><i class="track-fill" id="trackFill"></i></div>
+    <div id="trackStops"></div>
+    <svg class="track-bot" id="trackBot" viewBox="0 0 26 16"><rect x="4" y="0" width="9" height="3" rx="1" fill="#08070d"/><rect x="4" y="13" width="9" height="3" rx="1" fill="#08070d"/><rect x="2" y="3" width="17" height="10" rx="2.5" fill="#d4b464" stroke="#150f26" stroke-width=".8"/><path d="M19 3l6 2v6l-6 2z" fill="#8e6ee6" stroke="#150f26" stroke-width=".6"/><rect x="6" y="6" width="6" height="4" rx="1" fill="#150f26" opacity=".55"/></svg>
+  </div>
 </header>
 
 <main id="main">
@@ -364,25 +446,29 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   <canvas id="circuit" aria-hidden="true"></canvas>
   <div class="container hero-grid">
     <div>
-      <p class="eyebrow reveal" data-i18n="hero.eyebrow"></p>
-      <h1 class="reveal" style="--d:80ms"><span data-i18n="hero.t1"></span> <em data-i18n="hero.t2"></em></h1>
-      <p class="hero-sub reveal" style="--d:160ms" data-i18n="hero.sub"></p>
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">أخصائي أول STEM والروبوتيكس · منسّق مسابقات دولية</p>
+      <h1 class="reveal" style="--d:80ms"><span data-i18n="hero.t1">أُعِدّ فرقاً ومعلّمين يحصدون المراكز الأولى في</span> <em data-i18n="hero.t2">مسابقات الروبوت العالمية</em></h1>
+      <p class="hero-sub reveal" style="--d:160ms" data-i18n="hero.sub">خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس وتطوير المناهج وتأهيل المدربين (ToT) وإدارة المسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت — مع سجل حافل بتحقيق مراكز ضمن أفضل 10 عالمياً.</p>
       <div class="hero-cta reveal" style="--d:240ms">
-        <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1"></a>
-        <a class="btn btn-ghost" href="#work" data-i18n="hero.cta2"></a>
+        <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1">تواصل معي</a>
+        <a class="btn btn-ghost" href="#work" data-i18n="hero.cta2">شاهد الإنجازات</a>
       </div>
-      <ul class="hero-trust reveal" style="--d:320ms" data-i18n-aria="hero.trustAria">
-        <li><span class="ltr">WRO RoboMission</span></li>
-        <li><span class="ltr">Robotex International</span></li>
-        <li><span class="ltr">SACGC · Kuwait</span></li>
-      </ul>
+      <div class="stats reveal" style="--d:320ms" id="stats"></div>
     </div>
     <div class="hero-visual reveal" style="--d:200ms">
-      <!-- عنصر Three.js: ذراع روبوت تفاعلي -->
-      <div id="hero3d" role="img" data-i18n-aria="hero.visualAria"></div>
-      <svg class="fallback3d" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="100" cy="100" r="92" opacity=".3"/><circle cx="100" cy="100" r="66" opacity=".5" stroke-dasharray="4 8"/><path d="M100 8v34M100 158v34M8 100h34M158 100h34M60 60l20 20M140 60l-20 20M60 140l20-20M140 140l-20-20" opacity=".6"/><rect x="76" y="76" width="48" height="48" rx="8" stroke-width="2"/><circle cx="100" cy="100" r="8" fill="currentColor"/></svg>
-      <span class="chip chip-1"><i></i>WRO RoboMission</span>
-      <span class="chip chip-2"><i></i>Robotex International</span>
+      <!-- صورتك: ضع الملف في images/portrait.jpg (أو .webp) وستظهر تلقائياً. حتى ذلك الحين يظهر شعار الموقع -->
+      <figure class="portrait" id="portrait">
+        <img id="portraitImg" alt="" hidden width="960" height="1200" fetchpriority="high">
+        <div class="portrait-ph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#150f26" stroke="#d4b464" stroke-opacity=".4"/><path d="M22 16v32M22 33l19-17M28 28l14 20" fill="none" stroke="#d4b464" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="16" r="3" fill="#8e6ee6"/></svg>
+          <span>Mahmoud Korany</span>
+        </div>
+        <figcaption class="portrait-cap" data-i18n="hero.portraitCap"></figcaption>
+      </figure>
+      <div class="badges">
+        <div class="badge"><b>5th</b><span data-i18n="hero.badge1"></span></div>
+        <div class="badge"><b>WRO 2026</b><span data-i18n="hero.badge2"></span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -393,9 +479,9 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
     <div class="about-grid">
       <div class="about-text">
         <p class="eyebrow reveal" data-i18n="about.eyebrow"></p>
-        <div class="sec-head reveal" style="margin-bottom:1.6rem"><h2 data-i18n="about.title"></h2></div>
-        <p class="reveal" data-i18n="about.p1"></p>
-        <p class="reveal" data-i18n="about.p2"></p>
+        <div class="sec-head reveal" style="margin-bottom:1.6rem"><h2 data-i18n="about.title">أساس هندسي في الميكاترونكس، وخبرة تُصقَل في ميادين المنافسات العالمية</h2></div>
+        <p class="reveal" data-i18n="about.p1">أنا محمود قرني عبد الفتاح، أخصائي أول في تعليم STEM والروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ نوفمبر 2017. قدّمتُ أكثر من 200 برنامج تدريبي وورشة عمل وصل أثرها إلى أكثر من 2,000 مشارك، وأهّلتُ أكثر من 200 معلم ومدرب.</p>
+        <p class="reveal" data-i18n="about.p2">أجمع بين الأساس الهندسي كمهندس ميكاترونكس وروبوتات وأتمتة (جامعة عين شمس) والخبرة العملية كمدرب دولي معتمد ومعلّم معتمد من Google، مع قيادة التنفيذ المتكامل لأكثر من 11 بطولة روبوت وتدريب فرق حققت الصدارة وطنياً ومراكز ضمن العشرة الأوائل عالمياً.</p>
       </div>
       <ul class="card cred reveal" style="--d:120ms">
         <li><span data-i18n="about.c1k"></span><strong data-i18n="about.c1v"></strong></li>
@@ -406,7 +492,6 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
         <li><span data-i18n="about.c6k"></span><strong data-i18n="about.c6v"></strong></li>
       </ul>
     </div>
-    <div class="stats reveal" id="stats"></div>
   </div>
 </section>
 
@@ -441,18 +526,71 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
       <h2 data-i18n="work.title"></h2>
       <p data-i18n="work.sub"></p>
     </div>
+    <div class="podium reveal" id="podium"></div>
     <div class="grid-3" id="workGrid"></div>
   </div>
 </section>
 
-<!-- ================= الآراء ================= -->
-<section id="testimonials" class="alt">
+<!-- ================= المعرض (يظهر تلقائياً عند إضافة صور في CONFIG.gallery) ================= -->
+<section id="gallery" class="alt" hidden>
   <div class="container">
     <div class="sec-head reveal">
-      <p class="eyebrow" data-i18n="testi.eyebrow"></p>
-      <h2 data-i18n="testi.title"></h2>
+      <h2 data-i18n="gallery.title"></h2>
+      <p data-i18n="gallery.sub"></p>
     </div>
-    <div class="grid-3" id="testiGrid"></div>
+    <div class="gal-filters" id="galFilters" role="group" data-i18n-aria="gallery.filterAria"></div>
+    <div class="gal-grid" id="galGrid"></div>
+  </div>
+</section>
+<dialog class="lightbox" id="lightbox" data-i18n-aria="gallery.title">
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <button class="lb-close" id="lbClose" type="button" data-i18n-aria="gallery.close"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" data-i18n-aria="gallery.prev"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" type="button" data-i18n-aria="gallery.next"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</dialog>
+
+<!-- ================= جهات التعاون ================= -->
+<section class="partners">
+  <div class="container">
+    <h2 data-i18n="partners.title"></h2>
+    <ul>
+      <li data-i18n="partners.p1"></li><li data-i18n="partners.p2"></li><li data-i18n="partners.p3"></li><li class="ltr">WRO</li><li class="ltr">Robotex</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= جرّب بنفسك: لعبة LEGO Sumo ================= -->
+<section id="play" class="alt">
+  <div class="container play-grid">
+    <div class="play-text">
+      <div class="sec-head reveal" style="margin-bottom:1.6rem"><h2 data-i18n="play.title"></h2><p data-i18n="play.sub"></p></div>
+      <ul class="play-how reveal">
+        <li data-i18n="play.how.0"></li><li data-i18n="play.how.1"></li><li data-i18n="play.how.2"></li>
+      </ul>
+      <div class="play-hud reveal" aria-live="off">
+        <div><b id="sWins">0</b><span data-i18n="play.wins"></span></div>
+        <div><b id="sLosses">0</b><span data-i18n="play.losses"></span></div>
+        <div><b id="sBest">0</b><span data-i18n="play.best"></span></div>
+      </div>
+      <div class="play-cta reveal">
+        <p data-i18n="play.cta"></p>
+        <a class="btn btn-gold" href="#contact" data-i18n="play.ctaBtn"></a>
+      </div>
+    </div>
+    <div class="arena reveal" style="--d:120ms">
+      <canvas id="sumo" width="520" height="520" tabindex="0" role="application" data-i18n-aria="play.aria"></canvas>
+      <div class="arena-ui">
+        <div class="arena-card" id="arenaCard">
+          <h3 id="arenaTitle"></h3>
+          <p id="arenaMsg"></p>
+          <button class="btn btn-gold btn-sm" id="arenaBtn" type="button"></button>
+        </div>
+        <div class="arena-count" id="arenaCount" aria-hidden="true" hidden></div>
+      </div>
+      <button class="btn btn-ghost boost" id="boostBtn" type="button"><span data-i18n="play.boost"></span><span class="boost-bar"><i id="boostFill"></i></span></button>
+      <p class="sr" id="sumoStatus" role="status" aria-live="polite"></p>
+    </div>
   </div>
 </section>
 
@@ -529,6 +667,7 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
         <a href="#services" data-i18n="nav.services"></a>
         <a href="#why" data-i18n="nav.why"></a>
         <a href="#work" data-i18n="nav.work"></a>
+        <a href="#play" data-i18n="nav.play"></a>
         <a href="#faq" data-i18n="nav.faq"></a>
         <a href="#contact" data-i18n="nav.contact"></a>
       </nav>
@@ -547,8 +686,6 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
 </button>
 
-<!-- Three.js من CDN (للعنصر ثلاثي الأبعاد فقط) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 <script>
 (function(){
 'use strict';
@@ -561,7 +698,11 @@ var CONFIG = {
   whatsapp:  '96569911190',                               // ← رقم واتساب بالصيغة الدولية بدون + أو مسافات
   whatsappDisplay: '+965 6991 1190',                      // ← الرقم كما يظهر للزائر
   linkedin:  'https://www.linkedin.com/in/koranitronics', // ← رابط لينكدإن من الـ CV
-  instagram: 'https://www.instagram.com/koranitronics',   // ← رابط انستقرام
+  instagram: '',                                          // ← ضع رابط حسابك الفعلي هنا ليظهر زر انستقرام (فارغ = مخفي)
+  portrait:  'images/portrait.jpg',                       // ← صورتك الشخصية (تظهر تلقائياً في الـ Hero إذا وُجد الملف)
+  /* المعرض: أضف الصور هنا فيظهر القسم تلقائياً. cat: wro | robotex | training | workshops
+     مثال: { src:'images/gallery/wro-2026.jpg', cat:'wro', ar:'فريق SACGC على منصة WRO Kuwait 2026', en:'SACGC team on the WRO Kuwait 2026 podium' } */
+  gallery: [],
   /* أرقام الإنجازات الموثّقة في الـ CV (Career Impact) */
   stats: [
     { value: 200,  suffix: '+' },
@@ -581,13 +722,13 @@ var I18N = {
       desc: 'محمود قرني عبد الفتاح — أخصائي أول STEM وروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. تقديم 200+ برنامج تدريبي لـ 2000+ مشارك وتأهيل 200+ مدرب ومعلم وإعداد فرق WRO وRobotex.'
     },
     skip: 'تخطَّ إلى المحتوى',
-    nav: { label:'التنقل الرئيسي', about:'نبذة', services:'الخدمات', why:'لماذا أنا', work:'الإنجازات والأعمال', testimonials:'الآراء', faq:'الأسئلة', contact:'تواصل', cta:'احجز استشارة', langLabel:'EN', langAria:'Switch to English', themeAria:'تبديل الوضع الفاتح والداكن', menuAria:'فتح القائمة' },
+    nav: { label:'التنقل الرئيسي', about:'نبذة', services:'الخدمات', why:'لماذا أنا', work:'الإنجازات والأعمال', gallery:'المعرض', play:'جرّب اللعبة', faq:'الأسئلة', contact:'تواصل', cta:'تواصل معي', langLabel:'EN', langAria:'Switch to English', themeAria:'تبديل الوضع الفاتح والداكن', menuAria:'فتح القائمة' },
     hero: {
       eyebrow: 'أخصائي أول STEM والروبوتيكس · منسّق مسابقات دولية',
       t1: 'أُعِدّ فرقاً ومعلّمين يحصدون المراكز الأولى في', t2: 'مسابقات الروبوت العالمية',
       sub: 'خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس وتطوير المناهج وتأهيل المدربين (ToT) وإدارة المسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت — مع سجل حافل بتحقيق مراكز ضمن أفضل 10 عالمياً.',
-      cta1: 'احجز استشارة', cta2: 'شاهد الإنجازات',
-      trustAria: 'مسابقات وجهات', visualAria: 'نموذج ثلاثي الأبعاد لذراع روبوت متحرك'
+      cta1: 'تواصل معي', cta2: 'شاهد الإنجازات',
+      portraitAlt: 'محمود قرني عبد الفتاح', portraitCap: 'محمود قرني — أخصائي أول STEM والروبوتيكس', badge1: 'عالمياً في Drone — Robotex International', badge2: 'المراكز 1–3 في RoboMission Senior'
     },
     about: {
       eyebrow: 'نبذة عني',
@@ -635,22 +776,34 @@ var I18N = {
         { t:'تصميم المناهج وتقديم 200+ برنامج تدريبي', d:'تطوير محتوى تقني ومناهج تدريبية متدرجة عبر منصات LEGO SPIKE وfischertechnik وArduino وVEX ولغات Python وC/C++ استفاد منها أكثر من 2,000 مشارك.' }
       ]
     },
-    testi: {
-      eyebrow: 'الآراء', title: 'ماذا يقول من خاضوا التجربة',
-      items: [
-        { q:'لاحظنا الفرق خلال أسابيع قليلة. ابني لم يتعلّم البرمجة فقط، بل صار يحلّل المشكلة ويجرّب ويصحّح بنفسه. وتقارير المتابعة أعطتنا صورة واضحة عن مستواه.', r:'وليّ أمر' },
-        { q:'الورشة كانت منظّمة باحتراف من التخطيط إلى التنفيذ. الطلاب خرجوا بمشاريع تعمل فعلاً، والمعلمون استفادوا من أسلوب الشرح قبل الطلاب.', r:'منسّق مدرسة' },
-        { q:'التدريب جعلنا نتعامل مع المسابقة كفريق هندسي حقيقي: خطة، اختبارات، وتحسين مستمر. يوم المسابقة كنّا نعرف تماماً ماذا نفعل.', r:'عضو فريق مسابقة' }
-      ]
+    podium: [
+      { n:'5th', l:'عالمياً في Drone — Robotex International' },
+      { n:'7th', l:'عالمياً في LEGO Sumo — Robotex International' },
+      { n:'1–5', l:'المراكز الخمسة الأولى في Line Following — Robotex Kuwait 2024' },
+      { n:'1–3', l:'RoboMission Senior — WRO Kuwait 2026، والتأهل لبورتوريكو' }
+    ],
+    gallery: { title:'من الميدان', sub:'لقطات من البطولات والتدريب والورش.', filterAria:'تصفية الصور', all:'الكل', close:'إغلاق', prev:'السابق', next:'التالي',
+      cats: { wro:'WRO', robotex:'Robotex', training:'تدريب المدربين', workshops:'ورش وتدريب' } },
+    partners: { title:'جهات عملتُ معها وبطولات أُعِدّ لها فرقاً', p1:'وزارة التربية — الكويت', p2:'جامعة الكويت', p3:'معهد الكويت للأبحاث العلمية (KISR)' },
+    play: {
+      title:'جرّب بنفسك: LEGO Sumo', sub:'ادفع روبوت المدرّب خارج الحلبة قبل أن يدفعك. تحكّم بالأسهم أو WASD أو اسحب بإصبعك، واستخدم الاندفاع في اللحظة المناسبة.',
+      how:['وجّه مقدّمة روبوتك نحو الخصم: الدفع من المواجهة هو الأقوى.','الاندفاع (زر المسافة أو الزر أسفل الحلبة) يمنحك دفعة سريعة ثم يحتاج ثانية ونصف ليعود.','كلما زادت سلسلة انتصاراتك زاد ذكاء الخصم.'],
+      aria:'حلبة LEGO Sumo: تحكّم بروبوتك بالأسهم أو WASD أو بالسحب',
+      idleTitle:'جاهز للمباراة؟', idleMsg:'ادفع روبوت المدرّب خارج الحلبة.', start:'ابدأ المباراة', again:'جولة أخرى', go:'انطلق!',
+      win:'فزت بالجولة', winMsg:'دفعت الخصم خارج الحلبة. يمكنك برمجة روبوت يفعل هذا بمفرده.',
+      lose:'خرجت من الحلبة', loseMsg:'جرّب مرة أخرى: وجّه المقدّمة نحوه واستخدم الاندفاع.',
+      draw:'تعادل', drawMsg:'خرجتما معاً. أعد الجولة.',
+      wins:'فوز', losses:'خسارة', best:'أفضل سلسلة', boost:'اندفاع',
+      cta:'أعجبتك اللعبة؟ في التدريب تبرمج روبوتاً يلعب بهذه الطريقة وحده.', ctaBtn:'تواصل معي'
     },
     faq: {
       eyebrow: 'أسئلة شائعة', title: 'إجابات مختصرة عمّا يُسأل كثيراً',
       items: [
         { q:'ما الفرق بين تدريب المسابقات والدورات العادية؟', a:'الدورات تبني الأساس: مفاهيم البرمجة والإلكترونيات والميكانيكا بتدرّج. أما تدريب المسابقات فيبدأ من هذا الأساس ويركّز على قواعد المسابقة، استراتيجية المهام، العمل الجماعي، والأداء تحت ضغط الوقت.' },
         { q:'هل التدريب حضوري أم عن بُعد؟', a:'كلاهما متاح. تدريب المسابقات والورش العملية يُفضَّل أن يكون حضورياً لوجود العتاد، بينما تصلح مسارات البرمجة والمحاكاة وبعض برامج تأهيل المعلمين للتدريب عن بُعد.' },
-        { q:'هل تقدّمون برامج لتدريب المعلمين والمدربين (ToT)؟', a:'نعم، نمتلك خبرة واسعة في تأهيل أكثر من 200 معلم ومدرب للمدارس والمؤسسات التعليمية، مع تصميم المناهج والحقائب التدريبية ومعايير التقييم.' },
-        { q:'ما الأعمار والمنصّات المتاحة للتدريب؟', a:'نقدّم مسارات تناسب جميع المراحل الدراسية والجامعية باستخدام منصّات متنوّعة تشمل LEGO Education / SPIKE وfischertechnik وVEX وArduino والبرمجة بلغات Python وC/C++.' },
-        { q:'كيف تبدأ المدرسة أو المؤسسة التعاون؟', a:'تبدأ بجلسة استشارية لفهم أهدافكم وإمكاناتكم (سواء لتأهيل المعلمين، أو إقامة ورش عمل، أو تنظيم مسابقة، أو إعداد فرق)، ثم نقدّم مقترحاً متكاملاً بالخطة والجدول الزمني.' }
+        { q:'هل تقدّم برامج لتدريب المعلمين والمدربين (ToT)؟', a:'نعم، لديّ خبرة واسعة في تأهيل أكثر من 200 معلم ومدرب للمدارس والمؤسسات التعليمية، مع تصميم المناهج والحقائب التدريبية ومعايير التقييم.' },
+        { q:'ما الأعمار والمنصّات المتاحة للتدريب؟', a:'أقدّم مسارات تناسب مختلف المراحل الدراسية والجامعية باستخدام منصّات متنوّعة تشمل LEGO Education / SPIKE وfischertechnik وVEX وArduino والبرمجة بلغات Python وC/C++.' },
+        { q:'كيف تبدأ المدرسة أو المؤسسة التعاون؟', a:'أبدأ بجلسة استشارية لفهم أهدافكم وإمكاناتكم (سواء لتأهيل المعلمين، أو إقامة ورش عمل، أو تنظيم مسابقة، أو إعداد فرق)، ثم أقدّم مقترحاً متكاملاً بالخطة والجدول الزمني.' }
       ]
     },
     contact: {
@@ -673,13 +826,13 @@ var I18N = {
       desc: 'Mahmoud Korany Abdelfattah — Senior STEM & Robotics Specialist and Competition Coordinator at SACGC, Kuwait, since 2017. Delivered 200+ training programs reaching 2,000+ participants, developed 200+ educators, and coached Top-10 international WRO & Robotex teams.'
     },
     skip: 'Skip to content',
-    nav: { label:'Main navigation', about:'About', services:'Services', why:'Why Me', work:'Achievements & Work', testimonials:'Testimonials', faq:'FAQ', contact:'Contact', cta:'Book a Consultation', langLabel:'عربي', langAria:'التبديل إلى العربية', themeAria:'Toggle light and dark mode', menuAria:'Toggle menu' },
+    nav: { label:'Main navigation', about:'About', services:'Services', why:'Why Me', work:'Achievements & Work', gallery:'Gallery', play:'Play the game', faq:'FAQ', contact:'Contact', cta:'Get in touch', langLabel:'عربي', langAria:'التبديل إلى العربية', themeAria:'Toggle light and dark mode', menuAria:'Toggle menu' },
     hero: {
       eyebrow: 'Senior STEM & Robotics Specialist · Competition Coordinator',
       t1: 'Coaching award-winning teams & educators for', t2: 'world robotics competitions',
       sub: 'Nearly 9 years of experience in STEM education, robotics program delivery, curriculum & instructor development (ToT), and end-to-end competition management at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC), Kuwait.',
-      cta1: 'Book a Consultation', cta2: 'View Achievements',
-      trustAria: 'Competitions and affiliations', visualAria: 'Animated 3D model of a robotic arm'
+      cta1: 'Get in touch', cta2: 'View Achievements',
+      portraitAlt: 'Mahmoud Korany Abdelfattah', portraitCap: 'Mahmoud Korany — Senior STEM & Robotics Specialist', badge1: 'Worldwide in Drone — Robotex International', badge2: '1st–3rd in RoboMission Senior'
     },
     about: {
       eyebrow: 'About',
@@ -727,22 +880,34 @@ var I18N = {
         { t:'200+ STEM Programs & Multi-Platform Curricula', d:'Developed robotics curricula and learning activities across LEGO SPIKE, fischertechnik, Arduino, VEX, Python, and C/C++, reaching 2,000+ participants.' }
       ]
     },
-    testi: {
-      eyebrow: 'Testimonials', title: 'What people say after the experience',
-      items: [
-        { q:'We saw the difference within a few weeks. My son did not just learn to code — he now analyses a problem, experiments and corrects himself. The progress reports gave us a clear picture of his level.', r:'Parent' },
-        { q:'The workshop was professionally run from planning to delivery. Students left with projects that actually worked, and our teachers benefited from the teaching approach as much as the students did.', r:'School Coordinator' },
-        { q:'The coaching made us approach the competition like a real engineering team: a plan, tests and constant improvement. On competition day we knew exactly what to do.', r:'Competition Team Member' }
-      ]
+    podium: [
+      { n:'5th', l:'Worldwide in Drone — Robotex International' },
+      { n:'7th', l:'Worldwide in LEGO Sumo — Robotex International' },
+      { n:'1–5', l:'Top five places in Line Following — Robotex Kuwait 2024' },
+      { n:'1–3', l:'RoboMission Senior — WRO Kuwait 2026, qualifying for Puerto Rico' }
+    ],
+    gallery: { title:'From the field', sub:'Moments from competitions, coaching and workshops.', filterAria:'Filter photos', all:'All', close:'Close', prev:'Previous', next:'Next',
+      cats: { wro:'WRO', robotex:'Robotex', training:'Educator training', workshops:'Workshops & coaching' } },
+    partners: { title:'Institutions I have worked with and championships I coach teams for', p1:'Ministry of Education — Kuwait', p2:'Kuwait University', p3:'Kuwait Institute for Scientific Research (KISR)' },
+    play: {
+      title:'Try it yourself: LEGO Sumo', sub:'Push the coach\'s robot out of the ring before it pushes you. Steer with the arrow keys, WASD, or drag with your finger, and time your boost.',
+      how:['Point your robot\'s front at the opponent: head-on pushing is the strongest.','Boost (Space or the button below the ring) gives a quick burst, then needs 1.5 seconds to recharge.','The longer your win streak, the smarter the opponent gets.'],
+      aria:'LEGO Sumo ring: steer your robot with the arrow keys, WASD, or by dragging',
+      idleTitle:'Ready for a match?', idleMsg:'Push the coach\'s robot out of the ring.', start:'Start match', again:'Another round', go:'Go!',
+      win:'You won the round', winMsg:'You pushed the opponent out. You can program a robot to do this on its own.',
+      lose:'You left the ring', loseMsg:'Try again: aim your front at it and use the boost.',
+      draw:'Draw', drawMsg:'You both went out. Replay the round.',
+      wins:'Wins', losses:'Losses', best:'Best streak', boost:'Boost',
+      cta:'Enjoyed it? In training you program a robot that plays like this on its own.', ctaBtn:'Get in touch'
     },
     faq: {
       eyebrow: 'FAQ', title: 'Short answers to common questions',
       items: [
         { q:'How is competition coaching different from regular courses?', a:'Courses build the foundation: programming, electronics and mechanics, step by step. Competition coaching starts from that foundation and focuses on the rules, mission strategy, teamwork and performing under time pressure.' },
         { q:'Is training in person or online?', a:'Both are available. Competition coaching and hands-on workshops work best in person because of the hardware, while programming, simulation tracks, and educator consultations suit online delivery.' },
-        { q:'Do you offer Training of Trainers (ToT) for schools and educators?', a:'Yes. With experience developing 200+ educators and trainers, we offer tailored ToT programs, curriculum design, and instructional enablement for schools and institutions.' },
-        { q:'What ages and platforms do you cover?', a:'We cover primary, middle, high school, and university levels across LEGO Education / SPIKE, fischertechnik, VEX Robotics, Arduino, Python, and C/C++.' },
-        { q:'How does a school or institution get started?', a:'We begin with a consultation to understand your goals (teacher training, student workshops, competition hosting, or team coaching), followed by a complete proposal covering the plan, timeline, and outcomes.' }
+        { q:'Do you offer Training of Trainers (ToT) for schools and educators?', a:'Yes. With experience developing 200+ educators and trainers, I offer tailored ToT programs, curriculum design, and instructional enablement for schools and institutions.' },
+        { q:'What ages and platforms do you cover?', a:'I cover primary, middle, high school, and university levels across LEGO Education / SPIKE, fischertechnik, VEX Robotics, Arduino, Python, and C/C++.' },
+        { q:'How does a school or institution get started?', a:'I begin with a consultation to understand your goals (teacher training, student workshops, competition hosting, or team coaching), followed by a complete proposal covering the plan, timeline, and outcomes.' }
       ]
     },
     contact: {
@@ -769,6 +934,7 @@ var $$ = function(s, c){ return Array.prototype.slice.call((c || doc).querySelec
 var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var store = { get:function(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }, set:function(k,v){ try{ localStorage.setItem(k,v); }catch(e){} } };
 var lang = root.lang === 'en' ? 'en' : 'ar';
+var gallery = null, game = null, track = null;
 function t(path){ return path.split('.').reduce(function(a,k){ return a == null ? a : a[k]; }, I18N[lang]); }
 function cssVar(n){ return getComputedStyle(root).getPropertyValue(n).trim(); }
 
@@ -788,8 +954,7 @@ var ICONS = {
     '<path d="M3 20h5v-5h5v-5h5V5h3"/>',
     '<path d="M4 4v16h16M8 16v-4M12 16V8M16 16v-6"/>',
     '<circle cx="12" cy="12" r="9"/><path d="M8 12.500l3 3 5-6"/>'
-  ],
-  user: '<circle cx="12" cy="8" r="3.500"/><path d="M5 20a7 7 0 0 1 14 0"/>'
+  ]
 };
 function svg(p){ return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">' + p + '</svg>'; }
 var WORK_TAGS = ['c','c','c','d','e','e'];
@@ -807,8 +972,8 @@ function build(){
   $('#workGrid').innerHTML = WORK_TAGS.map(function(tag,i){
     return '<article class="card work-card reveal" style="--d:' + (i%3)*90 + 'ms"><div class="work-top"><span class="tag" data-i18n="work.tags.' + tag + '"></span><span class="work-no" aria-hidden="true">0' + (i+1) + '</span></div><h3 data-i18n="work.items.' + i + '.t"></h3><p data-i18n="work.items.' + i + '.d"></p></article>';
   }).join('');
-  $('#testiGrid').innerHTML = [0,1,2].map(function(i){
-    return '<figure class="card quote reveal" style="--d:' + i*90 + 'ms"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M6 22c0-6 3-11 8-13l1 2c-3 2-4 4-4 6h4v7H6v-2zm12 0c0-6 3-11 8-13l1 2c-3 2-4 4-4 6h4v7h-9v-2z"/></svg><blockquote data-i18n="testi.items.' + i + '.q"></blockquote><figcaption><span class="avatar">' + svg(ICONS.user) + '</span><span data-i18n="testi.items.' + i + '.r"></span></figcaption></figure>';
+  $('#podium').innerHTML = I18N.ar.podium.map(function(_,i){
+    return '<div><b data-i18n="podium.' + i + '.n"></b><span data-i18n="podium.' + i + '.l"></span></div>';
   }).join('');
   $('#faqList').innerHTML = I18N.ar.faq.items.map(function(_,i){
     return '<div class="faq-item reveal"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqP' + i + '" id="faqB' + i + '"><span data-i18n="faq.items.' + i + '.q"></span><span class="pm" aria-hidden="true"></span></button></h3><div class="faq-panel" id="faqP' + i + '" role="region" aria-labelledby="faqB' + i + '"><div><p data-i18n="faq.items.' + i + '.a"></p></div></div></div>';
@@ -819,7 +984,7 @@ function build(){
   $('#cEmail').textContent = CONFIG.email; $('#cEmail').href = $('#sMail').href = 'mailto:' + CONFIG.email;
   $('#cWa').textContent = CONFIG.whatsappDisplay; $('#cWa').href = $('#waBtn').href = $('#sWa').href = wa;
   $('#cLi').href = $('#sLi').href = CONFIG.linkedin;
-  $('#sIg').href = CONFIG.instagram;
+  if (CONFIG.instagram) $('#sIg').href = CONFIG.instagram; else $('#sIg').hidden = true;
   $('#year').textContent = new Date().getFullYear();
 }
 
@@ -839,6 +1004,10 @@ function applyLang(l){
   $('meta[property="og:locale"]').content = l === 'ar' ? 'ar_KW' : 'en_US';
   $$('.err').forEach(function(e){ e.textContent = ''; });
   $$('[aria-invalid]').forEach(function(e){ e.removeAttribute('aria-invalid'); });
+  var pi = $('#portraitImg'); if (pi) pi.alt = t('hero.portraitAlt');
+  if (gallery) gallery.render();
+  if (game) game.refresh();
+  if (track) track.layout();
   store.set('kx-lang', l);
 }
 
@@ -1046,105 +1215,262 @@ function initCircuit(){
 }
 
 /* ==========================================================
-   J) عنصر Three.js: ذراع روبوت يدور ببطء ويستجيب للماوس
+   J) الصورة الشخصية: تظهر تلقائياً إذا وُجد الملف
    ========================================================== */
-function initHero3D(){
-  var wrap = $('#hero3d'), visual = wrap.parentNode, T = window.THREE, renderer;
-  if (!T) { visual.classList.add('no3d'); return; }
-  try { renderer = new T.WebGLRenderer({ antialias:true, alpha:true, powerPreference:'low-power' }); }
-  catch (e) { visual.classList.add('no3d'); return; }
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-  renderer.outputEncoding = T.sRGBEncoding;
-  wrap.appendChild(renderer.domElement);
-  renderer.domElement.setAttribute('aria-hidden','true');
+function initPortrait(){
+  var img = $('#portraitImg'), fig = $('#portrait'); if (!img || !CONFIG.portrait) return;
+  var probe = new Image();
+  probe.onload = function(){ img.src = CONFIG.portrait; img.alt = t('hero.portraitAlt'); img.hidden = false; fig.classList.add('has-photo'); };
+  probe.src = CONFIG.portrait;
+}
 
-  var scene = new T.Scene();
-  var camera = new T.PerspectiveCamera(34, 1, .1, 100);
-  camera.position.set(0, 3.6, 12.5); camera.lookAt(0, 1.9, 0);
-
-  scene.add(new T.HemisphereLight(0xcbbcff, 0x120d20, .6));
-  var key = new T.DirectionalLight(0xffe6ad, 1.5); key.position.set(4, 7, 6); scene.add(key);
-  var rim = new T.PointLight(0x8a63ff, 2.2, 30); rim.position.set(-5, 3, -2); scene.add(rim);
-  var fill = new T.PointLight(0xd4b464, .8, 20); fill.position.set(3, 1, 4); scene.add(fill);
-
-  var mBody = new T.MeshStandardMaterial({ color:0x3a2a75, metalness:.55, roughness:.38 });
-  var mDark = new T.MeshStandardMaterial({ color:0x1b1530, metalness:.6, roughness:.45 });
-  var mGold = new T.MeshStandardMaterial({ color:0xd4b464, metalness:.75, roughness:.28, emissive:0x3d2c08 });
-  var mLine = new T.LineBasicMaterial({ color:0xd4b464, transparent:true, opacity:.5 });
-  var mRing = new T.MeshBasicMaterial({ color:0x8a63ff, transparent:true, opacity:.55 });
-
-  function mesh(geo, mat, edges){
-    var m = new T.Mesh(geo, mat);
-    if (edges) m.add(new T.LineSegments(new T.EdgesGeometry(geo), mLine));
-    return m;
+/* ==========================================================
+   J2) المعرض + عارض الصور (Lightbox). يظهر فقط عند وجود صور في CONFIG.gallery
+   ========================================================== */
+function initGallery(){
+  var items = CONFIG.gallery || [], sec = $('#gallery'); if (!items.length) return null;
+  sec.hidden = false; $('#navGallery').hidden = false;
+  var grid = $('#galGrid'), filters = $('#galFilters'), dlg = $('#lightbox'), cur = 'all', shown = [], idx = 0;
+  function cap(it){ return it[lang] || it.ar || it.en || ''; }
+  function open(i){
+    idx = (i + shown.length) % shown.length;
+    $('#lbImg').src = shown[idx].src; $('#lbImg').alt = cap(shown[idx]); $('#lbCap').textContent = cap(shown[idx]);
+    if (!dlg.open) dlg.showModal();
   }
-  function joint(r, len){ var j = mesh(new T.CylinderGeometry(r, r, len, 32), mGold); j.rotation.x = Math.PI / 2; return j; }
-
-  var rootG = new T.Group(); scene.add(rootG);
-
-  /* القاعدة بنقوش دوائر إلكترونية */
-  var platform = mesh(new T.CylinderGeometry(2.5, 2.7, .2, 64), mDark); platform.position.y = -.1; rootG.add(platform);
-  var ring = new T.Mesh(new T.TorusGeometry(2.52, .025, 8, 96), mGold); ring.rotation.x = Math.PI / 2; ring.position.y = .01; rootG.add(ring);
-  for (var i = 0; i < 12; i++) {
-    var a = i / 12 * Math.PI * 2, len = i % 3 === 0 ? 1.25 : .8, r0 = 1.05;
-    var tr = new T.Mesh(new T.BoxGeometry(len, .012, .025), mGold);
-    tr.position.set(Math.cos(a) * (r0 + len / 2), .012, Math.sin(a) * (r0 + len / 2)); tr.rotation.y = -a; rootG.add(tr);
-    var nd = new T.Mesh(new T.CylinderGeometry(.055, .055, .03, 16), mGold);
-    nd.position.set(Math.cos(a) * (r0 + len), .015, Math.sin(a) * (r0 + len)); rootG.add(nd);
+  function render(){
+    var cats = ['all'];
+    items.forEach(function(it){ if (cats.indexOf(it.cat) < 0) cats.push(it.cat); });
+    filters.innerHTML = cats.map(function(c){
+      return '<button type="button" data-cat="' + c + '" aria-pressed="' + (c === cur) + '">' + (c === 'all' ? t('gallery.all') : (t('gallery.cats.' + c) || c)) + '</button>';
+    }).join('');
+    shown = items.filter(function(it){ return cur === 'all' || it.cat === cur; });
+    grid.innerHTML = shown.map(function(it, n){
+      return '<button class="gal-item" type="button" data-i="' + n + '"><img src="' + it.src + '" alt="' + cap(it).replace(/"/g, '&quot;') + '" loading="lazy" decoding="async"><span>' + cap(it) + '</span></button>';
+    }).join('');
   }
-  /* حلقات مدارية */
-  var orbit1 = new T.Mesh(new T.TorusGeometry(3.0, .012, 6, 120), mRing); orbit1.rotation.set(1.25, 0, .3); orbit1.position.y = 2; rootG.add(orbit1);
-  var orbit2 = new T.Mesh(new T.TorusGeometry(3.3, .008, 6, 120), new T.MeshBasicMaterial({ color:0xd4b464, transparent:true, opacity:.4 })); orbit2.rotation.set(1.9, .4, 0); orbit2.position.y = 2; rootG.add(orbit2);
+  filters.addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) { cur = b.getAttribute('data-cat'); render(); } });
+  grid.addEventListener('click', function(e){ var b = e.target.closest('.gal-item'); if (b) open(+b.getAttribute('data-i')); });
+  $('#lbPrev').addEventListener('click', function(){ open(idx - 1); });
+  $('#lbNext').addEventListener('click', function(){ open(idx + 1); });
+  $('#lbClose').addEventListener('click', function(){ dlg.close(); });
+  dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener('keydown', function(e){
+    var rtl = root.dir === 'rtl';
+    if (e.key === 'ArrowRight') open(idx + (rtl ? -1 : 1)); else if (e.key === 'ArrowLeft') open(idx + (rtl ? 1 : -1));
+  });
+  render();
+  return { render: render };
+}
 
-  /* الذراع: قاعدة دوّارة ← كتف ← كوع ← رسغ ← ملقط */
-  var turret = new T.Group(); rootG.add(turret);
-  var base = mesh(new T.CylinderGeometry(.75, .95, .55, 40), mBody); base.position.y = .28; turret.add(base);
-  var collar = new T.Mesh(new T.TorusGeometry(.76, .03, 8, 48), mGold); collar.rotation.x = Math.PI / 2; collar.position.y = .56; turret.add(collar);
-  var tower = mesh(new T.BoxGeometry(.6, .5, .7), mBody, true); tower.position.y = .8; turret.add(tower);
+/* ==========================================================
+   L) لعبة LEGO Sumo (Canvas 2D، بدون مكتبات)
+   ========================================================== */
+function initSumo(){
+  var cv = $('#sumo'); if (!cv || !cv.getContext) return null;
+  var S = 520, C = S / 2, R = 224, OUT = R + 14, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  cv.width = cv.height = S * dpr;
+  var ctx = cv.getContext('2d'); ctx.scale(dpr, dpr);
+  var ui = { card:$('#arenaCard'), title:$('#arenaTitle'), msg:$('#arenaMsg'), btn:$('#arenaBtn'), count:$('#arenaCount'),
+             status:$('#sumoStatus'), fill:$('#boostFill'), boost:$('#boostBtn'), wins:$('#sWins'), losses:$('#sLosses'), best:$('#sBest') };
+  var st = { wins:0, losses:0, streak:0, best:+store.get('kx-sumo-best') || 0 };
+  var state = 'idle', kind = 'idle', countT = 0, matchT = 0, endT = 0, raf = 0, last = 0, visible = true;
+  var keys = {}, pointer = null, P, O, ai;
 
-  var shoulder = new T.Group(); shoulder.position.y = 1.05; turret.add(shoulder);
-  shoulder.add(joint(.34, .95));
-  var upper = mesh(new T.BoxGeometry(.36, 2.1, .4), mBody, true); upper.position.y = 1.05; shoulder.add(upper);
+  function bot(x, a){ return { x:x, y:C, vx:0, vy:0, a:a, r:24, cd:0, dash:0, out:false, outT:0 }; }
+  function reset(){ P = bot(C - 100, 0); O = bot(C + 100, Math.PI); ai = { dx:-1, dy:0 }; matchT = 0; endT = 0; }
+  function angDiff(a, b){ return Math.atan2(Math.sin(a - b), Math.cos(a - b)); }
 
-  var elbow = new T.Group(); elbow.position.y = 2.1; shoulder.add(elbow);
-  elbow.add(joint(.27, .8));
-  var fore = mesh(new T.BoxGeometry(.27, 1.7, .3), mBody, true); fore.position.y = .85; elbow.add(fore);
-
-  var wrist = new T.Group(); wrist.position.y = 1.7; elbow.add(wrist);
-  wrist.add(joint(.19, .55));
-  var palm = mesh(new T.BoxGeometry(.62, .12, .3), mDark, true); palm.position.y = .26; wrist.add(palm);
-  var fGeo = new T.BoxGeometry(.09, .55, .22);
-  var f1 = mesh(fGeo, mGold), f2 = mesh(fGeo, mGold); f1.position.y = f2.position.y = .58; wrist.add(f1); wrist.add(f2);
-
-  var mx = 0, my = 0, tx = 0, ty = 0, raf = 0, visible = true, t0 = performance.now();
-  function pose(time){
-    turret.rotation.y = time * .28;
-    shoulder.rotation.z = -.42 + Math.sin(time * .6) * .16;
-    elbow.rotation.z = 1.15 + Math.sin(time * .8 + 1) * .3;
-    wrist.rotation.z = .5 + Math.sin(time * 1.1 + 2) * .32;
-    var g = .15 + (Math.sin(time * 1.7) + 1) * .06; f1.position.x = g; f2.position.x = -g;
-    orbit1.rotation.z = .3 + time * .12; orbit2.rotation.z = -time * .09;
-    tx += (mx - tx) * .05; ty += (my - ty) * .05;
-    rootG.rotation.y = tx * .45; rootG.rotation.x = .08 + ty * .16;
-    renderer.render(scene, camera);
+  function input(){
+    var dx = 0, dy = 0;
+    if (keys.ArrowLeft || keys.KeyA) dx -= 1; if (keys.ArrowRight || keys.KeyD) dx += 1;
+    if (keys.ArrowUp || keys.KeyW) dy -= 1;   if (keys.ArrowDown || keys.KeyS) dy += 1;
+    if (pointer) { var px = pointer.x - P.x, py = pointer.y - P.y, d = Math.hypot(px, py); if (d > 14) { dx = px / d; dy = py / d; } }
+    var m = Math.hypot(dx, dy); return m ? [dx / m, dy / m] : [0, 0];
   }
-  function loop(){ pose((performance.now() - t0) / 1000); raf = requestAnimationFrame(loop); }
-  function start(){ if (!raf && !reduceMotion && visible && !doc.hidden) raf = requestAnimationFrame(loop); }
-  function stop(){ cancelAnimationFrame(raf); raf = 0; }
-  function resize(){
-    var w = wrap.clientWidth, h = wrap.clientHeight; if (!w || !h) return;
-    renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
-    if (!raf) pose(2.2);
+  function stepBot(b, dir, accel, dt){
+    if (b.out) { b.outT += dt; b.vx *= Math.exp(-1.5 * dt); b.vy *= Math.exp(-1.5 * dt); b.x += b.vx * dt; b.y += b.vy * dt; return; }
+    b.vx += dir[0] * accel * dt; b.vy += dir[1] * accel * dt;
+    var drag = Math.exp(-4.2 * dt); b.vx *= drag; b.vy *= drag;
+    b.x += b.vx * dt; b.y += b.vy * dt;
+    var ta = b.a, sp = Math.hypot(b.vx, b.vy);
+    if (dir[0] || dir[1]) ta = Math.atan2(dir[1], dir[0]); else if (sp > 25) ta = Math.atan2(b.vy, b.vx);
+    b.a += angDiff(ta, b.a) * Math.min(1, 9 * dt);
+    if (b.cd > 0) b.cd -= dt; if (b.dash > 0) b.dash -= dt;
   }
-  resize();
-  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(wrap); else window.addEventListener('resize', resize);
-  if (!reduceMotion) window.addEventListener('pointermove', function(e){
-    if (e.pointerType === 'touch') return;
-    mx = e.clientX / window.innerWidth * 2 - 1; my = e.clientY / window.innerHeight * 2 - 1;
-  }, { passive:true });
-  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ visible = es[0].isIntersecting; visible ? start() : stop(); }).observe(wrap);
-  doc.addEventListener('visibilitychange', function(){ doc.hidden ? stop() : start(); });
-  start();
+  function dash(b){
+    if (b.cd > 0 || b.out) return false;
+    b.vx += Math.cos(b.a) * 430; b.vy += Math.sin(b.a) * 430; b.cd = 1.4; b.dash = .28; return true;
+  }
+  function collide(dt){
+    if (P.out || O.out) return;
+    var dx = O.x - P.x, dy = O.y - P.y, d = Math.hypot(dx, dy), min = P.r + O.r;
+    if (d >= min || d === 0) return;
+    var nx = dx / d, ny = dy / d, ov = (min - d) / 2;
+    P.x -= nx * ov; P.y -= ny * ov; O.x += nx * ov; O.y += ny * ov;
+    var vr = (O.vx - P.vx) * nx + (O.vy - P.vy) * ny;
+    if (vr < 0) { var j = -(1.35) * vr / 2; P.vx -= j * nx; P.vy -= j * ny; O.vx += j * nx; O.vy += j * ny; }
+    /* المقدّمة المواجهة للخصم تدفعه أكثر */
+    var pp = Math.max(0, Math.cos(P.a) * nx + Math.sin(P.a) * ny), po = Math.max(0, -(Math.cos(O.a) * nx + Math.sin(O.a) * ny)), push = 1500 * dt;
+    O.vx += nx * pp * pp * push; O.vy += ny * pp * pp * push; P.vx -= nx * po * po * push; P.vy -= ny * po * po * push;
+  }
+  function update(dt){
+    matchT += dt;
+    stepBot(P, input(), 820, dt);
+    var skill = Math.min(st.streak, 4), acc = 690 + skill * 75;
+    var tx = P.x + P.vx * .3, ty = P.y + P.vy * .3;
+    var edge = Math.hypot(O.x - C, O.y - C) > R - 64 && matchT < 25;
+    var wx = edge ? C - O.x : tx - O.x, wy = edge ? C - O.y : ty - O.y, wl = Math.hypot(wx, wy) || 1;
+    var k = Math.min(1, dt * (3 + skill * 1.2));
+    ai.dx += (wx / wl - ai.dx) * k; ai.dy += (wy / wl - ai.dy) * k;
+    var al = Math.hypot(ai.dx, ai.dy) || 1;
+    stepBot(O, [ai.dx / al, ai.dy / al], acc, dt);
+    var dd = Math.hypot(P.x - O.x, P.y - O.y), fa = Math.abs(angDiff(Math.atan2(P.y - O.y, P.x - O.x), O.a));
+    if (!edge && !O.out && O.cd <= 0 && fa < .3 && dd > 85 && dd < 190 && Math.random() < dt * (.5 + skill * .35)) dash(O);
+    collide(dt);
+    /* أول من يخرج يخسر؛ التعادل فقط لو خرجا في نفس اللحظة */
+    if (!P.out && !O.out) [P, O].forEach(function(b){ if (Math.hypot(b.x - C, b.y - C) > OUT) { b.out = true; b.outT = 0; } });
+    if (P.out || O.out) { endT += dt; if (endT > .9) finish(); }
+  }
+
+  /* ---------- الرسم ---------- */
+  function rr(x, y, w, h, r){ if (ctx.roundRect) { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); ctx.fill(); } else ctx.fillRect(x, y, w, h); }
+  function drawBot(b, body, accent, ox, oy, alpha){
+    var sc = b.out ? Math.max(.55, 1 - b.outT * .5) : 1, al = (b.out ? Math.max(0, 1 - b.outT * 1.1) : 1) * alpha;
+    ctx.save(); ctx.translate(b.x + ox, b.y + oy); ctx.globalAlpha = al; ctx.scale(sc, sc); ctx.rotate(b.a);
+    ctx.fillStyle = 'rgba(0,0,0,.35)'; rr(-20, -13, 40, 36, 7);
+    ctx.fillStyle = '#08070d'; ctx.fillRect(-18, -22, 24, 7); ctx.fillRect(-18, 15, 24, 7);
+    ctx.fillStyle = body; rr(-22, -17, 38, 34, 7);
+    ctx.fillStyle = accent; ctx.beginPath(); ctx.moveTo(16, -18); ctx.lineTo(31, -12); ctx.lineTo(31, 12); ctx.lineTo(16, 18); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = 'rgba(8,7,13,.5)'; ctx.fillRect(-14, -7, 18, 14);
+    ctx.fillStyle = '#f2eff9'; ctx.beginPath(); ctx.arc(21, 0, 2.6, 0, 6.2832); ctx.fill();
+    ctx.restore();
+  }
+  function drawBotFx(b, body, accent){
+    if (b.dash > 0) { var ux = Math.cos(b.a), uy = Math.sin(b.a); for (var i = 3; i >= 1; i--) drawBot(b, body, accent, -ux * i * 15, -uy * i * 15, .16 * (4 - i) / 3); }
+    drawBot(b, body, accent, 0, 0, 1);
+  }
+  function draw(){
+    ctx.clearRect(0, 0, S, S);
+    var g = ctx.createRadialGradient(C, C, 10, C, C, R); g.addColorStop(0, '#1d1830'); g.addColorStop(1, '#0e0c16');
+    ctx.beginPath(); ctx.arc(C, C, R, 0, 6.2832); ctx.fillStyle = g; ctx.fill();
+    ctx.lineWidth = 9; ctx.strokeStyle = '#d4b464'; ctx.stroke();
+    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(212,180,100,.18)'; ctx.beginPath(); ctx.arc(C, C, R - 26, 0, 6.2832); ctx.stroke();
+    ctx.fillStyle = 'rgba(212,180,100,.35)'; ctx.fillRect(C - 102, C - 26, 4, 52); ctx.fillRect(C + 98, C - 26, 4, 52);
+    if (pointer && state === 'play') { ctx.strokeStyle = 'rgba(240,220,160,.5)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(pointer.x, pointer.y, 12, 0, 6.2832); ctx.stroke(); }
+    drawBotFx(O, '#6d4fc4', '#d4b464');
+    drawBotFx(P, '#d4b464', '#8e6ee6');
+    var f = 1 - Math.max(0, P.cd) / 1.4;
+    ui.fill.style.transform = 'scaleX(' + f + ')'; ui.boost.classList.toggle('ready', f >= 1);
+  }
+
+  /* ---------- واجهة النتائج والحالات ---------- */
+  function hud(){ ui.wins.textContent = st.wins; ui.losses.textContent = st.losses; ui.best.textContent = st.best; }
+  function setCard(k){
+    kind = k; ui.card.hidden = false;
+    ui.title.textContent = t(k === 'idle' ? 'play.idleTitle' : 'play.' + k);
+    ui.msg.textContent = t(k === 'idle' ? 'play.idleMsg' : 'play.' + k + 'Msg');
+    ui.btn.textContent = t(k === 'idle' ? 'play.start' : 'play.again');
+  }
+  function finish(){
+    var res = P.out && O.out ? 'draw' : O.out ? 'win' : 'lose';
+    if (res === 'win') { st.wins++; st.streak++; if (st.streak > st.best) { st.best = st.streak; store.set('kx-sumo-best', String(st.best)); } }
+    else if (res === 'lose') { st.losses++; st.streak = 0; }
+    state = 'over'; hud(); setCard(res);
+    ui.status.textContent = ui.title.textContent + '. ' + ui.msg.textContent;
+    ui.btn.focus({ preventScroll:true });
+  }
+  function start(){
+    reset(); state = 'count'; countT = 3; ui.card.hidden = true; showCount(3);
+    cv.focus({ preventScroll:true }); run();
+  }
+  function showCount(txt){
+    ui.count.hidden = false; ui.count.textContent = txt;
+    ui.count.style.animation = 'none'; void ui.count.offsetWidth; ui.count.style.animation = '';
+  }
+  var lastN = 3, goTimer = 0;
+  function tick(dt){
+    if (state === 'count') {
+      countT -= dt; var n = Math.max(1, Math.ceil(countT));
+      if (n !== lastN && countT > 0) { lastN = n; showCount(n); }
+      if (countT <= 0) { state = 'play'; lastN = 3; showCount(t('play.go')); clearTimeout(goTimer); goTimer = setTimeout(function(){ ui.count.hidden = true; }, 650); }
+    } else if (state === 'play') update(dt);
+  }
+  function frame(ts){
+    var dt = Math.max(0, Math.min((ts - last) / 1000, .033)); last = ts;
+    tick(dt); draw();
+    raf = (state === 'count' || state === 'play') && visible && !doc.hidden ? requestAnimationFrame(frame) : 0;
+  }
+  function run(){ if (!raf) { last = performance.now(); raf = requestAnimationFrame(frame); } }
+
+  /* ---------- التحكم ---------- */
+  var CTRL = { ArrowLeft:1, ArrowRight:1, ArrowUp:1, ArrowDown:1, KeyA:1, KeyD:1, KeyW:1, KeyS:1 };
+  cv.addEventListener('keydown', function(e){
+    if (CTRL[e.code]) { keys[e.code] = true; e.preventDefault(); }
+    else if (e.code === 'Space' && state === 'play') { dash(P); e.preventDefault(); }
+  });
+  cv.addEventListener('keyup', function(e){ if (CTRL[e.code]) keys[e.code] = false; });
+  cv.addEventListener('blur', function(){ keys = {}; });
+  function setPtr(e){ var r = cv.getBoundingClientRect(); pointer = { x:(e.clientX - r.left) * S / r.width, y:(e.clientY - r.top) * S / r.height }; }
+  cv.addEventListener('pointerdown', function(e){ cv.focus({ preventScroll:true }); setPtr(e); try { cv.setPointerCapture(e.pointerId); } catch (x) {} });
+  cv.addEventListener('pointermove', function(e){ if (pointer) setPtr(e); });
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function(n){ cv.addEventListener(n, function(){ pointer = null; }); });
+  ui.boost.addEventListener('pointerdown', function(e){ e.preventDefault(); if (state === 'play') dash(P); });
+  ui.boost.addEventListener('keydown', function(e){ if ((e.code === 'Enter' || e.code === 'Space') && state === 'play') { dash(P); e.preventDefault(); } });
+  ui.btn.addEventListener('click', start);
+
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ visible = es[0].isIntersecting; if (visible && (state === 'count' || state === 'play')) run(); }).observe(cv);
+  doc.addEventListener('visibilitychange', function(){ if (!doc.hidden && (state === 'count' || state === 'play')) run(); });
+
+  reset(); hud(); setCard('idle'); draw();
+  return { refresh: function(){ setCard(state === 'idle' || state === 'over' ? kind : 'idle'); if (state === 'count' || state === 'play') ui.card.hidden = true; } };
+}
+
+/* ==========================================================
+   M) مسار Line Following: روبوت يتتبّع الخط مع تقدّم التمرير
+   ========================================================== */
+function initTrack(){
+  var tr = $('#track'); if (!tr) return null;
+  var fill = $('#trackFill'), stopsEl = $('#trackStops'), botEl = $('#trackBot');
+  var ids = ['home', 'about', 'services', 'why', 'work', 'gallery', 'play', 'faq', 'contact'].filter(function(id){ var e = $('#' + id); return e && !e.hidden; });
+  var PAD = 16, W = 0, dir = 1, cur = 0, target = 0, raf = 0, xs = [], stops = [];
+
+  function layout(){
+    W = tr.clientWidth; dir = root.dir === 'rtl' ? -1 : 1;
+    xs = ids.map(function(_, i){ return PAD + (W - 2 * PAD) * i / (ids.length - 1); });
+    stopsEl.innerHTML = xs.map(function(x){ return '<i class="stop" style="inset-inline-start:' + x + 'px"></i>'; }).join('');
+    stops = $$('.stop', stopsEl); compute(true);
+  }
+  function compute(jump){
+    if (!xs.length) return;
+    var y = window.scrollY, hh = parseFloat(cssVar('--header-h')) || 74, n = ids.length;
+    var tops = ids.map(function(id, i){ return i ? $('#' + id).getBoundingClientRect().top + y - hh : 0; });
+    var maxY = doc.documentElement.scrollHeight - window.innerHeight, x = xs[0];
+    if (y >= maxY - 2) x = xs[n - 1];
+    else for (var i = 0; i < n; i++) {
+      if (i === n - 1 || y < tops[i + 1]) {
+        var f = i === n - 1 ? 0 : Math.min(1, Math.max(0, (y - tops[i]) / Math.max(1, tops[i + 1] - tops[i])));
+        x = xs[i] + (i === n - 1 ? 0 : (xs[i + 1] - xs[i]) * f); break;
+      }
+    }
+    target = x; if (jump) cur = x;
+    if (!raf) raf = requestAnimationFrame(step);
+  }
+  function step(){
+    var d = target - cur;
+    if (reduceMotion || Math.abs(d) < .4) cur = target; else cur += d * .16;
+    var wob = reduceMotion ? 0 : Math.sin(cur / 8) * Math.min(5, Math.abs(d) * .35);
+    botEl.style.transform = 'translateX(' + (dir * cur) + 'px) scaleX(' + dir + ') rotate(' + wob + 'deg)';
+    fill.style.width = cur + 'px';
+    stops.forEach(function(s, i){ s.classList.toggle('on', cur >= xs[i] - 1); });
+    raf = cur !== target ? requestAnimationFrame(step) : 0;
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(function(){ ticking = false; compute(false); }); } }, { passive:true });
+  window.addEventListener('resize', layout);
+  window.addEventListener('load', function(){ compute(false); });
+  if ('ResizeObserver' in window) new ResizeObserver(function(){ compute(false); }).observe(doc.body);
+  layout();
+  return { layout: layout };
 }
 
 /* ==========================================================
@@ -1158,9 +1484,13 @@ initCounters();
 initFaq();
 initForm();
 circuit = initCircuit();
+initPortrait();
+gallery = initGallery();
+game = initSumo();
+track = initTrack();
+applyLang(lang);
 $('#langBtn').addEventListener('click', function(){ applyLang(lang === 'ar' ? 'en' : 'ar'); });
 $('#themeBtn').addEventListener('click', function(){ setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); });
-if (doc.readyState === 'complete') initHero3D(); else window.addEventListener('load', initHero3D);
 })();
 </script>
 <noscript><p style="padding:6rem 1.5rem;text-align:center">يتطلب هذا الموقع تفعيل JavaScript لعرض المحتوى. · Please enable JavaScript to view this site.</p></noscript>
