@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahmoud Korany | أخصائي أول تعليم STEM والروبوتيكس ومنسّق مسابقات دولية</title>
+<meta name="description" content="محمود قرني عبد الفتاح — أخصائي أول STEM وروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. تقديم 200+ برنامج تدريبي لـ 2000+ مشارك وتأهيل 200+ مدرب ومعلم وإعداد فرق WRO وRobotex.">
+<meta name="description" lang="en" content="Mahmoud Korany Abdelfattah — Senior STEM & Robotics Specialist and Competition Coordinator at SACGC, Kuwait, since 2017. Delivered 200+ training programs reaching 2,000+ participants, developed 200+ educators, and coached Top-10 international WRO & Robotex teams.">
+<meta name="author" content="Mahmoud Korany Abdelfattah — Koranitronix">
+<meta name="theme-color" content="#0b0a10">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Koranitronix">
+<meta property="og:title" content="Mahmoud Korany | أخصائي أول تعليم STEM والروبوتيكس ومنسّق مسابقات دولية">
+<meta property="og:description" content="خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس، تأهيل المدربين (ToT)، وإدارة المسابقات وإعداد الفرق المتوّجة وطنياً وعالمياً في WRO وRobotex.">
+<meta property="og:locale" content="ar_KW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<!-- Favicon مضمّن كـ SVG -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23150f26'/%3E%3Cpath d='M22 16v32M22 33l19-17M28 28l14 20' fill='none' stroke='%23d4b464' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='46' cy='16' r='3' fill='%238e6ee6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<script>
+/* تطبيق اللغة والوضع المحفوظين قبل الرسم لتفادي الوميض */
+(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('kx-theme'),l=localStorage.getItem('kx-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'){d.lang='en';d.dir='ltr';}}catch(e){}})();
+</script>
+<style>
+/* ==========================================================
+   1) الألوان والمتغيرات — عدّل لوحة الألوان من هنا فقط
+   ========================================================== */
+:root{
+  --bg:#0b0a10;            /* خلفية فحمية شبه سوداء */
+  --bg-2:#100e18;          /* خلفية الأقسام المتناوبة */
+  --surface:#15121f;       /* البطاقات */
+  --surface-2:#1c1729;
+  --border:rgba(255,255,255,.09);
+  --text:#f2eff9;
+  --muted:#b6b0c8;
+  --purple:#6d4fc4;        /* بنفسجي ملكي */
+  --purple-deep:#3b2478;
+  --purple-soft:#b79df6;
+  --gold:#d4b464;          /* ذهبي معدني */
+  --gold-light:#f0dca0;
+  --gold-deep:#a8862f;
+  --gold-text:#e0c47c;     /* ذهبي للنصوص (تباين كافٍ) */
+  --on-gold:#191308;
+  --gold-rgb:212,180,100;
+  --purple-rgb:132,100,224;
+  --header-bg:rgba(11,10,16,.78);
+  --danger:#f08a8a;
+  --success:#8fd6a8;
+  --shadow:0 20px 50px -28px rgba(0,0,0,.75);
+  --glow:0 0 0 1px rgba(var(--gold-rgb),.28),0 26px 60px -30px rgba(var(--purple-rgb),.6);
+  --radius:18px;
+  --radius-sm:12px;
+  --maxw:1180px;
+  --header-h:74px;
+  --font-body:'Inter','IBM Plex Sans Arabic',system-ui,sans-serif;
+  --font-head:'Playfair Display','IBM Plex Sans Arabic',Georgia,serif;
+}
+[data-theme="light"]{
+  --bg:#f8f5ee; --bg-2:#f1ece1; --surface:#ffffff; --surface-2:#faf7f0;
+  --border:rgba(45,28,90,.13);
+  --text:#1b1628; --muted:#58516b;
+  --purple:#5a3bb0; --purple-deep:#3b2478; --purple-soft:#4b2e96;
+  --gold:#b8943a; --gold-light:#d9bd72; --gold-deep:#8f6f1f; --gold-text:#75570f;
+  --gold-rgb:150,115,30; --purple-rgb:90,59,176;
+  --header-bg:rgba(248,245,238,.85);
+  --danger:#b3261e; --success:#1c6b3c;
+  --shadow:0 20px 45px -28px rgba(45,28,90,.35);
+}
+html[lang="ar"]{
+  --font-body:'IBM Plex Sans Arabic','Inter',system-ui,sans-serif;
+  --font-head:'IBM Plex Sans Arabic','Playfair Display',serif;
+}
+
+/* ==========================================================
+   2) الأساسيات
+   ========================================================== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:1rem;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased;transition:background-color .4s,color .4s}
+h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.2;margin:0;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{line-height:1.45;font-weight:700}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+ul{list-style:none;margin:0;padding:0}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+svg{display:block}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+::selection{background:rgba(var(--gold-rgb),.35)}
+.container{width:min(100% - 2.5rem,var(--maxw));margin-inline:auto}
+.skip{position:absolute;inset-inline-start:1rem;top:-4rem;z-index:200;background:var(--gold);color:var(--on-gold);padding:.6rem 1rem;border-radius:8px;font-weight:600}
+.skip:focus{top:1rem}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+section{padding-block:clamp(4.5rem,9vw,7.5rem);scroll-margin-top:var(--header-h);position:relative}
+.alt{background:var(--bg-2)}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;color:var(--gold-text);font-size:.8rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.1rem}
+html[lang="ar"] .eyebrow{letter-spacing:0;font-size:.95rem}
+.eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+[dir="rtl"] .eyebrow::before{background:linear-gradient(270deg,var(--gold),transparent)}
+.sec-head{max-width:720px;margin-bottom:clamp(2.2rem,5vw,3.6rem)}
+.sec-head h2{font-size:clamp(1.75rem,3.6vw,2.7rem)}
+.sec-head p{color:var(--muted);margin-top:1rem;font-size:1.05rem}
+
+/* الأزرار */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.9rem 1.7rem;border-radius:999px;font-weight:600;font-size:.97rem;line-height:1.3;border:1px solid transparent;transition:transform .3s,box-shadow .3s,background-color .3s,border-color .3s,color .3s;white-space:nowrap}
+.btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold) 45%,var(--gold-deep));color:var(--on-gold);box-shadow:0 12px 30px -14px rgba(var(--gold-rgb),.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 38px -14px rgba(var(--gold-rgb),.85)}
+.btn-ghost{border-color:rgba(var(--gold-rgb),.45);color:var(--text)}
+.btn-ghost:hover{transform:translateY(-2px);background:rgba(var(--gold-rgb),.1);border-color:var(--gold)}
+.btn-sm{padding:.6rem 1.2rem;font-size:.9rem}
+
+/* بطاقة عامة + Hover فاخر */
+.card{position:relative;background:linear-gradient(160deg,var(--surface),var(--surface-2));border:1px solid var(--border);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s,border-color .45s;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px circle at 85% -10%,rgba(var(--purple-rgb),.2),transparent 60%),radial-gradient(300px circle at 0% 110%,rgba(var(--gold-rgb),.12),transparent 60%);opacity:0;transition:opacity .45s;pointer-events:none}
+.card:hover,.card:focus-within{transform:translateY(-6px);border-color:rgba(var(--gold-rgb),.4);box-shadow:var(--glow)}
+.card:hover::after,.card:focus-within::after{opacity:1}
+.card>*{position:relative;z-index:1}
+.card h3{font-size:1.2rem;margin-bottom:.6rem}
+.card p{color:var(--muted);font-size:.97rem}
+.ico-box{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;margin-bottom:1.4rem;color:var(--gold-text);background:linear-gradient(145deg,rgba(var(--purple-rgb),.28),rgba(var(--purple-rgb),.06));border:1px solid rgba(var(--gold-rgb),.3)}
+.ico-box .icon{width:26px;height:26px}
+
+/* ظهور تدريجي عند التمرير */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ==========================================================
+   3) شريط التنقل
+   ========================================================== */
+.header{position:fixed;inset:0 0 auto 0;z-index:100;height:var(--header-h);display:flex;align-items:center;border-bottom:1px solid transparent;transition:background-color .35s,border-color .35s,backdrop-filter .35s}
+.header.scrolled,.header.menu-open{background:var(--header-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:inline-flex;align-items:center;gap:.65rem;font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:600;letter-spacing:.01em;direction:ltr}
+.logo svg{width:34px;height:34px}
+.logo b{font-weight:600;color:var(--gold-text)}
+.nav-links{display:flex;align-items:center;gap:1.7rem}
+.nav-links a{font-size:.94rem;color:var(--muted);position:relative;padding-block:.4rem;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:.55rem}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--border);color:var(--text);font-weight:600;font-size:.85rem;transition:border-color .3s,background-color .3s,color .3s}
+.icon-btn:hover{border-color:var(--gold);color:var(--gold-text);background:rgba(var(--gold-rgb),.08)}
+.icon-btn .icon{width:19px;height:19px}
+.lang-btn{width:auto;padding-inline:.95rem;border-radius:999px;gap:.4rem;display:inline-flex;align-items:center}
+[data-theme="dark"] .i-moon,[data-theme="light"] .i-sun{display:none}
+.burger{display:none}
+.burger .i-close,.menu-open .burger .i-menu{display:none}
+.menu-open .burger .i-close{display:block}
+
+/* ==========================================================
+   4) القسم الرئيسي Hero
+   ========================================================== */
+.hero{min-height:100svh;padding-block:calc(var(--header-h) + 3rem) 4rem;display:flex;align-items:center;overflow:hidden;
+  background:radial-gradient(900px 600px at 80% 20%,rgba(var(--purple-rgb),.2),transparent 65%),radial-gradient(700px 500px at 5% 90%,rgba(var(--gold-rgb),.08),transparent 60%),var(--bg)}
+[dir="rtl"] .hero{background:radial-gradient(900px 600px at 20% 20%,rgba(var(--purple-rgb),.2),transparent 65%),radial-gradient(700px 500px at 95% 90%,rgba(var(--gold-rgb),.08),transparent 60%),var(--bg)}
+#circuit{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.hero h1{font-size:clamp(2.1rem,4.4vw,3.5rem);letter-spacing:-.01em}
+html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--gold-light),var(--gold) 50%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+[data-theme="light"] .hero h1 em{background:linear-gradient(120deg,var(--gold-deep),var(--gold-text));-webkit-background-clip:text;background-clip:text}
+.hero-sub{color:var(--muted);font-size:clamp(1rem,1.5vw,1.15rem);max-width:56ch;margin-top:1.5rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.3rem}
+.hero-trust{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.8rem;padding-top:1.6rem;border-top:1px solid var(--border);color:var(--muted);font-size:.86rem}
+.hero-trust li{display:flex;align-items:center;gap:.55rem}
+.hero-trust li::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold)}
+.hero-visual{position:relative;aspect-ratio:1/1;width:100%;max-width:540px;margin-inline:auto}
+.hero-visual::before{content:"";position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(var(--purple-rgb),.3),transparent 68%);filter:blur(20px)}
+#hero3d{position:absolute;inset:0}
+#hero3d canvas{width:100%!important;height:100%!important;display:block}
+.fallback3d{position:absolute;inset:12%;display:none;color:var(--gold)}
+.no3d .fallback3d{display:block}
+.chip{position:absolute;display:flex;align-items:center;gap:.55rem;padding:.55rem .95rem;border-radius:999px;font-size:.8rem;font-weight:500;background:var(--header-bg);border:1px solid rgba(var(--gold-rgb),.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:var(--shadow);direction:ltr}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.chip-1{top:9%;inset-inline-start:0;animation:float 7s ease-in-out infinite}
+.chip-2{bottom:11%;inset-inline-end:0;animation:float 8s ease-in-out -3s infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* ==========================================================
+   5) نبذة + الأرقام
+   ========================================================== */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.about-text p{color:var(--muted);font-size:1.05rem}
+.about-text p+p{margin-top:1.1rem}
+.cred{padding:0}
+.cred li{display:flex;justify-content:space-between;gap:1.5rem;padding:1.15rem 1.7rem;border-bottom:1px solid var(--border);font-size:.95rem}
+.cred li:last-child{border-bottom:0}
+.cred span{color:var(--muted);flex-shrink:0}
+.cred strong{font-weight:500;text-align:end}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(2.5rem,6vw,4.5rem);border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(160deg,var(--surface),var(--surface-2));box-shadow:var(--shadow);overflow:hidden}
+.stat{padding:2.2rem 1.2rem;text-align:center;border-inline-end:1px solid var(--border)}
+.stat:last-child{border-inline-end:0}
+.stat-num{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.1rem,4.5vw,3.3rem);font-weight:600;line-height:1.1;color:var(--gold-text);font-variant-numeric:tabular-nums}
+.stat-label{color:var(--muted);font-size:.93rem;margin-top:.5rem}
+
+/* ==========================================================
+   6) الشبكات: الخدمات / لماذا / الأعمال / الآراء
+   ========================================================== */
+.grid-3{display:grid;grid-template-columns:repeat(6,1fr);gap:1.4rem}
+.grid-3>*{grid-column:span 2}
+#servicesGrid>*:nth-child(4),#servicesGrid>*:nth-child(5){grid-column:span 3}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.why-card{display:flex;gap:1.4rem;align-items:flex-start}
+.why-card .ico-box{margin:0;flex-shrink:0}
+.work-card{display:flex;flex-direction:column;min-height:230px}
+.work-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.6rem}
+.tag{font-size:.76rem;font-weight:600;padding:.3rem .8rem;border-radius:999px;color:var(--gold-text);border:1px solid rgba(var(--gold-rgb),.35);background:rgba(var(--gold-rgb),.07)}
+.work-no{font-family:'Playfair Display',Georgia,serif;font-size:1.7rem;color:rgba(var(--purple-rgb),.75);line-height:1}
+.work-card::before{content:"";position:absolute;inset-inline:2rem;bottom:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .5s}
+.work-card:hover::before{transform:scaleX(1)}
+.quote{display:flex;flex-direction:column;gap:1.4rem;margin:0}
+.quote svg{width:34px;height:34px;color:var(--gold);opacity:.8}
+.quote blockquote{margin:0;font-size:1.02rem;color:var(--text);line-height:1.9}
+.quote figcaption{margin-top:auto;padding-top:1.2rem;border-top:1px solid var(--border);display:flex;align-items:center;gap:.8rem;color:var(--gold-text);font-weight:600;font-size:.93rem}
+.avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--purple-deep));border:1px solid rgba(var(--gold-rgb),.5);display:grid;place-items:center;color:#fff}
+.avatar .icon{width:18px;height:18px}
+
+/* ==========================================================
+   7) الأسئلة الشائعة (أكورديون)
+   ========================================================== */
+.faq{max-width:860px;margin-inline:auto}
+.faq-item{border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);margin-bottom:.9rem;transition:border-color .35s,box-shadow .35s}
+.faq-item.open{border-color:rgba(var(--gold-rgb),.4);box-shadow:var(--shadow)}
+.faq-item h3{font-family:var(--font-body);font-size:1.03rem;font-weight:600;line-height:1.6}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1.2rem;padding:1.25rem 1.5rem;text-align:start;border-radius:var(--radius-sm)}
+.faq-q .pm{position:relative;width:30px;height:30px;flex-shrink:0;border-radius:50%;border:1px solid rgba(var(--gold-rgb),.4);color:var(--gold-text)}
+.pm::before,.pm::after{content:"";position:absolute;top:50%;left:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%);transition:transform .35s}
+.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.faq-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.open .faq-panel{grid-template-rows:1fr}
+.faq-panel>div{overflow:hidden;visibility:hidden;transition:visibility .4s}
+.open .faq-panel>div{visibility:visible}
+.faq-panel p{padding:0 1.5rem 1.4rem;color:var(--muted)}
+
+/* ==========================================================
+   8) التواصل
+   ========================================================== */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.contact-list li{display:flex;align-items:center;gap:1rem;padding-block:1rem;border-bottom:1px solid var(--border)}
+.contact-list .ico-box{width:44px;height:44px;margin:0;flex-shrink:0;border-radius:12px}
+.contact-list .ico-box .icon{width:20px;height:20px}
+.contact-list small{display:block;color:var(--muted);font-size:.82rem;line-height:1.4}
+.contact-list a{font-weight:500;transition:color .3s;word-break:break-word}
+.contact-list a:hover{color:var(--gold-text)}
+.btn-wa{margin-top:1.8rem;width:100%}
+.form .field{margin-bottom:1.2rem}
+.form label{display:block;font-size:.9rem;font-weight:500;margin-bottom:.45rem}
+.form input,.form textarea{width:100%;padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);transition:border-color .3s,box-shadow .3s}
+.form textarea{min-height:150px;resize:vertical}
+.form input::placeholder,.form textarea::placeholder{color:var(--muted);opacity:.7}
+.form input:focus,.form textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 3px rgba(var(--gold-rgb),.2)}
+.form [aria-invalid="true"]{border-color:var(--danger)}
+.err{color:var(--danger);font-size:.84rem;margin-top:.35rem;min-height:1.2em}
+.form-ok{display:none;margin-top:1.1rem;padding:.9rem 1.1rem;border-radius:var(--radius-sm);border:1px solid var(--success);color:var(--success);font-size:.95rem}
+.form-ok.show{display:block}
+
+/* ==========================================================
+   9) التذييل + زر العودة للأعلى
+   ========================================================== */
+.footer{border-top:1px solid var(--border);padding-block:3.5rem 2rem;background:var(--bg-2)}
+.footer-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;align-items:flex-start}
+.footer-brand p{color:var(--muted);max-width:36ch;margin-top:.9rem;font-size:.93rem}
+.footer-links{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;max-width:420px}
+.footer-links a{color:var(--muted);font-size:.93rem;transition:color .3s}
+.footer-links a:hover{color:var(--gold-text)}
+.social{display:flex;gap:.6rem}
+.footer-bottom{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.86rem;text-align:center}
+.to-top{position:fixed;bottom:1.5rem;inset-inline-end:1.5rem;z-index:90;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:1px solid rgba(var(--gold-rgb),.45);color:var(--gold-text);box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s,transform .35s,visibility .35s,background-color .3s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:rgba(var(--gold-rgb),.15)}
+
+/* ==========================================================
+   10) التجاوب
+   ========================================================== */
+@media (max-width:1020px){
+  .burger{display:grid}
+  .nav-links{position:absolute;top:100%;inset-inline:0;flex-direction:column;align-items:stretch;gap:0;padding:.6rem 1.25rem 1.4rem;background:var(--bg-2);border-bottom:1px solid var(--border);display:none;max-height:calc(100svh - var(--header-h));overflow:auto}
+  .menu-open .nav-links{display:flex}
+  .nav-links a{display:block;padding:.9rem .2rem;border-bottom:1px solid var(--border);font-size:1rem}
+  .nav-links a::after{display:none}
+}
+@media (max-width:900px){
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-visual{max-width:400px;order:-1}
+  .hero{padding-top:calc(var(--header-h) + 1.5rem)}
+  .grid-3>*,#servicesGrid>*:nth-child(4),#servicesGrid>*:nth-child(5){grid-column:span 3}
+  #servicesGrid>*:nth-child(5){grid-column:span 6}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-inline-end:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--border)}
+}
+@media (max-width:640px){
+  .grid-3>*,#servicesGrid>*:nth-child(n){grid-column:span 6}
+  .grid-2{grid-template-columns:1fr}
+  .nav-cta{display:none}
+  .card{padding:1.6rem}
+  .why-card{flex-direction:column;gap:1.1rem}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero-visual{max-width:300px}
+  .chip{font-size:.72rem;padding:.4rem .75rem}
+  .cred li{flex-direction:column;gap:.15rem}
+  .cred strong{text-align:start}
+}
+
+/* ==========================================================
+   11) احترام prefers-reduced-motion
+   ========================================================== */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip"></a>
+
+<!-- ================= شريط التنقل ================= -->
+<header class="header" id="header">
+  <nav class="nav container" data-i18n-aria="nav.label">
+    <a class="logo" href="#home" aria-label="Koranitronix">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#150f26" stroke="#d4b464" stroke-opacity=".4"/><path d="M22 16v32M22 33l19-17M28 28l14 20" fill="none" stroke="#d4b464" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="16" r="3" fill="#8e6ee6"/></svg>
+      <span>Korani<b>tronix</b></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="nav.about"></a></li>
+      <li><a href="#services" data-i18n="nav.services"></a></li>
+      <li><a href="#why" data-i18n="nav.why"></a></li>
+      <li><a href="#work" data-i18n="nav.work"></a></li>
+      <li><a href="#testimonials" data-i18n="nav.testimonials"></a></li>
+      <li><a href="#faq" data-i18n="nav.faq"></a></li>
+      <li><a href="#contact" data-i18n="nav.contact"></a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn lang-btn" id="langBtn" type="button" data-i18n-aria="nav.langAria">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>
+        <span data-i18n="nav.langLabel"></span>
+      </button>
+      <button class="icon-btn" id="themeBtn" type="button" data-i18n-aria="nav.themeAria">
+        <svg class="icon i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        <svg class="icon i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-gold btn-sm nav-cta" href="#contact" data-i18n="nav.cta"></a>
+      <button class="icon-btn burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" data-i18n-aria="nav.menuAria">
+        <svg class="icon i-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ================= Hero ================= -->
+<section class="hero" id="home">
+  <canvas id="circuit" aria-hidden="true"></canvas>
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow"></p>
+      <h1 class="reveal" style="--d:80ms"><span data-i18n="hero.t1"></span> <em data-i18n="hero.t2"></em></h1>
+      <p class="hero-sub reveal" style="--d:160ms" data-i18n="hero.sub"></p>
+      <div class="hero-cta reveal" style="--d:240ms">
+        <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1"></a>
+        <a class="btn btn-ghost" href="#work" data-i18n="hero.cta2"></a>
+      </div>
+      <ul class="hero-trust reveal" style="--d:320ms" data-i18n-aria="hero.trustAria">
+        <li><span class="ltr">WRO RoboMission</span></li>
+        <li><span class="ltr">Robotex International</span></li>
+        <li><span class="ltr">SACGC · Kuwait</span></li>
+      </ul>
+    </div>
+    <div class="hero-visual reveal" style="--d:200ms">
+      <!-- عنصر Three.js: ذراع روبوت تفاعلي -->
+      <div id="hero3d" role="img" data-i18n-aria="hero.visualAria"></div>
+      <svg class="fallback3d" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="100" cy="100" r="92" opacity=".3"/><circle cx="100" cy="100" r="66" opacity=".5" stroke-dasharray="4 8"/><path d="M100 8v34M100 158v34M8 100h34M158 100h34M60 60l20 20M140 60l-20 20M60 140l20-20M140 140l-20-20" opacity=".6"/><rect x="76" y="76" width="48" height="48" rx="8" stroke-width="2"/><circle cx="100" cy="100" r="8" fill="currentColor"/></svg>
+      <span class="chip chip-1"><i></i>WRO RoboMission</span>
+      <span class="chip chip-2"><i></i>Robotex International</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= نبذة ================= -->
+<section id="about" class="alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="eyebrow reveal" data-i18n="about.eyebrow"></p>
+        <div class="sec-head reveal" style="margin-bottom:1.6rem"><h2 data-i18n="about.title"></h2></div>
+        <p class="reveal" data-i18n="about.p1"></p>
+        <p class="reveal" data-i18n="about.p2"></p>
+      </div>
+      <ul class="card cred reveal" style="--d:120ms">
+        <li><span data-i18n="about.c1k"></span><strong data-i18n="about.c1v"></strong></li>
+        <li><span data-i18n="about.c2k"></span><strong data-i18n="about.c2v"></strong></li>
+        <li><span data-i18n="about.c3k"></span><strong data-i18n="about.c3v"></strong></li>
+        <li><span data-i18n="about.c4k"></span><strong data-i18n="about.c4v"></strong></li>
+        <li><span data-i18n="about.c5k"></span><strong class="ltr">LEGO SPIKE · Arduino · VEX · fischertechnik</strong></li>
+        <li><span data-i18n="about.c6k"></span><strong data-i18n="about.c6v"></strong></li>
+      </ul>
+    </div>
+    <div class="stats reveal" id="stats"></div>
+  </div>
+</section>
+
+<!-- ================= الخدمات ================= -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="services.eyebrow"></p>
+      <h2 data-i18n="services.title"></h2>
+      <p data-i18n="services.sub"></p>
+    </div>
+    <div class="grid-3" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ================= لماذا تختارني ================= -->
+<section id="why" class="alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="why.eyebrow"></p>
+      <h2 data-i18n="why.title"></h2>
+    </div>
+    <div class="grid-2" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ================= الأعمال ================= -->
+<section id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="work.eyebrow"></p>
+      <h2 data-i18n="work.title"></h2>
+      <p data-i18n="work.sub"></p>
+    </div>
+    <div class="grid-3" id="workGrid"></div>
+  </div>
+</section>
+
+<!-- ================= الآراء ================= -->
+<section id="testimonials" class="alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="testi.eyebrow"></p>
+      <h2 data-i18n="testi.title"></h2>
+    </div>
+    <div class="grid-3" id="testiGrid"></div>
+  </div>
+</section>
+
+<!-- ================= الأسئلة الشائعة ================= -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head reveal" style="margin-inline:auto;text-align:center">
+      <p class="eyebrow" data-i18n="faq.eyebrow"></p>
+      <h2 data-i18n="faq.title"></h2>
+    </div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ================= التواصل ================= -->
+<section id="contact" class="alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="contact.eyebrow"></p>
+      <h2 data-i18n="contact.title"></h2>
+      <p data-i18n="contact.sub"></p>
+    </div>
+    <div class="contact-grid">
+      <div class="card reveal">
+        <ul class="contact-list">
+          <li><span class="ico-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span>
+            <div><small data-i18n="contact.email"></small><a id="cEmail" class="ltr" href="#"></a></div></li>
+          <li><span class="ico-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.2 19z"/><path d="M9.3 9c0 3 2.7 5.6 5.6 5.7l1.1-1.4-1.8-1-.9.8a3.6 3.6 0 0 1-1.8-1.8l.8-.9-1-1.8z"/></svg></span>
+            <div><small data-i18n="contact.whatsapp"></small><a id="cWa" class="ltr" href="#" target="_blank" rel="noopener"></a></div></li>
+          <li><span class="ico-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.6v.1M12 16v-5.5M12 13a2 2 0 0 1 4 0v3"/></svg></span>
+            <div><small>LinkedIn</small><a id="cLi" href="#" target="_blank" rel="noopener" data-i18n="contact.profile"></a></div></li>
+          <li><span class="ico-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.500 15.400 12 21 12 21z"/><circle cx="12" cy="10.500" r="2.3"/></svg></span>
+            <div><small data-i18n="contact.location"></small><span data-i18n="contact.locationV"></span></div></li>
+        </ul>
+        <a class="btn btn-gold btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.2 19z"/></svg>
+          <span data-i18n="contact.waBtn"></span>
+        </a>
+      </div>
+      <form class="card form reveal" id="contactForm" style="--d:120ms" novalidate>
+        <div class="field">
+          <label for="fName" data-i18n="form.name"></label>
+          <input id="fName" name="name" type="text" autocomplete="name" required aria-describedby="eName" data-i18n-ph="form.namePh">
+          <div class="err" id="eName" role="alert"></div>
+        </div>
+        <div class="field">
+          <label for="fContact" data-i18n="form.contact"></label>
+          <input id="fContact" name="contact" type="text" inputmode="email" autocomplete="email" required aria-describedby="eContact" dir="ltr" data-i18n-ph="form.contactPh">
+          <div class="err" id="eContact" role="alert"></div>
+        </div>
+        <div class="field">
+          <label for="fMsg" data-i18n="form.msg"></label>
+          <textarea id="fMsg" name="message" required aria-describedby="eMsg" data-i18n-ph="form.msgPh"></textarea>
+          <div class="err" id="eMsg" role="alert"></div>
+        </div>
+        <button class="btn btn-gold" type="submit" data-i18n="form.send"></button>
+        <div class="form-ok" id="formOk" role="status" aria-live="polite" data-i18n="form.ok"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= التذييل ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#home"><span>Korani<b>tronix</b></span></a>
+        <p data-i18n="footer.tagline"></p>
+      </div>
+      <nav class="footer-links" data-i18n-aria="footer.linksAria">
+        <a href="#about" data-i18n="nav.about"></a>
+        <a href="#services" data-i18n="nav.services"></a>
+        <a href="#why" data-i18n="nav.why"></a>
+        <a href="#work" data-i18n="nav.work"></a>
+        <a href="#faq" data-i18n="nav.faq"></a>
+        <a href="#contact" data-i18n="nav.contact"></a>
+      </nav>
+      <div class="social">
+        <a class="icon-btn" id="sLi" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.6v.1M12 16v-5.5M12 13a2 2 0 0 1 4 0v3"/></svg></a>
+        <a class="icon-btn" id="sIg" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7v.1"/></svg></a>
+        <a class="icon-btn" id="sWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.2 19z"/><path d="M9.3 9c0 3 2.7 5.6 5.6 5.7l1.1-1.4-1.8-1-.9.8a3.6 3.6 0 0 1-1.8-1.8l.8-.9-1-1.8z"/></svg></a>
+        <a class="icon-btn" id="sMail" href="#" data-i18n-aria="contact.email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></a>
+      </div>
+    </div>
+    <p class="footer-bottom">© <span id="year"></span> Koranitronix — Mahmoud Korany. <span data-i18n="footer.rights"></span></p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" data-i18n-aria="footer.top">
+  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- Three.js من CDN (للعنصر ثلاثي الأبعاد فقط) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script>
+(function(){
+'use strict';
+
+/* ==========================================================
+   A) بيانات التواصل والأرقام — عدّلها من هنا
+   ========================================================== */
+var CONFIG = {
+  email:     'm.qurani89@gmail.com',                      // ← بريدك الإلكتروني من الـ CV
+  whatsapp:  '96569911190',                               // ← رقم واتساب بالصيغة الدولية بدون + أو مسافات
+  whatsappDisplay: '+965 6991 1190',                      // ← الرقم كما يظهر للزائر
+  linkedin:  'https://www.linkedin.com/in/koranitronics', // ← رابط لينكدإن من الـ CV
+  instagram: 'https://www.instagram.com/koranitronics',   // ← رابط انستقرام
+  /* أرقام الإنجازات الموثّقة في الـ CV (Career Impact) */
+  stats: [
+    { value: 200,  suffix: '+' },
+    { value: 2000, suffix: '+' },
+    { value: 200,  suffix: '+' },
+    { value: 11,   suffix: '+' }
+  ]
+};
+
+/* ==========================================================
+   B) كل نصوص الموقع بالعربي والإنجليزي — عدّلها من هنا
+   ========================================================== */
+var I18N = {
+  ar: {
+    meta: {
+      title: 'Mahmoud Korany | أخصائي أول تعليم STEM والروبوتيكس ومنسّق مسابقات دولية',
+      desc: 'محمود قرني عبد الفتاح — أخصائي أول STEM وروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. تقديم 200+ برنامج تدريبي لـ 2000+ مشارك وتأهيل 200+ مدرب ومعلم وإعداد فرق WRO وRobotex.'
+    },
+    skip: 'تخطَّ إلى المحتوى',
+    nav: { label:'التنقل الرئيسي', about:'نبذة', services:'الخدمات', why:'لماذا أنا', work:'الإنجازات والأعمال', testimonials:'الآراء', faq:'الأسئلة', contact:'تواصل', cta:'احجز استشارة', langLabel:'EN', langAria:'Switch to English', themeAria:'تبديل الوضع الفاتح والداكن', menuAria:'فتح القائمة' },
+    hero: {
+      eyebrow: 'أخصائي أول STEM والروبوتيكس · منسّق مسابقات دولية',
+      t1: 'أُعِدّ فرقاً ومعلّمين يحصدون المراكز الأولى في', t2: 'مسابقات الروبوت العالمية',
+      sub: 'خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس وتطوير المناهج وتأهيل المدربين (ToT) وإدارة المسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت — مع سجل حافل بتحقيق مراكز ضمن أفضل 10 عالمياً.',
+      cta1: 'احجز استشارة', cta2: 'شاهد الإنجازات',
+      trustAria: 'مسابقات وجهات', visualAria: 'نموذج ثلاثي الأبعاد لذراع روبوت متحرك'
+    },
+    about: {
+      eyebrow: 'نبذة عني',
+      title: 'أساس هندسي في الميكاترونكس، وخبرة تُصقَل في ميادين المنافسات العالمية',
+      p1: 'أنا محمود قرني عبد الفتاح، أخصائي أول في تعليم STEM والروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ نوفمبر 2017. قدّمتُ أكثر من 200 برنامج تدريبي وورشة عمل وصل أثرها إلى أكثر من 2,000 مشارك، وأهّلتُ أكثر من 200 معلم ومدرب بالتعاون مع جهات رائدة مثل وزارة التربية وجامعة الكويت ومعهد الكويت للأبحاث العلمية (KISR).',
+      p2: 'أجمع بين الأساس الهندسي كمهندس ميكاترونكس وروبوتات وأتمتة (جامعة عين شمس) والخبرة العملية كمدرب دولي معتمد ومعلّم معتمد من Google (المستويين الأول والثاني وGemini)، مع قيادة التنفيذ المتكامل لأكثر من 11 بطولة روبوت وتدريب فرق حققت الصدارة وطنياً ومراكز ضمن العشرة الأوائل عالمياً في WRO وRobotex.',
+      c1k:'المسمّى الوظيفي', c1v:'أخصائي أول STEM وروبوتيكس ومنسّق مسابقات',
+      c2k:'الجهة', c2v:'مركز صباح الأحمد للموهبة والإبداع (SACGC)',
+      c3k:'الخبرة التعليمية', c3v:'نوفمبر 2017 — حتى الآن (الكويت)',
+      c4k:'المؤهل الهندسي', c4v:'بكالوريوس هندسة الميكاترونكس والروبوتات — عين شمس',
+      c5k:'المنصّات والتقنيات',
+      c6k:'أبرز الاعتمادات', c6v:'Google Educator L1/L2 & Gemini · مدرب دولي معتمد · PMP® Prep'
+    },
+    stats: ['برنامج تدريبي وورشة عمل', 'متدرب ومشارك', 'معلم ومدرب تم تأهيلهم', 'بطولة روبوت تم تنظيمها وإدارتها'],
+    services: {
+      eyebrow: 'الخدمات', title: 'برامج تدريب وتأهيل واستشارات مصمَّمة بمعايير المنافسة الدولية',
+      sub: 'خمسة مسارات متكاملة تغطّي احتياج الطالب والمعلم والمدرسة والمؤسسة، من التأسيس الهندسي حتى منصّات التتويج العالمية.',
+      items: [
+        { t:'تدريب وإعداد فرق المسابقات (WRO & Robotex)', d:'تأهيل شامل للفرق الوطنية والدولية في RoboMission وLEGO Sumo وLine Following وDrone: التصميم الميكانيكي، البرمجة المتقدمة، واستراتيجية المنافسة.' },
+        { t:'برامج تدريب المدربين وتأهيل المعلمين (ToT)', d:'تطوير قدرات المعلمين والمدربين الجدد على تدريس STEM والروبوتيكس وتطبيقات الذكاء الاصطناعي في التعليم وفق أحدث المعايير المعتمدة.' },
+        { t:'تصميم وإدارة مسابقات الروبوت المتكاملة', d:'قيادة دورة حياة المسابقات من الفكرة وتصميم التحديات ومعايرة الصعوبة وصياغة القوانين وأنظمة التحكيم حتى بناء الحلبات والتشغيل الفني يوم الحدث.' },
+        { t:'تطوير مناهج STEM والروبوتيكس للمؤسسات', d:'بناء مناهج تعليمية وحقائب تدريبية متدرّجة عبر LEGO Education / SPIKE وfischertechnik وArduino وVEX وPython وC/C++ تناسب مختلف الأعمار.' },
+        { t:'ورش STEM والشراكات المؤسسية والجامعية', d:'تنفيذ برامج تدريبية وورش عملية للجامعات والمراكز البحثية والمدارس (على غرار التعاون مع جامعة الكويت ومعهد الأبحاث KISR ووزارة التربية).' }
+      ]
+    },
+    why: {
+      eyebrow: 'لماذا تختارني', title: 'أربعة أسباب تجعل النتيجة مختلفة',
+      items: [
+        { t:'سجلّ تتويج عالمي ومحلي موثّق', d:'اكتساح منصات التتويج المحلية في WRO وRobotex لعدة أعوام، وتحقيق المركز الخامس عالمياً في Drone والسابع عالمياً في LEGO Sumo ببطولة Robotex الدولية.' },
+        { t:'قيادة أكثر من 11 مسابقة من الداخل', d:'خبرة عميقة كمنسّق مسابقات يصمّم التحديات والقوانين وأنظمة التحكيم والحلبات، مما يمنح الفرق المتدرّبة فهماً دقيقاً لكيفية التفكير التحكيمي.' },
+        { t:'خلفيّة هندسية واعتمادات دولية', d:'مهندس ميكاترونكس وأتمتة بخبرة صناعية وميدانية، ومعلّم معتمد من Google (Level 1, Level 2, Gemini) ومدرب دولي معتمد.' },
+        { t:'أثر واسع ومنهجية شاملة (2,000+ متدرب)', d:'خبرة عملية في تدريب أكثر من 2,000 طالب وتأهيل أكثر من 200 معلم ومدرب عبر أكثر من 200 برنامج وورشة عمل ناجحة.' }
+      ]
+    },
+    work: {
+      eyebrow: 'الإنجازات والأعمال', title: 'أبرز إنجازات المسابقات والبرامج التدريبية',
+      sub: 'محطات موثّقة من البطولات العالمية والمحلية والمبادرات التعليمية والمؤسسية.',
+      tags: { c:'مسابقات دولية ومحلية', e:'تأهيل ومناهج', d:'إدارة بطولات' },
+      items: [
+        { t:'Robotex International — ضمن أفضل 10 عالمياً', d:'تدريب وإعداد فرق مركز صباح الأحمد لثلاث سنوات متتالية وتحقيق مراكز عالمية متقدمة شملت المركز الخامس عالمياً في فئة Drone والمركز السابع عالمياً في LEGO Sumo.' },
+        { t:'أولمبياد الروبوت العالمي — WRO Kuwait 2026 & 2025', d:'قيادة فرق المركز لاكتساح المراكز الثلاثة الأولى (الأول والثاني والثالث) في فئة RoboMission Senior والتأهل للنهائيات العالمية في بورتوريكو 2026، والمركز الثاني لفئة Junior والتأهل للبطولة الإقليمية بالسعودية 2025.' },
+        { t:'بطولات Robotex Kuwait 2024 & 2025 — اكتساح المراكز الأولى', d:'تحقيق المراكز الثلاثة الأولى (1st–3rd) في LEGO Sumo والمركزين الأول والثاني في Line Following لعام 2025، واكتساح المراكز الخمسة الأولى (1st–5th) في Line Following عام 2024.' },
+        { t:'التنفيذ الفني والتشغيلي لـ 11+ بطولة روبوت', d:'قيادة التخطيط والتنفيذ الكامل لـ 9 مسابقات حضورية ومسابقتين عن بُعد، شاملة تصميم التحديات، معايرة الصعوبة، القوانين، أنظمة التحكيم، وتجهيز الحلبات.' },
+        { t:'تأهيل 200+ معلم ومدرب والشراكات المؤسسية', d:'تقديم برامج تدريب المدربين (ToT) لمعلمي وزارة التربية والمدربين الجدد، وتنفيذ تدريبات Arduino بجامعة الكويت، وأنشطة روبوتيكس مع معهد الكويت للأبحاث العلمية (KISR).' },
+        { t:'تصميم المناهج وتقديم 200+ برنامج تدريبي', d:'تطوير محتوى تقني ومناهج تدريبية متدرجة عبر منصات LEGO SPIKE وfischertechnik وArduino وVEX ولغات Python وC/C++ استفاد منها أكثر من 2,000 مشارك.' }
+      ]
+    },
+    testi: {
+      eyebrow: 'الآراء', title: 'ماذا يقول من خاضوا التجربة',
+      items: [
+        { q:'لاحظنا الفرق خلال أسابيع قليلة. ابني لم يتعلّم البرمجة فقط، بل صار يحلّل المشكلة ويجرّب ويصحّح بنفسه. وتقارير المتابعة أعطتنا صورة واضحة عن مستواه.', r:'وليّ أمر' },
+        { q:'الورشة كانت منظّمة باحتراف من التخطيط إلى التنفيذ. الطلاب خرجوا بمشاريع تعمل فعلاً، والمعلمون استفادوا من أسلوب الشرح قبل الطلاب.', r:'منسّق مدرسة' },
+        { q:'التدريب جعلنا نتعامل مع المسابقة كفريق هندسي حقيقي: خطة، اختبارات، وتحسين مستمر. يوم المسابقة كنّا نعرف تماماً ماذا نفعل.', r:'عضو فريق مسابقة' }
+      ]
+    },
+    faq: {
+      eyebrow: 'أسئلة شائعة', title: 'إجابات مختصرة عمّا يُسأل كثيراً',
+      items: [
+        { q:'ما الفرق بين تدريب المسابقات والدورات العادية؟', a:'الدورات تبني الأساس: مفاهيم البرمجة والإلكترونيات والميكانيكا بتدرّج. أما تدريب المسابقات فيبدأ من هذا الأساس ويركّز على قواعد المسابقة، استراتيجية المهام، العمل الجماعي، والأداء تحت ضغط الوقت.' },
+        { q:'هل التدريب حضوري أم عن بُعد؟', a:'كلاهما متاح. تدريب المسابقات والورش العملية يُفضَّل أن يكون حضورياً لوجود العتاد، بينما تصلح مسارات البرمجة والمحاكاة وبعض برامج تأهيل المعلمين للتدريب عن بُعد.' },
+        { q:'هل تقدّمون برامج لتدريب المعلمين والمدربين (ToT)؟', a:'نعم، نمتلك خبرة واسعة في تأهيل أكثر من 200 معلم ومدرب للمدارس والمؤسسات التعليمية، مع تصميم المناهج والحقائب التدريبية ومعايير التقييم.' },
+        { q:'ما الأعمار والمنصّات المتاحة للتدريب؟', a:'نقدّم مسارات تناسب جميع المراحل الدراسية والجامعية باستخدام منصّات متنوّعة تشمل LEGO Education / SPIKE وfischertechnik وVEX وArduino والبرمجة بلغات Python وC/C++.' },
+        { q:'كيف تبدأ المدرسة أو المؤسسة التعاون؟', a:'تبدأ بجلسة استشارية لفهم أهدافكم وإمكاناتكم (سواء لتأهيل المعلمين، أو إقامة ورش عمل، أو تنظيم مسابقة، أو إعداد فرق)، ثم نقدّم مقترحاً متكاملاً بالخطة والجدول الزمني.' }
+      ]
+    },
+    contact: {
+      eyebrow: 'تواصل', title: 'لنبدأ بمحادثة قصيرة',
+      sub: 'شاركني هدفك — إعداد فريق مسابقة، تأهيل معلمين (ToT)، تنظيم بطولة، أو تدريب طلابي — وسأعود إليك بالخطوة الأنسب.',
+      email:'البريد الإلكتروني', whatsapp:'واتساب / هاتف', profile:'الملف المهني', location:'الموقع', locationV:'دولة الكويت', waBtn:'تواصل عبر واتساب'
+    },
+    form: {
+      name:'الاسم', namePh:'اسمك الكريم', contact:'البريد الإلكتروني أو الهاتف', contactPh:'name@example.com / +965…', msg:'الرسالة', msgPh:'كيف يمكنني مساعدتك؟', send:'إرسال الرسالة',
+      ok:'شكراً لك. تم تجهيز رسالتك وفتح واتساب لإرسالها — سأرد عليك في أقرب وقت.',
+      eName:'يرجى إدخال الاسم (حرفان على الأقل).', eContact:'يرجى إدخال بريد إلكتروني أو رقم هاتف صحيح.', eMsg:'يرجى كتابة رسالة لا تقل عن 10 أحرف.',
+      waIntro:'رسالة من الموقع', waName:'الاسم', waContact:'وسيلة التواصل'
+    },
+    footer: { tagline:'أخصائي أول تعليم STEM والروبوتيكس، تأهيل المدربين (ToT)، وإدارة المسابقات وإعداد الفرق المتوّجة دولياً.', linksAria:'روابط سريعة', rights:'جميع الحقوق محفوظة.', top:'العودة لأعلى الصفحة' }
+  },
+
+  en: {
+    meta: {
+      title: 'Mahmoud Korany | Senior STEM & Robotics Specialist & Competition Coordinator',
+      desc: 'Mahmoud Korany Abdelfattah — Senior STEM & Robotics Specialist and Competition Coordinator at SACGC, Kuwait, since 2017. Delivered 200+ training programs reaching 2,000+ participants, developed 200+ educators, and coached Top-10 international WRO & Robotex teams.'
+    },
+    skip: 'Skip to content',
+    nav: { label:'Main navigation', about:'About', services:'Services', why:'Why Me', work:'Achievements & Work', testimonials:'Testimonials', faq:'FAQ', contact:'Contact', cta:'Book a Consultation', langLabel:'عربي', langAria:'التبديل إلى العربية', themeAria:'Toggle light and dark mode', menuAria:'Toggle menu' },
+    hero: {
+      eyebrow: 'Senior STEM & Robotics Specialist · Competition Coordinator',
+      t1: 'Coaching award-winning teams & educators for', t2: 'world robotics competitions',
+      sub: 'Nearly 9 years of experience in STEM education, robotics program delivery, curriculum & instructor development (ToT), and end-to-end competition management at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC), Kuwait.',
+      cta1: 'Book a Consultation', cta2: 'View Achievements',
+      trustAria: 'Competitions and affiliations', visualAria: 'Animated 3D model of a robotic arm'
+    },
+    about: {
+      eyebrow: 'About',
+      title: 'Engineering foundation in Mechatronics, forged on international competition floors',
+      p1: 'I am Mahmoud Korany Abdelfattah, Senior STEM & Robotics Specialist and Competition Coordinator at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC) in Kuwait since November 2017. I have designed and delivered 200+ training programs and workshops reaching 2,000+ participants, and trained 200+ educators and aspiring instructors in collaboration with the Ministry of Education, Kuwait University, and KISR.',
+      p2: 'Backed by a Bachelor\'s degree in Mechatronics, Robotics & Automation Engineering (Ain Shams University) and international credentials including Google Certified Educator (Level 1, Level 2 & Gemini) and Certified International Professional Trainer, I lead the full lifecycle of robotics competitions and coach teams to national podium sweeps and Top-10 world rankings.',
+      c1k:'Role', c1v:'Senior STEM & Robotics Specialist / Competition Coordinator',
+      c2k:'Institution', c2v:'Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC)',
+      c3k:'Tenure', c3v:'Nov 2017 — Present (Kuwait)',
+      c4k:'Education', c4v:'B.Sc. Mechatronics, Robotics & Automation — Ain Shams Univ.',
+      c5k:'Platforms & Tech',
+      c6k:'Certifications', c6v:'Google Educator L1/L2 & Gemini · Certified Int\'l Trainer · PMP® Prep'
+    },
+    stats: ['Training Programs & Workshops', 'Participant Reach', 'Educators & Trainers Developed', 'Robotics Competitions Delivered'],
+    services: {
+      eyebrow: 'Services', title: 'Training, educator development & advisory built to international standards',
+      sub: 'Five comprehensive tracks serving students, educators, schools, and institutions — from engineering fundamentals to global podiums.',
+      items: [
+        { t:'Competitive Robotics Coaching (WRO & Robotex)', d:'Comprehensive preparation for national and international teams in RoboMission, LEGO Sumo, Line Following, and Drone: robot design, algorithms, and competition strategy.' },
+        { t:'Training of Trainers (ToT) & Educator Development', d:'Empowering teachers and aspiring instructors through hands-on robotics education initiatives, instructional design, and AI in education.' },
+        { t:'End-to-End Robotics Competition Management', d:'Leading the full competition lifecycle: concept and challenge design, difficulty calibration, rules, scoring & judging methodologies, arena development, and event-day operations.' },
+        { t:'STEM & Robotics Curriculum Development', d:'Designing age- and skill-adapted curricula and technical content across LEGO Education / SPIKE, fischertechnik, Arduino, VEX Robotics, Python, and C/C++.' },
+        { t:'Institutional & University STEM Workshops', d:'Delivering external learning initiatives and collaborative workshops for universities, research centers, and schools (including Kuwait University, KISR, and Ministry of Education).' }
+      ]
+    },
+    why: {
+      eyebrow: 'Why choose me', title: 'Four reasons the outcome is different',
+      items: [
+        { t:'Proven national sweeps & Top-10 world rankings', d:'Repeated national podium sweeps at WRO and Robotex Kuwait, plus Top-10 world rankings at Robotex International including 5th in Drone and 7th in LEGO Sumo.' },
+        { t:'End-to-end leadership of 11+ competitions', d:'Deep insider expertise designing challenges, rules, judging systems, and arenas across 9 on-site and 2 online robotics competitions.' },
+        { t:'Mechatronics engineering & global credentials', d:'B.Sc. in Mechatronics & Automation combined with Google Certified Educator (Level 1, 2 & Gemini), Certified International Trainer, and AI/Data Science training.' },
+        { t:'Scalable impact (2,000+ participants & 200+ trainers)', d:'Field-tested methodology refined across 200+ workshops for students, Ministry of Education teachers, university learners, and competition teams.' }
+      ]
+    },
+    work: {
+      eyebrow: 'Achievements & Work', title: 'Selected competition achievements & program highlights',
+      sub: 'Documented milestones across international championships, national sweeps, and institutional initiatives.',
+      tags: { c:'Competitions', e:'Education & ToT', d:'Competition Ops' },
+      items: [
+        { t:'Robotex International — Top-10 World Rankings', d:'Coached and prepared SACGC teams across three consecutive years, achieving Top-10 world rankings including 5th place worldwide in Drone and 7th place worldwide in LEGO Sumo.' },
+        { t:'WRO Kuwait 2026 & 2025 — Podium Sweep & World Qualifiers', d:'Led SACGC teams to sweep 1st, 2nd, and 3rd places in RoboMission Senior (2026) qualifying for the World Finals in Puerto Rico, and 2nd place nationwide in RoboMission Junior (2025) qualifying for Saudi Arabia.' },
+        { t:'Robotex Kuwait 2024 & 2025 — National Podium Sweeps', d:'Coached teams to all Top 3 positions (1st–3rd) in LEGO Sumo and Top 2 (1st–2nd) in Line Following in 2025, following a complete Top 5 sweep (1st–5th) in Line Following and 1st & 3rd in Sumo in 2024.' },
+        { t:'End-to-End Delivery of 11+ Robotics Competitions', d:'Led technical and operational delivery of ~9 on-site and 2 online competitions, covering challenge design, rules, scoring/judging systems, arena build, and event-day execution.' },
+        { t:'200+ Educators Trained & Institutional Collaborations', d:'Delivered ToT programs for Kuwait Ministry of Education teachers and new trainers, Arduino training at Kuwait University, and robotics activities with KISR.' },
+        { t:'200+ STEM Programs & Multi-Platform Curricula', d:'Developed robotics curricula and learning activities across LEGO SPIKE, fischertechnik, Arduino, VEX, Python, and C/C++, reaching 2,000+ participants.' }
+      ]
+    },
+    testi: {
+      eyebrow: 'Testimonials', title: 'What people say after the experience',
+      items: [
+        { q:'We saw the difference within a few weeks. My son did not just learn to code — he now analyses a problem, experiments and corrects himself. The progress reports gave us a clear picture of his level.', r:'Parent' },
+        { q:'The workshop was professionally run from planning to delivery. Students left with projects that actually worked, and our teachers benefited from the teaching approach as much as the students did.', r:'School Coordinator' },
+        { q:'The coaching made us approach the competition like a real engineering team: a plan, tests and constant improvement. On competition day we knew exactly what to do.', r:'Competition Team Member' }
+      ]
+    },
+    faq: {
+      eyebrow: 'FAQ', title: 'Short answers to common questions',
+      items: [
+        { q:'How is competition coaching different from regular courses?', a:'Courses build the foundation: programming, electronics and mechanics, step by step. Competition coaching starts from that foundation and focuses on the rules, mission strategy, teamwork and performing under time pressure.' },
+        { q:'Is training in person or online?', a:'Both are available. Competition coaching and hands-on workshops work best in person because of the hardware, while programming, simulation tracks, and educator consultations suit online delivery.' },
+        { q:'Do you offer Training of Trainers (ToT) for schools and educators?', a:'Yes. With experience developing 200+ educators and trainers, we offer tailored ToT programs, curriculum design, and instructional enablement for schools and institutions.' },
+        { q:'What ages and platforms do you cover?', a:'We cover primary, middle, high school, and university levels across LEGO Education / SPIKE, fischertechnik, VEX Robotics, Arduino, Python, and C/C++.' },
+        { q:'How does a school or institution get started?', a:'We begin with a consultation to understand your goals (teacher training, student workshops, competition hosting, or team coaching), followed by a complete proposal covering the plan, timeline, and outcomes.' }
+      ]
+    },
+    contact: {
+      eyebrow: 'Contact', title: 'Let\'s start with a short conversation',
+      sub: 'Tell me your goal — a competition team, educator training (ToT), competition management, or a school program — and I will come back with the right next step.',
+      email:'Email', whatsapp:'WhatsApp / Phone', profile:'Professional profile', location:'Location', locationV:'State of Kuwait', waBtn:'Chat on WhatsApp'
+    },
+    form: {
+      name:'Name', namePh:'Your name', contact:'Email or phone', contactPh:'name@example.com / +965…', msg:'Message', msgPh:'How can I help?', send:'Send Message',
+      ok:'Thank you. Your message is ready and WhatsApp has been opened to send it — I will reply as soon as possible.',
+      eName:'Please enter your name (at least 2 characters).', eContact:'Please enter a valid email address or phone number.', eMsg:'Please write a message of at least 10 characters.',
+      waIntro:'Message from the website', waName:'Name', waContact:'Contact'
+    },
+    footer: { tagline:'Senior STEM & Robotics Specialist — Educator Development (ToT), Competition Management & International Team Coaching.', linksAria:'Quick links', rights:'All rights reserved.', top:'Back to top' }
+  }
+};
+
+/* ==========================================================
+   C) أدوات مساعدة
+   ========================================================== */
+var doc = document, root = doc.documentElement;
+var $ = function(s, c){ return (c || doc).querySelector(s); };
+var $$ = function(s, c){ return Array.prototype.slice.call((c || doc).querySelectorAll(s)); };
+var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var store = { get:function(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }, set:function(k,v){ try{ localStorage.setItem(k,v); }catch(e){} } };
+var lang = root.lang === 'en' ? 'en' : 'ar';
+function t(path){ return path.split('.').reduce(function(a,k){ return a == null ? a : a[k]; }, I18N[lang]); }
+function cssVar(n){ return getComputedStyle(root).getPropertyValue(n).trim(); }
+
+/* ==========================================================
+   D) بناء البطاقات (الخدمات / لماذا / الأعمال / الآراء / الأسئلة / الأرقام)
+   ========================================================== */
+var ICONS = {
+  services: [
+    '<path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M10 17h4"/>',
+    '<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/>',
+    '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.800 3h10.400a2 2 0 0 0 1.800-3l-5-9V3M7.500 15h9"/>',
+    '<path d="M5 4h11l3 3v13H5zM9 9h6M9 13h6M9 17h3"/>',
+    '<rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/>'
+  ],
+  why: [
+    '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.200 3 14.800 0 18M12 3c-3 3.200-3 14.800 0 18"/>',
+    '<path d="M3 20h5v-5h5v-5h5V5h3"/>',
+    '<path d="M4 4v16h16M8 16v-4M12 16V8M16 16v-6"/>',
+    '<circle cx="12" cy="12" r="9"/><path d="M8 12.500l3 3 5-6"/>'
+  ],
+  user: '<circle cx="12" cy="8" r="3.500"/><path d="M5 20a7 7 0 0 1 14 0"/>'
+};
+function svg(p){ return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">' + p + '</svg>'; }
+var WORK_TAGS = ['c','c','c','d','e','e'];
+
+function build(){
+  $('#stats').innerHTML = CONFIG.stats.map(function(s,i){
+    return '<div class="stat"><div class="stat-num ltr" data-count="' + s.value + '" data-suffix="' + s.suffix + '">0' + s.suffix + '</div><div class="stat-label" data-i18n="stats.' + i + '"></div></div>';
+  }).join('');
+  $('#servicesGrid').innerHTML = ICONS.services.map(function(ic,i){
+    return '<article class="card reveal" style="--d:' + (i%3)*90 + 'ms"><div class="ico-box">' + svg(ic) + '</div><h3 data-i18n="services.items.' + i + '.t"></h3><p data-i18n="services.items.' + i + '.d"></p></article>';
+  }).join('');
+  $('#whyGrid').innerHTML = ICONS.why.map(function(ic,i){
+    return '<article class="card why-card reveal" style="--d:' + (i%2)*90 + 'ms"><div class="ico-box">' + svg(ic) + '</div><div><h3 data-i18n="why.items.' + i + '.t"></h3><p data-i18n="why.items.' + i + '.d"></p></div></article>';
+  }).join('');
+  $('#workGrid').innerHTML = WORK_TAGS.map(function(tag,i){
+    return '<article class="card work-card reveal" style="--d:' + (i%3)*90 + 'ms"><div class="work-top"><span class="tag" data-i18n="work.tags.' + tag + '"></span><span class="work-no" aria-hidden="true">0' + (i+1) + '</span></div><h3 data-i18n="work.items.' + i + '.t"></h3><p data-i18n="work.items.' + i + '.d"></p></article>';
+  }).join('');
+  $('#testiGrid').innerHTML = [0,1,2].map(function(i){
+    return '<figure class="card quote reveal" style="--d:' + i*90 + 'ms"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M6 22c0-6 3-11 8-13l1 2c-3 2-4 4-4 6h4v7H6v-2zm12 0c0-6 3-11 8-13l1 2c-3 2-4 4-4 6h4v7h-9v-2z"/></svg><blockquote data-i18n="testi.items.' + i + '.q"></blockquote><figcaption><span class="avatar">' + svg(ICONS.user) + '</span><span data-i18n="testi.items.' + i + '.r"></span></figcaption></figure>';
+  }).join('');
+  $('#faqList').innerHTML = I18N.ar.faq.items.map(function(_,i){
+    return '<div class="faq-item reveal"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqP' + i + '" id="faqB' + i + '"><span data-i18n="faq.items.' + i + '.q"></span><span class="pm" aria-hidden="true"></span></button></h3><div class="faq-panel" id="faqP' + i + '" role="region" aria-labelledby="faqB' + i + '"><div><p data-i18n="faq.items.' + i + '.a"></p></div></div></div>';
+  }).join('');
+
+  /* بيانات التواصل */
+  var wa = 'https://wa.me/' + CONFIG.whatsapp;
+  $('#cEmail').textContent = CONFIG.email; $('#cEmail').href = $('#sMail').href = 'mailto:' + CONFIG.email;
+  $('#cWa').textContent = CONFIG.whatsappDisplay; $('#cWa').href = $('#waBtn').href = $('#sWa').href = wa;
+  $('#cLi').href = $('#sLi').href = CONFIG.linkedin;
+  $('#sIg').href = CONFIG.instagram;
+  $('#year').textContent = new Date().getFullYear();
+}
+
+/* ==========================================================
+   E) تبديل اللغة (فوري + يحفظ الاختيار)
+   ========================================================== */
+function applyLang(l){
+  lang = l;
+  root.lang = l; root.dir = l === 'ar' ? 'rtl' : 'ltr';
+  $$('[data-i18n]').forEach(function(el){ var v = t(el.getAttribute('data-i18n')); if (v != null) el.textContent = v; });
+  $$('[data-i18n-aria]').forEach(function(el){ var v = t(el.getAttribute('data-i18n-aria')); if (v != null) el.setAttribute('aria-label', v); });
+  $$('[data-i18n-ph]').forEach(function(el){ var v = t(el.getAttribute('data-i18n-ph')); if (v != null) el.placeholder = v; });
+  doc.title = t('meta.title');
+  $('meta[name="description"]').content = t('meta.desc');
+  $('meta[property="og:title"]').content = t('meta.title');
+  $('meta[property="og:description"]').content = t('meta.desc');
+  $('meta[property="og:locale"]').content = l === 'ar' ? 'ar_KW' : 'en_US';
+  $$('.err').forEach(function(e){ e.textContent = ''; });
+  $$('[aria-invalid]').forEach(function(e){ e.removeAttribute('aria-invalid'); });
+  store.set('kx-lang', l);
+}
+
+/* ==========================================================
+   F) الوضع الفاتح/الداكن
+   ========================================================== */
+function setTheme(th){
+  root.setAttribute('data-theme', th);
+  $('meta[name="theme-color"]').content = th === 'dark' ? '#0b0a10' : '#f8f5ee';
+  store.set('kx-theme', th);
+  if (circuit) circuit.rebuild();
+}
+
+/* ==========================================================
+   G) التنقل، الظهور عند التمرير، العدّادات، الأكورديون
+   ========================================================== */
+function initNav(){
+  var header = $('#header'), burger = $('#burger'), toTop = $('#toTop');
+  function closeMenu(){ header.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); }
+  burger.addEventListener('click', function(){
+    var open = header.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  $$('#navLinks a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  doc.addEventListener('keydown', function(e){ if (e.key === 'Escape' && header.classList.contains('menu-open')) { closeMenu(); burger.focus(); } });
+  window.addEventListener('resize', function(){ if (window.innerWidth > 1020) closeMenu(); });
+
+  var ticking = false;
+  function onScroll(){
+    header.classList.toggle('scrolled', window.scrollY > 20);
+    toTop.classList.toggle('show', window.scrollY > 600);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive:true });
+  onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({ top:0, behavior: reduceMotion ? 'auto' : 'smooth' }); });
+
+  /* تمييز رابط القسم الحالي */
+  if ('IntersectionObserver' in window) {
+    var links = {};
+    $$('#navLinks a').forEach(function(a){ links[a.getAttribute('href').slice(1)] = a; });
+    var spy = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting) { for (var k in links) links[k].classList.toggle('active', k === e.target.id); }
+      });
+    }, { rootMargin:'-45% 0px -50% 0px' });
+    $$('main section[id]').forEach(function(s){ spy.observe(s); });
+  }
+}
+
+function initReveal(){
+  var els = $$('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+  els.forEach(function(e){ io.observe(e); });
+}
+
+function initCounters(){
+  var nums = $$('[data-count]');
+  function finish(el){ el.textContent = el.getAttribute('data-count') + el.getAttribute('data-suffix'); }
+  if (reduceMotion || !('IntersectionObserver' in window)) { nums.forEach(finish); return; }
+  function run(el){
+    var end = +el.getAttribute('data-count'), suf = el.getAttribute('data-suffix'), dur = 1900, t0 = null;
+    function step(ts){
+      if (t0 === null) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(end * e) + suf;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { run(e.target); io.unobserve(e.target); } });
+  }, { threshold:.6 });
+  nums.forEach(function(n){ io.observe(n); });
+}
+
+function initFaq(){
+  $$('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item'), open = !item.classList.contains('open');
+      $$('.faq-item.open').forEach(function(o){ o.classList.remove('open'); $('.faq-q', o).setAttribute('aria-expanded','false'); });
+      if (open) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+}
+
+/* ==========================================================
+   H) نموذج التواصل: تحقق + رسالة نجاح + فتح واتساب بالرسالة
+   (لا يوجد خادم؛ الرسالة تُرسل فعلياً عبر واتساب إلى CONFIG.whatsapp)
+   ========================================================== */
+function initForm(){
+  var form = $('#contactForm'), ok = $('#formOk');
+  var fields = [
+    { el:$('#fName'),    err:$('#eName'),    key:'form.eName',    test:function(v){ return v.length >= 2; } },
+    { el:$('#fContact'), err:$('#eContact'), key:'form.eContact', test:function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) || /^\+?[\d\s\-()]{7,20}$/.test(v) && v.replace(/\D/g,'').length >= 7; } },
+    { el:$('#fMsg'),     err:$('#eMsg'),     key:'form.eMsg',     test:function(v){ return v.length >= 10; } }
+  ];
+  function check(f){
+    var valid = f.test(f.el.value.trim());
+    f.err.textContent = valid ? '' : t(f.key);
+    if (valid) f.el.removeAttribute('aria-invalid'); else f.el.setAttribute('aria-invalid','true');
+    return valid;
+  }
+  fields.forEach(function(f){
+    f.el.addEventListener('blur', function(){ if (f.el.value) check(f); });
+    f.el.addEventListener('input', function(){ if (f.el.hasAttribute('aria-invalid')) check(f); ok.classList.remove('show'); });
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var bad = fields.filter(function(f){ return !check(f); });
+    if (bad.length) { bad[0].el.focus(); return; }
+    var text = t('form.waIntro') + '\n' + t('form.waName') + ': ' + fields[0].el.value.trim() + '\n' + t('form.waContact') + ': ' + fields[1].el.value.trim() + '\n\n' + fields[2].el.value.trim();
+    window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+    form.reset();
+    ok.classList.add('show');
+  });
+}
+
+/* ==========================================================
+   I) خلفية الـHero: خطوط دوائر كهربائية ونبضات متحركة (Canvas)
+   ========================================================== */
+var circuit = null;
+function initCircuit(){
+  var c = $('#circuit'); if (!c || !c.getContext) return null;
+  var ctx = c.getContext('2d'), stat = doc.createElement('canvas'), sctx = stat.getContext('2d');
+  var W = 0, H = 0, dpr = 1, paths = [], raf = 0, visible = true, last = 0, gold, purple;
+  var G = 44, DIRS = [[1,0],[1,1],[0,1],[-1,1],[-1,0],[-1,-1],[0,-1],[1,-1]];
+  function rnd(a,b){ return a + Math.random() * (b - a); }
+
+  function makePath(){
+    var x = Math.round(rnd(0, W / G)) * G, y = Math.round(rnd(0, H / G)) * G, d = (Math.random() * 4 | 0) * 2;
+    var pts = [[x,y]], lens = [], total = 0, n = 3 + (Math.random() * 3 | 0);
+    for (var i = 0; i < n; i++) {
+      var cells = 2 + (Math.random() * 5 | 0), dx = DIRS[d][0] * cells * G, dy = DIRS[d][1] * cells * G;
+      x += dx; y += dy; pts.push([x,y]);
+      var l = Math.sqrt(dx*dx + dy*dy); lens.push(l); total += l;
+      d = (d + (Math.random() < .5 ? 1 : 7)) % 8;
+    }
+    return { pts:pts, lens:lens, total:total, pos:rnd(-total, total), speed:rnd(50, 110), col: Math.random() < .6 ? 0 : 1 };
+  }
+  function at(p, dist){
+    if (dist <= 0) return p.pts[0];
+    for (var i = 0; i < p.lens.length; i++) {
+      if (dist <= p.lens[i]) { var k = dist / p.lens[i], a = p.pts[i], b = p.pts[i+1]; return [a[0] + (b[0]-a[0])*k, a[1] + (b[1]-a[1])*k]; }
+      dist -= p.lens[i];
+    }
+    return p.pts[p.pts.length - 1];
+  }
+  function rebuild(){
+    var r = c.getBoundingClientRect();
+    W = r.width; H = r.height; dpr = Math.min(window.devicePixelRatio || 1, 2);
+    c.width = stat.width = Math.max(1, W * dpr); c.height = stat.height = Math.max(1, H * dpr);
+    gold = cssVar('--gold-rgb'); purple = cssVar('--purple-rgb');
+    var n = Math.max(8, Math.min(34, Math.round(W * H / 42000)));
+    paths = []; for (var i = 0; i < n; i++) paths.push(makePath());
+    /* الخطوط الثابتة تُرسم مرة واحدة على لوحة جانبية */
+    sctx.setTransform(dpr,0,0,dpr,0,0); sctx.clearRect(0,0,W,H); sctx.lineWidth = 1; sctx.lineJoin = 'round';
+    paths.forEach(function(p){
+      var col = p.col ? purple : gold;
+      sctx.strokeStyle = 'rgba(' + col + ',.16)';
+      sctx.beginPath(); p.pts.forEach(function(q,i){ i ? sctx.lineTo(q[0],q[1]) : sctx.moveTo(q[0],q[1]); }); sctx.stroke();
+      [p.pts[0], p.pts[p.pts.length-1]].forEach(function(q){
+        sctx.beginPath(); sctx.arc(q[0],q[1],3,0,6.283); sctx.fillStyle = cssVar('--bg'); sctx.fill();
+        sctx.strokeStyle = 'rgba(' + col + ',.4)'; sctx.stroke();
+      });
+    });
+    draw(0);
+  }
+  function draw(dt){
+    ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,c.width,c.height); ctx.drawImage(stat,0,0);
+    if (reduceMotion) return;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    paths.forEach(function(p){
+      p.pos += p.speed * dt;
+      if (p.pos > p.total + 80) p.pos = -rnd(100, 900);
+      if (p.pos < 0) return;
+      var col = p.col ? purple : gold;
+      for (var k = 9; k >= 0; k--) {
+        var d = p.pos - k * 6; if (d < 0 || d > p.total) continue;
+        var q = at(p, d);
+        ctx.beginPath(); ctx.arc(q[0], q[1], k ? 1.3 : 2.1, 0, 6.283);
+        ctx.fillStyle = 'rgba(' + col + ',' + (1 - k / 10) * .85 + ')';
+        if (!k) { ctx.shadowColor = 'rgba(' + col + ',.9)'; ctx.shadowBlur = 12; }
+        ctx.fill(); ctx.shadowBlur = 0;
+      }
+    });
+  }
+  function loop(ts){
+    var dt = Math.min((ts - last) / 1000, .05); last = ts;
+    draw(dt);
+    raf = requestAnimationFrame(loop);
+  }
+  function start(){ if (!raf && !reduceMotion && visible && !doc.hidden) { last = performance.now(); raf = requestAnimationFrame(loop); } }
+  function stop(){ cancelAnimationFrame(raf); raf = 0; }
+
+  rebuild();
+  var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(rebuild, 200); });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ visible = es[0].isIntersecting; visible ? start() : stop(); }).observe(c);
+  doc.addEventListener('visibilitychange', function(){ doc.hidden ? stop() : start(); });
+  start();
+  return { rebuild: rebuild };
+}
+
+/* ==========================================================
+   J) عنصر Three.js: ذراع روبوت يدور ببطء ويستجيب للماوس
+   ========================================================== */
+function initHero3D(){
+  var wrap = $('#hero3d'), visual = wrap.parentNode, T = window.THREE, renderer;
+  if (!T) { visual.classList.add('no3d'); return; }
+  try { renderer = new T.WebGLRenderer({ antialias:true, alpha:true, powerPreference:'low-power' }); }
+  catch (e) { visual.classList.add('no3d'); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = T.sRGBEncoding;
+  wrap.appendChild(renderer.domElement);
+  renderer.domElement.setAttribute('aria-hidden','true');
+
+  var scene = new T.Scene();
+  var camera = new T.PerspectiveCamera(34, 1, .1, 100);
+  camera.position.set(0, 3.6, 12.5); camera.lookAt(0, 1.9, 0);
+
+  scene.add(new T.HemisphereLight(0xcbbcff, 0x120d20, .6));
+  var key = new T.DirectionalLight(0xffe6ad, 1.5); key.position.set(4, 7, 6); scene.add(key);
+  var rim = new T.PointLight(0x8a63ff, 2.2, 30); rim.position.set(-5, 3, -2); scene.add(rim);
+  var fill = new T.PointLight(0xd4b464, .8, 20); fill.position.set(3, 1, 4); scene.add(fill);
+
+  var mBody = new T.MeshStandardMaterial({ color:0x3a2a75, metalness:.55, roughness:.38 });
+  var mDark = new T.MeshStandardMaterial({ color:0x1b1530, metalness:.6, roughness:.45 });
+  var mGold = new T.MeshStandardMaterial({ color:0xd4b464, metalness:.75, roughness:.28, emissive:0x3d2c08 });
+  var mLine = new T.LineBasicMaterial({ color:0xd4b464, transparent:true, opacity:.5 });
+  var mRing = new T.MeshBasicMaterial({ color:0x8a63ff, transparent:true, opacity:.55 });
+
+  function mesh(geo, mat, edges){
+    var m = new T.Mesh(geo, mat);
+    if (edges) m.add(new T.LineSegments(new T.EdgesGeometry(geo), mLine));
+    return m;
+  }
+  function joint(r, len){ var j = mesh(new T.CylinderGeometry(r, r, len, 32), mGold); j.rotation.x = Math.PI / 2; return j; }
+
+  var rootG = new T.Group(); scene.add(rootG);
+
+  /* القاعدة بنقوش دوائر إلكترونية */
+  var platform = mesh(new T.CylinderGeometry(2.5, 2.7, .2, 64), mDark); platform.position.y = -.1; rootG.add(platform);
+  var ring = new T.Mesh(new T.TorusGeometry(2.52, .025, 8, 96), mGold); ring.rotation.x = Math.PI / 2; ring.position.y = .01; rootG.add(ring);
+  for (var i = 0; i < 12; i++) {
+    var a = i / 12 * Math.PI * 2, len = i % 3 === 0 ? 1.25 : .8, r0 = 1.05;
+    var tr = new T.Mesh(new T.BoxGeometry(len, .012, .025), mGold);
+    tr.position.set(Math.cos(a) * (r0 + len / 2), .012, Math.sin(a) * (r0 + len / 2)); tr.rotation.y = -a; rootG.add(tr);
+    var nd = new T.Mesh(new T.CylinderGeometry(.055, .055, .03, 16), mGold);
+    nd.position.set(Math.cos(a) * (r0 + len), .015, Math.sin(a) * (r0 + len)); rootG.add(nd);
+  }
+  /* حلقات مدارية */
+  var orbit1 = new T.Mesh(new T.TorusGeometry(3.0, .012, 6, 120), mRing); orbit1.rotation.set(1.25, 0, .3); orbit1.position.y = 2; rootG.add(orbit1);
+  var orbit2 = new T.Mesh(new T.TorusGeometry(3.3, .008, 6, 120), new T.MeshBasicMaterial({ color:0xd4b464, transparent:true, opacity:.4 })); orbit2.rotation.set(1.9, .4, 0); orbit2.position.y = 2; rootG.add(orbit2);
+
+  /* الذراع: قاعدة دوّارة ← كتف ← كوع ← رسغ ← ملقط */
+  var turret = new T.Group(); rootG.add(turret);
+  var base = mesh(new T.CylinderGeometry(.75, .95, .55, 40), mBody); base.position.y = .28; turret.add(base);
+  var collar = new T.Mesh(new T.TorusGeometry(.76, .03, 8, 48), mGold); collar.rotation.x = Math.PI / 2; collar.position.y = .56; turret.add(collar);
+  var tower = mesh(new T.BoxGeometry(.6, .5, .7), mBody, true); tower.position.y = .8; turret.add(tower);
+
+  var shoulder = new T.Group(); shoulder.position.y = 1.05; turret.add(shoulder);
+  shoulder.add(joint(.34, .95));
+  var upper = mesh(new T.BoxGeometry(.36, 2.1, .4), mBody, true); upper.position.y = 1.05; shoulder.add(upper);
+
+  var elbow = new T.Group(); elbow.position.y = 2.1; shoulder.add(elbow);
+  elbow.add(joint(.27, .8));
+  var fore = mesh(new T.BoxGeometry(.27, 1.7, .3), mBody, true); fore.position.y = .85; elbow.add(fore);
+
+  var wrist = new T.Group(); wrist.position.y = 1.7; elbow.add(wrist);
+  wrist.add(joint(.19, .55));
+  var palm = mesh(new T.BoxGeometry(.62, .12, .3), mDark, true); palm.position.y = .26; wrist.add(palm);
+  var fGeo = new T.BoxGeometry(.09, .55, .22);
+  var f1 = mesh(fGeo, mGold), f2 = mesh(fGeo, mGold); f1.position.y = f2.position.y = .58; wrist.add(f1); wrist.add(f2);
+
+  var mx = 0, my = 0, tx = 0, ty = 0, raf = 0, visible = true, t0 = performance.now();
+  function pose(time){
+    turret.rotation.y = time * .28;
+    shoulder.rotation.z = -.42 + Math.sin(time * .6) * .16;
+    elbow.rotation.z = 1.15 + Math.sin(time * .8 + 1) * .3;
+    wrist.rotation.z = .5 + Math.sin(time * 1.1 + 2) * .32;
+    var g = .15 + (Math.sin(time * 1.7) + 1) * .06; f1.position.x = g; f2.position.x = -g;
+    orbit1.rotation.z = .3 + time * .12; orbit2.rotation.z = -time * .09;
+    tx += (mx - tx) * .05; ty += (my - ty) * .05;
+    rootG.rotation.y = tx * .45; rootG.rotation.x = .08 + ty * .16;
+    renderer.render(scene, camera);
+  }
+  function loop(){ pose((performance.now() - t0) / 1000); raf = requestAnimationFrame(loop); }
+  function start(){ if (!raf && !reduceMotion && visible && !doc.hidden) raf = requestAnimationFrame(loop); }
+  function stop(){ cancelAnimationFrame(raf); raf = 0; }
+  function resize(){
+    var w = wrap.clientWidth, h = wrap.clientHeight; if (!w || !h) return;
+    renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+    if (!raf) pose(2.2);
+  }
+  resize();
+  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(wrap); else window.addEventListener('resize', resize);
+  if (!reduceMotion) window.addEventListener('pointermove', function(e){
+    if (e.pointerType === 'touch') return;
+    mx = e.clientX / window.innerWidth * 2 - 1; my = e.clientY / window.innerHeight * 2 - 1;
+  }, { passive:true });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ visible = es[0].isIntersecting; visible ? start() : stop(); }).observe(wrap);
+  doc.addEventListener('visibilitychange', function(){ doc.hidden ? stop() : start(); });
+  start();
+}
+
+/* ==========================================================
+   K) التشغيل
+   ========================================================== */
+build();
+applyLang(lang);
+initNav();
+initReveal();
+initCounters();
+initFaq();
+initForm();
+circuit = initCircuit();
+$('#langBtn').addEventListener('click', function(){ applyLang(lang === 'ar' ? 'en' : 'ar'); });
+$('#themeBtn').addEventListener('click', function(){ setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); });
+if (doc.readyState === 'complete') initHero3D(); else window.addEventListener('load', initHero3D);
+})();
+</script>
+<noscript><p style="padding:6rem 1.5rem;text-align:center">يتطلب هذا الموقع تفعيل JavaScript لعرض المحتوى. · Please enable JavaScript to view this site.</p></noscript>
+</body>
+</html>
