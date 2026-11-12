@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mahmoud Korany | أخصائي أول تعليم STEM والروبوتيكس ومنسّق مسابقات دولية</title>
-<meta name="description" content="محمود قرني عبد الفتاح — أخصائي أول STEM وروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. تقديم 200+ برنامج تدريبي لـ 2000+ مشارك وتأهيل 200+ مدرب ومعلم وإعداد فرق WRO وRobotex.">
-<meta name="description" lang="en" content="Mahmoud Korany Abdelfattah — Senior STEM & Robotics Specialist and Competition Coordinator at SACGC, Kuwait, since 2017. Delivered 200+ training programs reaching 2,000+ participants, developed 200+ educators, and coached Top-10 international WRO & Robotex teams.">
+<title>Mahmoud Korany | مدرب روبوتيكس ومنسّق مسابقات روبوت</title>
+<meta name="description" content="محمود قرني عبد الفتاح — مدرب روبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. 200+ برنامج تدريبي وورشة، 2,000+ مشارك، 200+ معلم ومدرب، وفرق ضمن أفضل 10 عالمياً في Robotex.">
+<meta name="description" lang="en" content="Mahmoud Korany Abdelfattah — Robotics Instructor &amp; Competition Coordinator at SACGC, Kuwait, since 2017. 200+ training programs and workshops, 2,000+ participants, 200+ educators trained, and teams ranked in the world Top 10 at Robotex.">
 <meta name="author" content="Mahmoud Korany Abdelfattah — Koranitronix">
 <meta name="theme-color" content="#0b0a10">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Koranitronix">
-<meta property="og:title" content="Mahmoud Korany | أخصائي أول تعليم STEM والروبوتيكس ومنسّق مسابقات دولية">
-<meta property="og:description" content="خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس، تأهيل المدربين (ToT)، وإدارة المسابقات وإعداد الفرق المتوّجة وطنياً وعالمياً في WRO وRobotex.">
+<meta property="og:title" content="Mahmoud Korany | مدرب روبوتيكس ومنسّق مسابقات روبوت">
+<meta property="og:description" content="محمود قرني عبد الفتاح — مدرب روبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. 200+ برنامج تدريبي وورشة، 2,000+ مشارك، 200+ معلم ومدرب، وفرق ضمن أفضل 10 عالمياً في Robotex.">
 <meta property="og:locale" content="ar_KW">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
@@ -207,7 +207,6 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
    ========================================================== */
 .grid-3{display:grid;grid-template-columns:repeat(6,1fr);gap:1.4rem}
 .grid-3>*{grid-column:span 2}
-#servicesGrid>*:nth-child(4),#servicesGrid>*:nth-child(5){grid-column:span 3}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
 .why-card{display:flex;gap:1.4rem;align-items:flex-start}
 .why-card .ico-box{margin:0;flex-shrink:0}
@@ -217,9 +216,27 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
 .work-no{font-family:'Playfair Display',Georgia,serif;font-size:1.7rem;color:rgba(var(--purple-rgb),.75);line-height:1}
 .work-card::before{content:"";position:absolute;inset-inline:2rem;bottom:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .5s}
 .work-card:hover::before{transform:scaleX(1)}
-.podium{display:grid;grid-template-columns:repeat(4,1fr);margin-bottom:clamp(2rem,4vw,3rem);border-block:1px solid var(--border)}
+.podium{display:grid;grid-template-columns:repeat(3,1fr);margin-bottom:clamp(2rem,4vw,3rem);border-block:1px solid var(--border)}
 .podium>div{padding:2rem 1.4rem;border-inline-end:1px solid var(--border)}
-.podium>div:last-child{border-inline-end:0}
+.podium>div:nth-child(3n){border-inline-end:0}
+.podium>div:nth-child(-n+3){border-bottom:1px solid var(--border)}
+[dir="rtl"] .podium b,[dir="rtl"] .badge b{text-align:right}
+.pts{margin-top:1rem;display:grid;gap:.45rem}
+.pts li{position:relative;padding-inline-start:1.1rem;color:var(--muted);font-size:.93rem}
+.pts li::before{content:"";position:absolute;inset-inline-start:0;top:.72em;width:5px;height:5px;transform:rotate(45deg);background:var(--gold)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:1.6rem;counter-reset:st;position:relative}
+.steps::before{content:"";position:absolute;top:1.2rem;inset-inline:1.2rem;height:1px;background:rgba(var(--gold-rgb),.35)}
+.steps li{position:relative;padding-top:3.6rem}
+.steps li::before{counter-increment:st;content:counter(st);position:absolute;top:0;inset-inline-start:0;width:2.4rem;height:2.4rem;border-radius:50%;display:grid;place-items:center;background:var(--bg-2);border:1px solid rgba(var(--gold-rgb),.6);color:var(--gold-text);font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:1.05rem;line-height:1}
+.steps h3{font-size:1.08rem;margin-bottom:.45rem}
+.steps p{color:var(--muted);font-size:.93rem}
+.certs{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(2rem,5vw,4.5rem);margin-top:clamp(2.5rem,5vw,4rem);padding-top:2.2rem;border-top:1px solid var(--border)}
+.certs h3{font-family:var(--font-body);font-size:1rem;font-weight:600;color:var(--gold-text);margin-bottom:.6rem}
+.certs li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-block:.75rem;border-bottom:1px solid var(--border);font-size:.95rem}
+.certs li:last-child{border-bottom:0}
+.certs strong{font-weight:500;display:block}
+.certs small{color:var(--muted);font-size:.84rem}
+.certs li>span{color:var(--muted);font-size:.85rem;white-space:nowrap}
 .podium b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.4rem,4.6vw,3.6rem);font-weight:600;line-height:1.05;color:var(--gold-text);direction:ltr;text-align:start}
 .podium span{display:block;margin-top:.6rem;color:var(--muted);font-size:.92rem;line-height:1.55}
 .partners{padding-block:clamp(2.8rem,5vw,4rem)}
@@ -360,16 +377,24 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   .play-hud,.play-cta{margin-top:.4rem}
   .hero-visual{max-width:340px;order:-1}
   .podium{grid-template-columns:repeat(2,1fr)}
-  .podium>div:nth-child(2){border-inline-end:0}
-  .podium>div:nth-child(-n+2){border-bottom:1px solid var(--border)}
+  .podium>div:nth-child(3n){border-inline-end:1px solid var(--border)}
+  .podium>div:nth-child(2n){border-inline-end:0}
+  .podium>div:nth-child(-n+4){border-bottom:1px solid var(--border)}
+  .certs{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:1.5rem}
+  .steps::before{top:1.2rem;bottom:1.2rem;inset-inline:auto;inset-inline-start:1.2rem;width:1px;height:auto}
+  .steps li{padding-top:0;padding-inline-start:3.6rem;min-height:2.4rem}
   .hero{padding-top:calc(var(--header-h) + 1.5rem)}
-  .grid-3>*,#servicesGrid>*:nth-child(4),#servicesGrid>*:nth-child(5){grid-column:span 3}
-  #servicesGrid>*:nth-child(5){grid-column:span 6}
+  .grid-3>*{grid-column:span 3}
+  .grid-3>*:nth-child(3):last-child{grid-column:span 6}
   .stats{grid-template-columns:repeat(2,1fr);gap:1.4rem 1rem}
 }
 @media (max-width:640px){
-  .grid-3>*,#servicesGrid>*:nth-child(n){grid-column:span 6}
+  .grid-3>*:nth-child(n){grid-column:span 6}
   .grid-2{grid-template-columns:1fr}
+  .podium{grid-template-columns:1fr}
+  .podium>div:nth-child(n){border-inline-end:0;border-bottom:1px solid var(--border);padding:1.4rem .4rem}
+  .podium>div:last-child{border-bottom:0}
   .nav-cta{display:none}
   .nav{gap:.5rem}.nav-actions{gap:.4rem}
   .logo{font-size:1.2rem;gap:.5rem}.logo svg{width:30px;height:30px}
@@ -407,10 +432,10 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
       <span>Korani<b>tronix</b></span>
     </a>
     <ul class="nav-links" id="navLinks">
+      <li><a href="#work" data-i18n="nav.work"></a></li>
       <li><a href="#about" data-i18n="nav.about"></a></li>
       <li><a href="#services" data-i18n="nav.services"></a></li>
-      <li><a href="#why" data-i18n="nav.why"></a></li>
-      <li><a href="#work" data-i18n="nav.work"></a></li>
+      <li><a href="#process" data-i18n="nav.process"></a></li>
       <li id="navGallery" hidden><a href="#gallery" data-i18n="nav.gallery"></a></li>
       <li><a href="#faq" data-i18n="nav.faq"></a></li>
       <li><a href="#contact" data-i18n="nav.contact"></a></li>
@@ -446,9 +471,9 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   <canvas id="circuit" aria-hidden="true"></canvas>
   <div class="container hero-grid">
     <div>
-      <p class="eyebrow reveal" data-i18n="hero.eyebrow">أخصائي أول STEM والروبوتيكس · منسّق مسابقات دولية</p>
-      <h1 class="reveal" style="--d:80ms"><span data-i18n="hero.t1">أُعِدّ فرقاً ومعلّمين يحصدون المراكز الأولى في</span> <em data-i18n="hero.t2">مسابقات الروبوت العالمية</em></h1>
-      <p class="hero-sub reveal" style="--d:160ms" data-i18n="hero.sub">خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس وتطوير المناهج وتأهيل المدربين (ToT) وإدارة المسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت — مع سجل حافل بتحقيق مراكز ضمن أفضل 10 عالمياً.</p>
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">مدرب روبوتيكس ومنسّق مسابقات روبوت</p>
+      <h1 class="reveal" style="--d:80ms"><span data-i18n="hero.t1">أُعِدّ فرقاً تكتسح المنصات الوطنية وتصل إلى</span> <em data-i18n="hero.t2">أفضل 10 عالمياً</em></h1>
+      <p class="hero-sub reveal" style="--d:160ms" data-i18n="hero.sub">أعمل منذ 2017 في تعليم STEM والروبوتيكس بمركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت: أدرّب الفرق، أصمّم المسابقات وأديرها فنياً، أطوّر المناهج، وأؤهّل المعلمين والمدربين.</p>
       <div class="hero-cta reveal" style="--d:240ms">
         <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1">تواصل معي</a>
         <a class="btn btn-ghost" href="#work" data-i18n="hero.cta2">شاهد الإنجازات</a>
@@ -473,52 +498,7 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   </div>
 </section>
 
-<!-- ================= نبذة ================= -->
-<section id="about" class="alt">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text">
-        <p class="eyebrow reveal" data-i18n="about.eyebrow"></p>
-        <div class="sec-head reveal" style="margin-bottom:1.6rem"><h2 data-i18n="about.title">أساس هندسي في الميكاترونكس، وخبرة تُصقَل في ميادين المنافسات العالمية</h2></div>
-        <p class="reveal" data-i18n="about.p1">أنا محمود قرني عبد الفتاح، أخصائي أول في تعليم STEM والروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ نوفمبر 2017. قدّمتُ أكثر من 200 برنامج تدريبي وورشة عمل وصل أثرها إلى أكثر من 2,000 مشارك، وأهّلتُ أكثر من 200 معلم ومدرب.</p>
-        <p class="reveal" data-i18n="about.p2">أجمع بين الأساس الهندسي كمهندس ميكاترونكس وروبوتات وأتمتة (جامعة عين شمس) والخبرة العملية كمدرب دولي معتمد ومعلّم معتمد من Google، مع قيادة التنفيذ المتكامل لأكثر من 11 بطولة روبوت وتدريب فرق حققت الصدارة وطنياً ومراكز ضمن العشرة الأوائل عالمياً.</p>
-      </div>
-      <ul class="card cred reveal" style="--d:120ms">
-        <li><span data-i18n="about.c1k"></span><strong data-i18n="about.c1v"></strong></li>
-        <li><span data-i18n="about.c2k"></span><strong data-i18n="about.c2v"></strong></li>
-        <li><span data-i18n="about.c3k"></span><strong data-i18n="about.c3v"></strong></li>
-        <li><span data-i18n="about.c4k"></span><strong data-i18n="about.c4v"></strong></li>
-        <li><span data-i18n="about.c5k"></span><strong class="ltr">LEGO SPIKE · Arduino · VEX · fischertechnik</strong></li>
-        <li><span data-i18n="about.c6k"></span><strong data-i18n="about.c6v"></strong></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= الخدمات ================= -->
-<section id="services">
-  <div class="container">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-i18n="services.eyebrow"></p>
-      <h2 data-i18n="services.title"></h2>
-      <p data-i18n="services.sub"></p>
-    </div>
-    <div class="grid-3" id="servicesGrid"></div>
-  </div>
-</section>
-
-<!-- ================= لماذا تختارني ================= -->
-<section id="why" class="alt">
-  <div class="container">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-i18n="why.eyebrow"></p>
-      <h2 data-i18n="why.title"></h2>
-    </div>
-    <div class="grid-2" id="whyGrid"></div>
-  </div>
-</section>
-
-<!-- ================= الأعمال ================= -->
+<!-- ================= الإنجازات ================= -->
 <section id="work">
   <div class="container">
     <div class="sec-head reveal">
@@ -531,8 +511,60 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
   </div>
 </section>
 
+<!-- ================= نبذة ================= -->
+<section id="about" class="alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="eyebrow reveal" data-i18n="about.eyebrow"></p>
+        <div class="sec-head reveal" style="margin-bottom:1.6rem"><h2 data-i18n="about.title">مهندس ميكاترونكس قبل أن أكون مدرباً</h2></div>
+        <p class="reveal" data-i18n="about.p1">أنا محمود قرني عبد الفتاح، مدرب روبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ نوفمبر 2017. صمّمتُ وقدّمتُ أكثر من 200 برنامج تدريبي وورشة في STEM والروبوتيكس والبرمجة، وصلت إلى أكثر من 2,000 مشارك من الطلاب والمعلمين والمدربين.</p>
+        <p class="reveal" data-i18n="about.p2"></p>
+        <p class="reveal" data-i18n="about.p3"></p>
+      </div>
+      <ul class="card cred reveal" style="--d:120ms">
+        <li><span data-i18n="about.c1k"></span><strong data-i18n="about.c1v"></strong></li>
+        <li><span data-i18n="about.c2k"></span><strong data-i18n="about.c2v"></strong></li>
+        <li><span data-i18n="about.c3k"></span><strong data-i18n="about.c3v"></strong></li>
+        <li><span data-i18n="about.c4k"></span><strong data-i18n="about.c4v"></strong></li>
+        <li><span data-i18n="about.c5k"></span><strong class="ltr">LEGO SPIKE · Arduino · VEX · fischertechnik · Raspberry Pi</strong></li>
+        <li><span data-i18n="about.c6k"></span><strong class="ltr">Python · C/C++ · PLC Siemens · CAD/CAM</strong></li>
+        <li><span data-i18n="about.c7k"></span><strong data-i18n="about.c7v"></strong></li>
+      </ul>
+    </div>
+    <div class="certs reveal">
+      <div><h3 data-i18n="about.certsT"></h3><ul id="certsList"></ul></div>
+      <div><h3 data-i18n="about.devT"></h3><ul id="devList"></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= مجالات الخبرة ================= -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="services.eyebrow"></p>
+      <h2 data-i18n="services.title"></h2>
+      <p data-i18n="services.sub"></p>
+    </div>
+    <div class="grid-2" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ================= كيف أبني مسابقة ================= -->
+<section id="process" class="alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="process.eyebrow"></p>
+      <h2 data-i18n="process.title"></h2>
+      <p data-i18n="process.sub"></p>
+    </div>
+    <ol class="steps" id="steps"></ol>
+  </div>
+</section>
+
 <!-- ================= المعرض (يظهر تلقائياً عند إضافة صور في CONFIG.gallery) ================= -->
-<section id="gallery" class="alt" hidden>
+<section id="gallery" hidden>
   <div class="container">
     <div class="sec-head reveal">
       <h2 data-i18n="gallery.title"></h2>
@@ -663,10 +695,10 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
         <p data-i18n="footer.tagline"></p>
       </div>
       <nav class="footer-links" data-i18n-aria="footer.linksAria">
+        <a href="#work" data-i18n="nav.work"></a>
         <a href="#about" data-i18n="nav.about"></a>
         <a href="#services" data-i18n="nav.services"></a>
-        <a href="#why" data-i18n="nav.why"></a>
-        <a href="#work" data-i18n="nav.work"></a>
+        <a href="#process" data-i18n="nav.process"></a>
         <a href="#play" data-i18n="nav.play"></a>
         <a href="#faq" data-i18n="nav.faq"></a>
         <a href="#contact" data-i18n="nav.contact"></a>
@@ -674,6 +706,9 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
       <div class="social">
         <a class="icon-btn" id="sLi" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.6v.1M12 16v-5.5M12 13a2 2 0 0 1 4 0v3"/></svg></a>
         <a class="icon-btn" id="sIg" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7v.1"/></svg></a>
+        <a class="icon-btn" id="sFb" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M15 8h-1.8a2.2 2.2 0 0 0-2.2 2.2V20.5M9.5 13.5H15"/></svg></a>
+        <a class="icon-btn" id="sYt" href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.200v5.600l5-2.800z"/></svg></a>
+        <a class="icon-btn" id="sTt" href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.500a3.500 3.500 0 1 1-3.500-3.500M14 4c.3 2.400 1.900 4 4.500 4.300"/></svg></a>
         <a class="icon-btn" id="sWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.2 19z"/><path d="M9.3 9c0 3 2.7 5.6 5.6 5.7l1.1-1.4-1.8-1-.9.8a3.6 3.6 0 0 1-1.8-1.8l.8-.9-1-1.8z"/></svg></a>
         <a class="icon-btn" id="sMail" href="#" data-i18n-aria="contact.email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></a>
       </div>
@@ -694,11 +729,14 @@ html[lang="ar"] .hero h1{font-size:clamp(1.9rem,4.5vw,3.4rem);letter-spacing:0}
    A) بيانات التواصل والأرقام — عدّلها من هنا
    ========================================================== */
 var CONFIG = {
-  email:     'm.qurani89@gmail.com',                      // ← بريدك الإلكتروني من الـ CV
+  email:     'koranitronix@gmail.com',                    // ← بريدك الإلكتروني
   whatsapp:  '96569911190',                               // ← رقم واتساب بالصيغة الدولية بدون + أو مسافات
   whatsappDisplay: '+965 6991 1190',                      // ← الرقم كما يظهر للزائر
   linkedin:  'https://www.linkedin.com/in/koranitronics', // ← رابط لينكدإن من الـ CV
-  instagram: '',                                          // ← ضع رابط حسابك الفعلي هنا ليظهر زر انستقرام (فارغ = مخفي)
+  instagram: 'https://www.instagram.com/koranitronix/',   // ← رابط حساب انستقرام
+  facebook:  'https://www.facebook.com/profile.php?id=61596665183175', // ← رابط حساب فيسبوك
+  youtube:   'https://www.youtube.com/@koranitronix',     // ← رابط قناة يوتيوب
+  tiktok:    'https://www.tiktok.com/@koranitronix',      // ← رابط حساب تيك توك
   portrait:  'images/portrait.jpg',                       // ← صورتك الشخصية (تظهر تلقائياً في الـ Hero إذا وُجد الملف)
   /* المعرض: أضف الصور هنا فيظهر القسم تلقائياً. cat: wro | robotex | training | workshops
      مثال: { src:'images/gallery/wro-2026.jpg', cat:'wro', ar:'فريق SACGC على منصة WRO Kuwait 2026', en:'SACGC team on the WRO Kuwait 2026 podium' } */
@@ -718,69 +756,86 @@ var CONFIG = {
 var I18N = {
   ar: {
     meta: {
-      title: 'Mahmoud Korany | أخصائي أول تعليم STEM والروبوتيكس ومنسّق مسابقات دولية',
-      desc: 'محمود قرني عبد الفتاح — أخصائي أول STEM وروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. تقديم 200+ برنامج تدريبي لـ 2000+ مشارك وتأهيل 200+ مدرب ومعلم وإعداد فرق WRO وRobotex.'
+      title: 'Mahmoud Korany | مدرب روبوتيكس ومنسّق مسابقات روبوت',
+      desc: 'محمود قرني عبد الفتاح — مدرب روبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ 2017. 200+ برنامج تدريبي وورشة، 2,000+ مشارك، 200+ معلم ومدرب، وفرق ضمن أفضل 10 عالمياً في Robotex.'
     },
     skip: 'تخطَّ إلى المحتوى',
-    nav: { label:'التنقل الرئيسي', about:'نبذة', services:'الخدمات', why:'لماذا أنا', work:'الإنجازات والأعمال', gallery:'المعرض', play:'جرّب اللعبة', faq:'الأسئلة', contact:'تواصل', cta:'تواصل معي', langLabel:'EN', langAria:'Switch to English', themeAria:'تبديل الوضع الفاتح والداكن', menuAria:'فتح القائمة' },
+    nav: { label:'التنقل الرئيسي', about:'نبذة', services:'مجالات الخبرة', process:'بناء المسابقة', work:'الإنجازات', gallery:'المعرض', play:'جرّب اللعبة', faq:'الأسئلة', contact:'تواصل', cta:'تواصل معي', langLabel:'EN', langAria:'Switch to English', themeAria:'تبديل الوضع الفاتح والداكن', menuAria:'فتح القائمة' },
     hero: {
-      eyebrow: 'أخصائي أول STEM والروبوتيكس · منسّق مسابقات دولية',
-      t1: 'أُعِدّ فرقاً ومعلّمين يحصدون المراكز الأولى في', t2: 'مسابقات الروبوت العالمية',
-      sub: 'خبرة تقارب 9 سنوات في تعليم STEM والروبوتيكس وتطوير المناهج وتأهيل المدربين (ToT) وإدارة المسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت — مع سجل حافل بتحقيق مراكز ضمن أفضل 10 عالمياً.',
+      eyebrow: 'مدرب روبوتيكس ومنسّق مسابقات روبوت',
+      t1: 'أُعِدّ فرقاً تكتسح المنصات الوطنية وتصل إلى', t2: 'أفضل 10 عالمياً',
+      sub: 'أعمل منذ 2017 في تعليم STEM والروبوتيكس بمركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت: أدرّب الفرق، أصمّم المسابقات وأديرها فنياً، أطوّر المناهج، وأؤهّل المعلمين والمدربين.',
       cta1: 'تواصل معي', cta2: 'شاهد الإنجازات',
-      portraitAlt: 'محمود قرني عبد الفتاح', portraitCap: 'محمود قرني — أخصائي أول STEM والروبوتيكس', badge1: 'عالمياً في Drone — Robotex International', badge2: 'المراكز 1–3 في RoboMission Senior'
+      portraitAlt: 'محمود قرني عبد الفتاح', portraitCap: 'محمود قرني — مدرب روبوتيكس ومنسّق مسابقات', badge1: 'عالمياً في Drone — Robotex International', badge2: 'المراكز 1–3 في RoboMission Senior'
     },
     about: {
       eyebrow: 'نبذة عني',
-      title: 'أساس هندسي في الميكاترونكس، وخبرة تُصقَل في ميادين المنافسات العالمية',
-      p1: 'أنا محمود قرني عبد الفتاح، أخصائي أول في تعليم STEM والروبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ نوفمبر 2017. قدّمتُ أكثر من 200 برنامج تدريبي وورشة عمل وصل أثرها إلى أكثر من 2,000 مشارك، وأهّلتُ أكثر من 200 معلم ومدرب بالتعاون مع جهات رائدة مثل وزارة التربية وجامعة الكويت ومعهد الكويت للأبحاث العلمية (KISR).',
-      p2: 'أجمع بين الأساس الهندسي كمهندس ميكاترونكس وروبوتات وأتمتة (جامعة عين شمس) والخبرة العملية كمدرب دولي معتمد ومعلّم معتمد من Google (المستويين الأول والثاني وGemini)، مع قيادة التنفيذ المتكامل لأكثر من 11 بطولة روبوت وتدريب فرق حققت الصدارة وطنياً ومراكز ضمن العشرة الأوائل عالمياً في WRO وRobotex.',
-      c1k:'المسمّى الوظيفي', c1v:'أخصائي أول STEM وروبوتيكس ومنسّق مسابقات',
+      title: 'مهندس ميكاترونكس قبل أن أكون مدرباً',
+      p1: 'أنا محمود قرني عبد الفتاح، مدرب روبوتيكس ومنسّق مسابقات في مركز صباح الأحمد للموهبة والإبداع (SACGC) بالكويت منذ نوفمبر 2017. صمّمتُ وقدّمتُ أكثر من 200 برنامج تدريبي وورشة في STEM والروبوتيكس والبرمجة، وصلت إلى أكثر من 2,000 مشارك من الطلاب والمعلمين والمدربين.',
+      p2: 'قبل التعليم عملتُ مهندس صيانة وخدمة ميدانية بين 2013 و2017 لدى HEISCO وXerox وSISCO في الكويت ومصر والسعودية. لذلك أدرّس الروبوتيكس كما تُمارَس الهندسة: مشكلة حقيقية، تصميم، اختبار، ثم تحسين.',
+      p3: 'أستخدم التحضير للمسابقات كبيئة تعلّم تطبيقي يصمّم فيها الطالب ويبرمج ويختبر ويعمل ضمن فريق، وأستعين بأدوات Google التعليمية وتطبيقات الذكاء الاصطناعي في التعليم.',
+      c1k:'المسمّى الوظيفي', c1v:'مدرب روبوتيكس ومنسّق مسابقات',
       c2k:'الجهة', c2v:'مركز صباح الأحمد للموهبة والإبداع (SACGC)',
-      c3k:'الخبرة التعليمية', c3v:'نوفمبر 2017 — حتى الآن (الكويت)',
-      c4k:'المؤهل الهندسي', c4v:'بكالوريوس هندسة الميكاترونكس والروبوتات — عين شمس',
-      c5k:'المنصّات والتقنيات',
-      c6k:'أبرز الاعتمادات', c6v:'Google Educator L1/L2 & Gemini · مدرب دولي معتمد · PMP® Prep'
-    },
-    stats: ['برنامج تدريبي وورشة عمل', 'متدرب ومشارك', 'معلم ومدرب تم تأهيلهم', 'بطولة روبوت تم تنظيمها وإدارتها'],
-    services: {
-      eyebrow: 'الخدمات', title: 'برامج تدريب وتأهيل واستشارات مصمَّمة بمعايير المنافسة الدولية',
-      sub: 'خمسة مسارات متكاملة تغطّي احتياج الطالب والمعلم والمدرسة والمؤسسة، من التأسيس الهندسي حتى منصّات التتويج العالمية.',
-      items: [
-        { t:'تدريب وإعداد فرق المسابقات (WRO & Robotex)', d:'تأهيل شامل للفرق الوطنية والدولية في RoboMission وLEGO Sumo وLine Following وDrone: التصميم الميكانيكي، البرمجة المتقدمة، واستراتيجية المنافسة.' },
-        { t:'برامج تدريب المدربين وتأهيل المعلمين (ToT)', d:'تطوير قدرات المعلمين والمدربين الجدد على تدريس STEM والروبوتيكس وتطبيقات الذكاء الاصطناعي في التعليم وفق أحدث المعايير المعتمدة.' },
-        { t:'تصميم وإدارة مسابقات الروبوت المتكاملة', d:'قيادة دورة حياة المسابقات من الفكرة وتصميم التحديات ومعايرة الصعوبة وصياغة القوانين وأنظمة التحكيم حتى بناء الحلبات والتشغيل الفني يوم الحدث.' },
-        { t:'تطوير مناهج STEM والروبوتيكس للمؤسسات', d:'بناء مناهج تعليمية وحقائب تدريبية متدرّجة عبر LEGO Education / SPIKE وfischertechnik وArduino وVEX وPython وC/C++ تناسب مختلف الأعمار.' },
-        { t:'ورش STEM والشراكات المؤسسية والجامعية', d:'تنفيذ برامج تدريبية وورش عملية للجامعات والمراكز البحثية والمدارس (على غرار التعاون مع جامعة الكويت ومعهد الأبحاث KISR ووزارة التربية).' }
+      c3k:'الفترة', c3v:'نوفمبر 2017 — حتى الآن (الكويت)',
+      c4k:'المؤهل', c4v:'بكالوريوس الهندسة الميكانيكية — ميكاترونكس وروبوتات وأتمتة، جامعة عين شمس (2006–2012)',
+      c5k:'المنصّات',
+      c6k:'البرمجة والهندسة',
+      c7k:'اللغات', c7v:'العربية (اللغة الأم) · الإنجليزية (B2)',
+      certsT:'الشهادات والاعتمادات', devT:'تطوير مهني',
+      certs: [
+        ['Google Certified Educator Level 2', 'Google', '2026–2029'],
+        ['Google Certified Educator Level 1', 'Google', '2025–2028'],
+        ['Gemini Certified Educator', 'Google', '2025–2028'],
+        ['مدرب دولي محترف معتمد', 'International Cultural Office — ICO Ltd', '2019'],
+        ['مدرب معتمد', 'American University of Professional Studies', '2019'],
+        ['fischertechnik Education — Level 1', 'fischertechnik Education / SACGC', '2018'],
+        ['الإسعافات الأولية والإنعاش القلبي (Heartsaver® CPR AED)', 'American Heart Association', '2025–2027']
+      ],
+      dev: [
+        ['Data Science & Machine Learning (AI)', 'CLS Learning Solutions', '2025'],
+        ['دورة تحضيرية لاختبار PMP®‎', 'Gravity Business Advisory', '2025'],
+        ['CAM Manufacturing Fundamentals', 'Siemens', '2021']
       ]
     },
-    why: {
-      eyebrow: 'لماذا تختارني', title: 'أربعة أسباب تجعل النتيجة مختلفة',
+    stats: ['برنامج تدريبي وورشة', 'مشارك', 'معلم ومدرب تم تأهيلهم', 'مسابقة روبوت قدتُ تنفيذها فنياً'],
+    services: {
+      eyebrow: 'مجالات الخبرة', title: 'أربعة مجالات أعمل فيها',
+      sub: 'يمكن التعاون في مجال واحد أو أكثر، لمدرسة أو مؤسسة أو فريق.',
       items: [
-        { t:'سجلّ تتويج عالمي ومحلي موثّق', d:'اكتساح منصات التتويج المحلية في WRO وRobotex لعدة أعوام، وتحقيق المركز الخامس عالمياً في Drone والسابع عالمياً في LEGO Sumo ببطولة Robotex الدولية.' },
-        { t:'قيادة أكثر من 11 مسابقة من الداخل', d:'خبرة عميقة كمنسّق مسابقات يصمّم التحديات والقوانين وأنظمة التحكيم والحلبات، مما يمنح الفرق المتدرّبة فهماً دقيقاً لكيفية التفكير التحكيمي.' },
-        { t:'خلفيّة هندسية واعتمادات دولية', d:'مهندس ميكاترونكس وأتمتة بخبرة صناعية وميدانية، ومعلّم معتمد من Google (Level 1, Level 2, Gemini) ومدرب دولي معتمد.' },
-        { t:'أثر واسع ومنهجية شاملة (2,000+ متدرب)', d:'خبرة عملية في تدريب أكثر من 2,000 طالب وتأهيل أكثر من 200 معلم ومدرب عبر أكثر من 200 برنامج وورشة عمل ناجحة.' }
+        { t:'تصميم وإدارة مسابقات الروبوت', d:'قدتُ التنفيذ الفني والتشغيلي لأكثر من 11 مسابقة روبوت (نحو 9 حضورية و2 عن بُعد).', p:['تصميم التحديات ومعايرة الصعوبة','القوانين ومنهجيات التسجيل والتحكيم','تجهيز الحلبات والتشغيل الفني يوم الحدث'] },
+        { t:'تدريب فرق المسابقات', d:'أدرّب الفرق للمسابقات الوطنية والدولية في WRO وRobotex: RoboMission وLEGO Sumo وLine Following وDrone.', p:['تصميم الروبوت وبرمجته','حل المشكلات الهندسية والعمل الجماعي','استراتيجية المنافسة'] },
+        { t:'مناهج STEM وتقنيات التعليم', d:'أطوّر مناهج ومحتوى تقنياً وأنشطة عملية تتكيّف مع العمر والمستوى وأهداف التعلّم.', p:['LEGO Education / SPIKE وfischertechnik وArduino وVEX','تعلّم بالمشاريع يربط المفهوم بالتطبيق','أدوات Google التعليمية والذكاء الاصطناعي في التعليم'] },
+        { t:'تأهيل المعلمين والمدربين (ToT)', d:'أهّلتُ أكثر من 200 معلم ومدرب، منهم معلمون من وزارة التربية ومدربون حديثو التخرج.', p:['برامج تدريب المدربين (ToT) وتطوير المدربين','عروض تقنية وتيسير عملي داخل الورشة','ورش خارجية: جامعة الكويت، KISR، ومعلمو مدارس مختلفة'] }
+      ]
+    },
+    process: {
+      eyebrow: 'إدارة المسابقات', title: 'كيف أبني مسابقة روبوت',
+      sub: 'خمس مراحل أقودها من الفكرة حتى يوم الحدث.',
+      steps: [
+        { t:'الفكرة وتصميم التحدي', d:'تحويل الهدف التقني إلى تحدٍّ واضح وبنية للمسابقة.' },
+        { t:'الصعوبة والقوانين', d:'معايرة مستوى التحدي للفئة المستهدفة وصياغة القوانين.' },
+        { t:'التسجيل والتحكيم', d:'منطق احتساب النقاط وسير عمل الحكّام.' },
+        { t:'الحلبة والاختبار الفني', d:'تطوير الحلبة وتجهيز المعدّات والتحقق الفني قبل الحدث.' },
+        { t:'يوم الحدث', d:'تنسيق الحكّام والمدربين وإدارة التشغيل الفني.' }
       ]
     },
     work: {
-      eyebrow: 'الإنجازات والأعمال', title: 'أبرز إنجازات المسابقات والبرامج التدريبية',
-      sub: 'محطات موثّقة من البطولات العالمية والمحلية والمبادرات التعليمية والمؤسسية.',
-      tags: { c:'مسابقات دولية ومحلية', e:'تأهيل ومناهج', d:'إدارة بطولات' },
+      eyebrow: 'الإنجازات', title: 'نتائج الفرق التي درّبتها',
+      sub: 'نتائج فرق مركز صباح الأحمد (SACGC) في Robotex وWRO، وأرقام البرامج والمسابقات.',
+      tags: { e:'تأهيل ومناهج', d:'إدارة مسابقات' },
       items: [
-        { t:'Robotex International — ضمن أفضل 10 عالمياً', d:'تدريب وإعداد فرق مركز صباح الأحمد لثلاث سنوات متتالية وتحقيق مراكز عالمية متقدمة شملت المركز الخامس عالمياً في فئة Drone والمركز السابع عالمياً في LEGO Sumo.' },
-        { t:'أولمبياد الروبوت العالمي — WRO Kuwait 2026 & 2025', d:'قيادة فرق المركز لاكتساح المراكز الثلاثة الأولى (الأول والثاني والثالث) في فئة RoboMission Senior والتأهل للنهائيات العالمية في بورتوريكو 2026، والمركز الثاني لفئة Junior والتأهل للبطولة الإقليمية بالسعودية 2025.' },
-        { t:'بطولات Robotex Kuwait 2024 & 2025 — اكتساح المراكز الأولى', d:'تحقيق المراكز الثلاثة الأولى (1st–3rd) في LEGO Sumo والمركزين الأول والثاني في Line Following لعام 2025، واكتساح المراكز الخمسة الأولى (1st–5th) في Line Following عام 2024.' },
-        { t:'التنفيذ الفني والتشغيلي لـ 11+ بطولة روبوت', d:'قيادة التخطيط والتنفيذ الكامل لـ 9 مسابقات حضورية ومسابقتين عن بُعد، شاملة تصميم التحديات، معايرة الصعوبة، القوانين، أنظمة التحكيم، وتجهيز الحلبات.' },
-        { t:'تأهيل 200+ معلم ومدرب والشراكات المؤسسية', d:'تقديم برامج تدريب المدربين (ToT) لمعلمي وزارة التربية والمدربين الجدد، وتنفيذ تدريبات Arduino بجامعة الكويت، وأنشطة روبوتيكس مع معهد الكويت للأبحاث العلمية (KISR).' },
-        { t:'تصميم المناهج وتقديم 200+ برنامج تدريبي', d:'تطوير محتوى تقني ومناهج تدريبية متدرجة عبر منصات LEGO SPIKE وfischertechnik وArduino وVEX ولغات Python وC/C++ استفاد منها أكثر من 2,000 مشارك.' }
+        { t:'التنفيذ الفني والتشغيلي لـ 11+ مسابقة روبوت', d:'نحو 9 مسابقات حضورية ومسابقتان عن بُعد: تصميم التحديات، معايرة الصعوبة، القوانين، منهجيات التحكيم، وتجهيز الحلبات.' },
+        { t:'تأهيل 200+ معلم ومدرب', d:'برامج تدريب المدربين (ToT) لمعلمي وزارة التربية والمدربين الجدد، وتدريب Arduino في جامعة الكويت، وأنشطة روبوتيكس مع معهد الكويت للأبحاث العلمية (KISR).' },
+        { t:'200+ برنامج تدريبي وورشة', d:'مناهج ومحتوى تقني عبر LEGO SPIKE وfischertechnik وArduino وVEX، وصلت إلى أكثر من 2,000 مشارك.' }
       ]
     },
     podium: [
       { n:'5th', l:'عالمياً في Drone — Robotex International' },
       { n:'7th', l:'عالمياً في LEGO Sumo — Robotex International' },
-      { n:'1–5', l:'المراكز الخمسة الأولى في Line Following — Robotex Kuwait 2024' },
-      { n:'1–3', l:'RoboMission Senior — WRO Kuwait 2026، والتأهل لبورتوريكو' }
+      { n:'1–3', l:'RoboMission Senior — WRO Kuwait 2026، والتأهل للمسابقة الدولية في بورتوريكو' },
+      { n:'1–3', l:'LEGO Sumo — Robotex Kuwait 2025، مع المركزين الأول والثاني في Line Following' },
+      { n:'1–5', l:'LEGO Line Following — Robotex Kuwait 2024، مع الأول والثالث في Sumo' },
+      { n:'2nd', l:'RoboMission Junior — WRO Kuwait 2025، والتأهل للمسابقة الإقليمية في السعودية' }
     ],
     gallery: { title:'من الميدان', sub:'لقطات من البطولات والتدريب والورش.', filterAria:'تصفية الصور', all:'الكل', close:'إغلاق', prev:'السابق', next:'التالي',
       cats: { wro:'WRO', robotex:'Robotex', training:'تدريب المدربين', workshops:'ورش وتدريب' } },
@@ -800,10 +855,9 @@ var I18N = {
       eyebrow: 'أسئلة شائعة', title: 'إجابات مختصرة عمّا يُسأل كثيراً',
       items: [
         { q:'ما الفرق بين تدريب المسابقات والدورات العادية؟', a:'الدورات تبني الأساس: مفاهيم البرمجة والإلكترونيات والميكانيكا بتدرّج. أما تدريب المسابقات فيبدأ من هذا الأساس ويركّز على قواعد المسابقة، استراتيجية المهام، العمل الجماعي، والأداء تحت ضغط الوقت.' },
-        { q:'هل التدريب حضوري أم عن بُعد؟', a:'كلاهما متاح. تدريب المسابقات والورش العملية يُفضَّل أن يكون حضورياً لوجود العتاد، بينما تصلح مسارات البرمجة والمحاكاة وبعض برامج تأهيل المعلمين للتدريب عن بُعد.' },
-        { q:'هل تقدّم برامج لتدريب المعلمين والمدربين (ToT)؟', a:'نعم، لديّ خبرة واسعة في تأهيل أكثر من 200 معلم ومدرب للمدارس والمؤسسات التعليمية، مع تصميم المناهج والحقائب التدريبية ومعايير التقييم.' },
-        { q:'ما الأعمار والمنصّات المتاحة للتدريب؟', a:'أقدّم مسارات تناسب مختلف المراحل الدراسية والجامعية باستخدام منصّات متنوّعة تشمل LEGO Education / SPIKE وfischertechnik وVEX وArduino والبرمجة بلغات Python وC/C++.' },
-        { q:'كيف تبدأ المدرسة أو المؤسسة التعاون؟', a:'أبدأ بجلسة استشارية لفهم أهدافكم وإمكاناتكم (سواء لتأهيل المعلمين، أو إقامة ورش عمل، أو تنظيم مسابقة، أو إعداد فرق)، ثم أقدّم مقترحاً متكاملاً بالخطة والجدول الزمني.' }
+        { q:'هل تقدّم برامج لتدريب المعلمين والمدربين (ToT)؟', a:'نعم. أهّلتُ أكثر من 200 معلم ومدرب عبر برامج تدريب المدربين (ToT) وبرامج تطوير المدربين، منها برامج لمعلمي وزارة التربية.' },
+        { q:'ما المنصّات التي تدرّب عليها؟', a:'LEGO Education / SPIKE وfischertechnik وVEX وArduino وRaspberry Pi، مع البرمجة بـ Python وC/C++. وأكيّف المحتوى حسب العمر والمستوى وهدف التعلّم.' },
+        { q:'كيف تبدأ المدرسة أو المؤسسة التعاون؟', a:'نبدأ بمحادثة قصيرة لفهم الهدف: تأهيل معلمين، ورشة، تنظيم مسابقة، أو إعداد فريق. بعدها أقترح خطة وجدولاً زمنياً.' }
       ]
     },
     contact: {
@@ -817,74 +871,91 @@ var I18N = {
       eName:'يرجى إدخال الاسم (حرفان على الأقل).', eContact:'يرجى إدخال بريد إلكتروني أو رقم هاتف صحيح.', eMsg:'يرجى كتابة رسالة لا تقل عن 10 أحرف.',
       waIntro:'رسالة من الموقع', waName:'الاسم', waContact:'وسيلة التواصل'
     },
-    footer: { tagline:'أخصائي أول تعليم STEM والروبوتيكس، تأهيل المدربين (ToT)، وإدارة المسابقات وإعداد الفرق المتوّجة دولياً.', linksAria:'روابط سريعة', rights:'جميع الحقوق محفوظة.', top:'العودة لأعلى الصفحة' }
+    footer: { tagline:'مدرب روبوتيكس ومنسّق مسابقات: تدريب الفرق، تصميم المسابقات، مناهج STEM، وتأهيل المدربين.', linksAria:'روابط سريعة', rights:'جميع الحقوق محفوظة.', top:'العودة لأعلى الصفحة' }
   },
 
   en: {
     meta: {
-      title: 'Mahmoud Korany | Senior STEM & Robotics Specialist & Competition Coordinator',
-      desc: 'Mahmoud Korany Abdelfattah — Senior STEM & Robotics Specialist and Competition Coordinator at SACGC, Kuwait, since 2017. Delivered 200+ training programs reaching 2,000+ participants, developed 200+ educators, and coached Top-10 international WRO & Robotex teams.'
+      title: 'Mahmoud Korany | Robotics Instructor & Competition Coordinator',
+      desc: 'Mahmoud Korany Abdelfattah — Robotics Instructor & Competition Coordinator at SACGC, Kuwait, since 2017. 200+ training programs and workshops, 2,000+ participants, 200+ educators trained, and teams ranked in the world Top 10 at Robotex.'
     },
     skip: 'Skip to content',
-    nav: { label:'Main navigation', about:'About', services:'Services', why:'Why Me', work:'Achievements & Work', gallery:'Gallery', play:'Play the game', faq:'FAQ', contact:'Contact', cta:'Get in touch', langLabel:'عربي', langAria:'التبديل إلى العربية', themeAria:'Toggle light and dark mode', menuAria:'Toggle menu' },
+    nav: { label:'Main navigation', about:'About', services:'Expertise', process:'Process', work:'Achievements', gallery:'Gallery', play:'Play the game', faq:'FAQ', contact:'Contact', cta:'Get in touch', langLabel:'عربي', langAria:'التبديل إلى العربية', themeAria:'Toggle light and dark mode', menuAria:'Toggle menu' },
     hero: {
-      eyebrow: 'Senior STEM & Robotics Specialist · Competition Coordinator',
-      t1: 'Coaching award-winning teams & educators for', t2: 'world robotics competitions',
-      sub: 'Nearly 9 years of experience in STEM education, robotics program delivery, curriculum & instructor development (ToT), and end-to-end competition management at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC), Kuwait.',
+      eyebrow: 'Robotics Instructor & Competition Coordinator',
+      t1: 'I coach teams that sweep national podiums and reach the', t2: 'world Top 10',
+      sub: 'Since 2017 I have worked in STEM and robotics education at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC) in Kuwait: coaching teams, designing and running robotics competitions, developing curricula, and training educators.',
       cta1: 'Get in touch', cta2: 'View Achievements',
-      portraitAlt: 'Mahmoud Korany Abdelfattah', portraitCap: 'Mahmoud Korany — Senior STEM & Robotics Specialist', badge1: 'Worldwide in Drone — Robotex International', badge2: '1st–3rd in RoboMission Senior'
+      portraitAlt: 'Mahmoud Korany Abdelfattah', portraitCap: 'Mahmoud Korany — Robotics Instructor & Competition Coordinator', badge1: 'Worldwide in Drone — Robotex International', badge2: '1st–3rd in RoboMission Senior'
     },
     about: {
       eyebrow: 'About',
-      title: 'Engineering foundation in Mechatronics, forged on international competition floors',
-      p1: 'I am Mahmoud Korany Abdelfattah, Senior STEM & Robotics Specialist and Competition Coordinator at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC) in Kuwait since November 2017. I have designed and delivered 200+ training programs and workshops reaching 2,000+ participants, and trained 200+ educators and aspiring instructors in collaboration with the Ministry of Education, Kuwait University, and KISR.',
-      p2: 'Backed by a Bachelor\'s degree in Mechatronics, Robotics & Automation Engineering (Ain Shams University) and international credentials including Google Certified Educator (Level 1, Level 2 & Gemini) and Certified International Professional Trainer, I lead the full lifecycle of robotics competitions and coach teams to national podium sweeps and Top-10 world rankings.',
-      c1k:'Role', c1v:'Senior STEM & Robotics Specialist / Competition Coordinator',
+      title: 'A mechatronics engineer before I became a trainer',
+      p1: 'I am Mahmoud Korany Abdelfattah, Robotics Instructor & Competition Coordinator at the Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC) in Kuwait since November 2017. I have designed and delivered 200+ STEM, robotics and programming programs and workshops, reaching 2,000+ participants across students, educators and trainers.',
+      p2: 'Before education I worked as a maintenance and field service engineer from 2013 to 2017, at HEISCO, Xerox and SISCO in Kuwait, Egypt and Saudi Arabia. That is why I teach robotics the way engineering is practised: a real problem, a design, a test, then an improvement.',
+      p3: 'I use competition preparation as an applied learning environment where students design, program, test and work as a team, and I draw on Google education tools and AI in education.',
+      c1k:'Role', c1v:'Robotics Instructor & Competition Coordinator',
       c2k:'Institution', c2v:'Sabah Al-Ahmad Center for Giftedness and Creativity (SACGC)',
       c3k:'Tenure', c3v:'Nov 2017 — Present (Kuwait)',
-      c4k:'Education', c4v:'B.Sc. Mechatronics, Robotics & Automation — Ain Shams Univ.',
-      c5k:'Platforms & Tech',
-      c6k:'Certifications', c6v:'Google Educator L1/L2 & Gemini · Certified Int\'l Trainer · PMP® Prep'
+      c4k:'Education', c4v:'Bachelor of Mechanical Engineering — Mechatronics, Robotics & Automation, Ain Shams University (2006–2012)',
+      c5k:'Platforms',
+      c6k:'Programming & engineering',
+      c7k:'Languages', c7v:'Arabic (native) · English (B2)',
+      certsT:'Certifications', devT:'Professional development',
+      certs: [
+        ['Google Certified Educator Level 2', 'Google', '2026–2029'],
+        ['Google Certified Educator Level 1', 'Google', '2025–2028'],
+        ['Gemini Certified Educator', 'Google', '2025–2028'],
+        ['Certified International Professional Trainer', 'International Cultural Office — ICO Ltd', '2019'],
+        ['Certified Trainer', 'American University of Professional Studies', '2019'],
+        ['fischertechnik Education — Level 1', 'fischertechnik Education / SACGC', '2018'],
+        ['Heartsaver® First Aid CPR AED', 'American Heart Association', '2025–2027']
+      ],
+      dev: [
+        ['Data Science & Machine Learning (AI)', 'CLS Learning Solutions', '2025'],
+        ['PMP® exam-preparation course', 'Gravity Business Advisory', '2025'],
+        ['CAM Manufacturing Fundamentals', 'Siemens', '2021']
+      ]
     },
     stats: ['Training Programs & Workshops', 'Participant Reach', 'Educators & Trainers Developed', 'Robotics Competitions Delivered'],
     services: {
-      eyebrow: 'Services', title: 'Training, educator development & advisory built to international standards',
-      sub: 'Five comprehensive tracks serving students, educators, schools, and institutions — from engineering fundamentals to global podiums.',
+      eyebrow: 'Expertise', title: 'Four areas I work in',
+      sub: 'We can work together on one area or several, for a school, an institution or a team.',
       items: [
-        { t:'Competitive Robotics Coaching (WRO & Robotex)', d:'Comprehensive preparation for national and international teams in RoboMission, LEGO Sumo, Line Following, and Drone: robot design, algorithms, and competition strategy.' },
-        { t:'Training of Trainers (ToT) & Educator Development', d:'Empowering teachers and aspiring instructors through hands-on robotics education initiatives, instructional design, and AI in education.' },
-        { t:'End-to-End Robotics Competition Management', d:'Leading the full competition lifecycle: concept and challenge design, difficulty calibration, rules, scoring & judging methodologies, arena development, and event-day operations.' },
-        { t:'STEM & Robotics Curriculum Development', d:'Designing age- and skill-adapted curricula and technical content across LEGO Education / SPIKE, fischertechnik, Arduino, VEX Robotics, Python, and C/C++.' },
-        { t:'Institutional & University STEM Workshops', d:'Delivering external learning initiatives and collaborative workshops for universities, research centers, and schools (including Kuwait University, KISR, and Ministry of Education).' }
+        { t:'Robotics competition design & delivery', d:'I have led the technical and operational delivery of 11+ robotics competitions (about 9 on-site and 2 online).', p:['Challenge design and difficulty calibration','Rules, scoring and judging methodologies','Arena development and event-day technical operations'] },
+        { t:'Competitive team coaching', d:'I coach teams for national and international events at WRO and Robotex: RoboMission, LEGO Sumo, Line Following and Drone.', p:['Robot design and programming','Engineering problem-solving and teamwork','Competition strategy'] },
+        { t:'STEM curriculum & educational technology', d:'I develop curricula, technical content and hands-on activities adapted to age, skill level and learning objectives.', p:['LEGO Education / SPIKE, fischertechnik, Arduino and VEX','Project-based learning that ties concepts to application','Google education tools and AI in education'] },
+        { t:'Educator & trainer development (ToT)', d:'I have trained 200+ educators and trainers, including Kuwait Ministry of Education teachers and newly graduated trainer candidates.', p:['Training of Trainers (ToT) and instructor development','Technical demonstrations and hands-on facilitation','External workshops: Kuwait University, KISR, and teachers from different schools'] }
       ]
     },
-    why: {
-      eyebrow: 'Why choose me', title: 'Four reasons the outcome is different',
-      items: [
-        { t:'Proven national sweeps & Top-10 world rankings', d:'Repeated national podium sweeps at WRO and Robotex Kuwait, plus Top-10 world rankings at Robotex International including 5th in Drone and 7th in LEGO Sumo.' },
-        { t:'End-to-end leadership of 11+ competitions', d:'Deep insider expertise designing challenges, rules, judging systems, and arenas across 9 on-site and 2 online robotics competitions.' },
-        { t:'Mechatronics engineering & global credentials', d:'B.Sc. in Mechatronics & Automation combined with Google Certified Educator (Level 1, 2 & Gemini), Certified International Trainer, and AI/Data Science training.' },
-        { t:'Scalable impact (2,000+ participants & 200+ trainers)', d:'Field-tested methodology refined across 200+ workshops for students, Ministry of Education teachers, university learners, and competition teams.' }
+    process: {
+      eyebrow: 'Competition management', title: 'How I build a robotics competition',
+      sub: 'Five stages I lead, from the idea to event day.',
+      steps: [
+        { t:'Concept & challenge design', d:'Turning the technical objective into a clear challenge and competition structure.' },
+        { t:'Difficulty & rules', d:'Calibrating the challenge for the target group and writing the rules.' },
+        { t:'Scoring & judging', d:'The scoring logic and the judges\' workflow.' },
+        { t:'Arena & technical validation', d:'Building the arena, preparing equipment and validating everything before the event.' },
+        { t:'Event day', d:'Coordinating judges and trainers and running technical operations.' }
       ]
     },
     work: {
-      eyebrow: 'Achievements & Work', title: 'Selected competition achievements & program highlights',
-      sub: 'Documented milestones across international championships, national sweeps, and institutional initiatives.',
-      tags: { c:'Competitions', e:'Education & ToT', d:'Competition Ops' },
+      eyebrow: 'Achievements', title: 'Results of the teams I coached',
+      sub: 'Results of SACGC teams at Robotex and WRO, plus program and competition numbers.',
+      tags: { e:'Education & ToT', d:'Competition delivery' },
       items: [
-        { t:'Robotex International — Top-10 World Rankings', d:'Coached and prepared SACGC teams across three consecutive years, achieving Top-10 world rankings including 5th place worldwide in Drone and 7th place worldwide in LEGO Sumo.' },
-        { t:'WRO Kuwait 2026 & 2025 — Podium Sweep & World Qualifiers', d:'Led SACGC teams to sweep 1st, 2nd, and 3rd places in RoboMission Senior (2026) qualifying for the World Finals in Puerto Rico, and 2nd place nationwide in RoboMission Junior (2025) qualifying for Saudi Arabia.' },
-        { t:'Robotex Kuwait 2024 & 2025 — National Podium Sweeps', d:'Coached teams to all Top 3 positions (1st–3rd) in LEGO Sumo and Top 2 (1st–2nd) in Line Following in 2025, following a complete Top 5 sweep (1st–5th) in Line Following and 1st & 3rd in Sumo in 2024.' },
-        { t:'End-to-End Delivery of 11+ Robotics Competitions', d:'Led technical and operational delivery of ~9 on-site and 2 online competitions, covering challenge design, rules, scoring/judging systems, arena build, and event-day execution.' },
-        { t:'200+ Educators Trained & Institutional Collaborations', d:'Delivered ToT programs for Kuwait Ministry of Education teachers and new trainers, Arduino training at Kuwait University, and robotics activities with KISR.' },
-        { t:'200+ STEM Programs & Multi-Platform Curricula', d:'Developed robotics curricula and learning activities across LEGO SPIKE, fischertechnik, Arduino, VEX, Python, and C/C++, reaching 2,000+ participants.' }
+        { t:'Technical & operational delivery of 11+ robotics competitions', d:'About 9 on-site and 2 online competitions: challenge design, difficulty calibration, rules, judging methodologies and arena development.' },
+        { t:'200+ educators and trainers developed', d:'ToT programs for Kuwait Ministry of Education teachers and new trainers, Arduino training at Kuwait University, and robotics activities with KISR.' },
+        { t:'200+ training programs and workshops', d:'Curricula and technical content across LEGO SPIKE, fischertechnik, Arduino and VEX, reaching 2,000+ participants.' }
       ]
     },
     podium: [
       { n:'5th', l:'Worldwide in Drone — Robotex International' },
       { n:'7th', l:'Worldwide in LEGO Sumo — Robotex International' },
-      { n:'1–5', l:'Top five places in Line Following — Robotex Kuwait 2024' },
-      { n:'1–3', l:'RoboMission Senior — WRO Kuwait 2026, qualifying for Puerto Rico' }
+      { n:'1–3', l:'RoboMission Senior — WRO Kuwait 2026, qualifying for the international competition in Puerto Rico' },
+      { n:'1–3', l:'LEGO Sumo — Robotex Kuwait 2025, plus 1st and 2nd in Line Following' },
+      { n:'1–5', l:'LEGO Line Following — Robotex Kuwait 2024, plus 1st and 3rd in Sumo' },
+      { n:'2nd', l:'RoboMission Junior — WRO Kuwait 2025, qualifying for the regional competition in Saudi Arabia' }
     ],
     gallery: { title:'From the field', sub:'Moments from competitions, coaching and workshops.', filterAria:'Filter photos', all:'All', close:'Close', prev:'Previous', next:'Next',
       cats: { wro:'WRO', robotex:'Robotex', training:'Educator training', workshops:'Workshops & coaching' } },
@@ -904,10 +975,9 @@ var I18N = {
       eyebrow: 'FAQ', title: 'Short answers to common questions',
       items: [
         { q:'How is competition coaching different from regular courses?', a:'Courses build the foundation: programming, electronics and mechanics, step by step. Competition coaching starts from that foundation and focuses on the rules, mission strategy, teamwork and performing under time pressure.' },
-        { q:'Is training in person or online?', a:'Both are available. Competition coaching and hands-on workshops work best in person because of the hardware, while programming, simulation tracks, and educator consultations suit online delivery.' },
-        { q:'Do you offer Training of Trainers (ToT) for schools and educators?', a:'Yes. With experience developing 200+ educators and trainers, I offer tailored ToT programs, curriculum design, and instructional enablement for schools and institutions.' },
-        { q:'What ages and platforms do you cover?', a:'I cover primary, middle, high school, and university levels across LEGO Education / SPIKE, fischertechnik, VEX Robotics, Arduino, Python, and C/C++.' },
-        { q:'How does a school or institution get started?', a:'I begin with a consultation to understand your goals (teacher training, student workshops, competition hosting, or team coaching), followed by a complete proposal covering the plan, timeline, and outcomes.' }
+        { q:'Do you offer Training of Trainers (ToT) for schools and educators?', a:'Yes. I have trained 200+ educators and trainers through ToT and instructor-development programs, including programs for Kuwait Ministry of Education teachers.' },
+        { q:'Which platforms do you teach?', a:'LEGO Education / SPIKE, fischertechnik, VEX, Arduino and Raspberry Pi, with programming in Python and C/C++. I adapt the content to age, skill level and learning objective.' },
+        { q:'How does a school or institution get started?', a:'We start with a short conversation about the goal: educator training, a workshop, running a competition, or preparing a team. Then I propose a plan and a timeline.' }
       ]
     },
     contact: {
@@ -921,7 +991,7 @@ var I18N = {
       eName:'Please enter your name (at least 2 characters).', eContact:'Please enter a valid email address or phone number.', eMsg:'Please write a message of at least 10 characters.',
       waIntro:'Message from the website', waName:'Name', waContact:'Contact'
     },
-    footer: { tagline:'Senior STEM & Robotics Specialist — Educator Development (ToT), Competition Management & International Team Coaching.', linksAria:'Quick links', rights:'All rights reserved.', top:'Back to top' }
+    footer: { tagline:'Robotics Instructor & Competition Coordinator: team coaching, competition design, STEM curricula and educator training.', linksAria:'Quick links', rights:'All rights reserved.', top:'Back to top' }
   }
 };
 
@@ -943,35 +1013,34 @@ function cssVar(n){ return getComputedStyle(root).getPropertyValue(n).trim(); }
    ========================================================== */
 var ICONS = {
   services: [
-    '<path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M10 17h4"/>',
-    '<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/>',
-    '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.800 3h10.400a2 2 0 0 0 1.800-3l-5-9V3M7.500 15h9"/>',
-    '<path d="M5 4h11l3 3v13H5zM9 9h6M9 13h6M9 17h3"/>',
-    '<rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/>'
-  ],
-  why: [
-    '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.200 3 14.800 0 18M12 3c-3 3.200-3 14.800 0 18"/>',
     '<path d="M3 20h5v-5h5v-5h5V5h3"/>',
-    '<path d="M4 4v16h16M8 16v-4M12 16V8M16 16v-6"/>',
-    '<circle cx="12" cy="12" r="9"/><path d="M8 12.500l3 3 5-6"/>'
+    '<path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M10 17h4"/>',
+    '<path d="M5 4h11l3 3v13H5zM9 9h6M9 13h6M9 17h3"/>',
+    '<circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0M16 5.500a3 3 0 0 1 0 5.500M18 19a6 6 0 0 0-2.500-4.800"/>'
   ]
 };
 function svg(p){ return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">' + p + '</svg>'; }
-var WORK_TAGS = ['c','c','c','d','e','e'];
+var WORK_TAGS = ['d','e','e'];
 
 function build(){
   $('#stats').innerHTML = CONFIG.stats.map(function(s,i){
     return '<div class="stat"><div class="stat-num ltr" data-count="' + s.value + '" data-suffix="' + s.suffix + '">0' + s.suffix + '</div><div class="stat-label" data-i18n="stats.' + i + '"></div></div>';
   }).join('');
   $('#servicesGrid').innerHTML = ICONS.services.map(function(ic,i){
-    return '<article class="card reveal" style="--d:' + (i%3)*90 + 'ms"><div class="ico-box">' + svg(ic) + '</div><h3 data-i18n="services.items.' + i + '.t"></h3><p data-i18n="services.items.' + i + '.d"></p></article>';
-  }).join('');
-  $('#whyGrid').innerHTML = ICONS.why.map(function(ic,i){
-    return '<article class="card why-card reveal" style="--d:' + (i%2)*90 + 'ms"><div class="ico-box">' + svg(ic) + '</div><div><h3 data-i18n="why.items.' + i + '.t"></h3><p data-i18n="why.items.' + i + '.d"></p></div></article>';
+    return '<article class="card why-card reveal" style="--d:' + (i%2)*90 + 'ms"><div class="ico-box">' + svg(ic) + '</div><div><h3 data-i18n="services.items.' + i + '.t"></h3><p data-i18n="services.items.' + i + '.d"></p><ul class="pts">' +
+      [0,1,2].map(function(k){ return '<li data-i18n="services.items.' + i + '.p.' + k + '"></li>'; }).join('') + '</ul></div></article>';
   }).join('');
   $('#workGrid').innerHTML = WORK_TAGS.map(function(tag,i){
-    return '<article class="card work-card reveal" style="--d:' + (i%3)*90 + 'ms"><div class="work-top"><span class="tag" data-i18n="work.tags.' + tag + '"></span><span class="work-no" aria-hidden="true">0' + (i+1) + '</span></div><h3 data-i18n="work.items.' + i + '.t"></h3><p data-i18n="work.items.' + i + '.d"></p></article>';
+    return '<article class="card work-card reveal" style="--d:' + (i%3)*90 + 'ms"><div class="work-top"><span class="tag" data-i18n="work.tags.' + tag + '"></span></div><h3 data-i18n="work.items.' + i + '.t"></h3><p data-i18n="work.items.' + i + '.d"></p></article>';
   }).join('');
+  $('#steps').innerHTML = I18N.ar.process.steps.map(function(_,i){
+    return '<li class="reveal" style="--d:' + i*80 + 'ms"><h3 data-i18n="process.steps.' + i + '.t"></h3><p data-i18n="process.steps.' + i + '.d"></p></li>';
+  }).join('');
+  ['certs','dev'].forEach(function(k){
+    $('#' + k + 'List').innerHTML = I18N.ar.about[k].map(function(_,i){
+      return '<li><div><strong data-i18n="about.' + k + '.' + i + '.0"></strong><small data-i18n="about.' + k + '.' + i + '.1"></small></div><span class="ltr" data-i18n="about.' + k + '.' + i + '.2"></span></li>';
+    }).join('');
+  });
   $('#podium').innerHTML = I18N.ar.podium.map(function(_,i){
     return '<div><b data-i18n="podium.' + i + '.n"></b><span data-i18n="podium.' + i + '.l"></span></div>';
   }).join('');
@@ -984,7 +1053,7 @@ function build(){
   $('#cEmail').textContent = CONFIG.email; $('#cEmail').href = $('#sMail').href = 'mailto:' + CONFIG.email;
   $('#cWa').textContent = CONFIG.whatsappDisplay; $('#cWa').href = $('#waBtn').href = $('#sWa').href = wa;
   $('#cLi').href = $('#sLi').href = CONFIG.linkedin;
-  if (CONFIG.instagram) $('#sIg').href = CONFIG.instagram; else $('#sIg').hidden = true;
+  [['#sIg','instagram'],['#sFb','facebook'],['#sYt','youtube'],['#sTt','tiktok']].forEach(function(x){ if (CONFIG[x[1]]) $(x[0]).href = CONFIG[x[1]]; else $(x[0]).hidden = true; });
   $('#year').textContent = new Date().getFullYear();
 }
 
@@ -1431,7 +1500,7 @@ function initSumo(){
 function initTrack(){
   var tr = $('#track'); if (!tr) return null;
   var fill = $('#trackFill'), stopsEl = $('#trackStops'), botEl = $('#trackBot');
-  var ids = ['home', 'about', 'services', 'why', 'work', 'gallery', 'play', 'faq', 'contact'].filter(function(id){ var e = $('#' + id); return e && !e.hidden; });
+  var ids = ['home', 'work', 'about', 'services', 'process', 'gallery', 'play', 'faq', 'contact'].filter(function(id){ var e = $('#' + id); return e && !e.hidden; });
   var PAD = 16, W = 0, dir = 1, cur = 0, target = 0, raf = 0, xs = [], stops = [];
 
   function layout(){
